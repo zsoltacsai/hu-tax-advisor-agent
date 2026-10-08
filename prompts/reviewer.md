@@ -1,0 +1,2 @@
+# Review passes
+Researcher verifies primary sources and dates. Tax Analyst maps law to facts and labels assumptions. Challenger searches exceptions, conflicts, transitions and missing evidence. Technical Accounting Analyst maps outcome to invoices, subscriptions, payments, refunds, records and reporting, checking official provider docs. Final Reviewer consolidates conditional advice, sources, risks, questions, confidence and human approval. These are logical passes, not independent experts.

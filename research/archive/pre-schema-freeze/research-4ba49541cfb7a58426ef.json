@@ -1,0 +1,144 @@
+{
+  "as_of_date": "2026-10-08",
+  "candidate_conclusion": "Article 58 is a special B2C electronic-services rule; classification and Article 59c must be separately reviewed.",
+  "confidence": "low",
+  "confidence_basis": [
+    "Confidence is recomputed from frozen source and provision metadata; submitted rating is ignored."
+  ],
+  "conflicting_sources": [],
+  "facts": {
+    "case": "synthetic research scope; not a taxpayer case"
+  },
+  "facts_required": [
+    "service meets the legal electronically supplied service definition",
+    "customer is non-taxable and location is evidenced",
+    "Article 59c conditions and any option",
+    "special exceptions"
+  ],
+  "human_review_required": true,
+  "interpretation": "Article 58 is a special B2C electronic-services rule; classification and Article 59c must be separately reviewed.",
+  "jurisdiction": [
+    "EU",
+    "HU"
+  ],
+  "official_guidance": [
+    "eu-commission-place-of-taxation"
+  ],
+  "primary_sources": [
+    "eu-vat-ecommerce-directive-2017-2455",
+    "eu-vat-directive-current-consolidation-2025-04-14"
+  ],
+  "question": "When does the destination rule apply to B2C electronically supplied services?",
+  "relevant_provisions": [
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "58",
+      "paragraph": null,
+      "provision": "Article 1, effective 2019-01-01; Directive 2006/112/EC Article 58(1)-(2)",
+      "source_id": "eu-vat-ecommerce-directive-2017-2455",
+      "summary": "Amendment and effective date for Article 58",
+      "verified": true,
+      "version_date": "2017-12-05"
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "58",
+      "paragraph": null,
+      "provision": "Article 58",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "summary": "Consolidated electronic services place-of-supply text",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "58",
+      "paragraph": null,
+      "provision": "Article 58; Article 59c",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "summary": "Consolidated electronic services rule and exception text",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "58",
+      "paragraph": null,
+      "provision": "Commission summary of Directive Article 58 and 59c",
+      "source_id": "eu-commission-place-of-taxation",
+      "summary": "Commission description of the B2C electronic-services rule",
+      "verified": true,
+      "version_date": null
+    }
+  ],
+  "research_id": "research-4ba49541cfb7a58426ef",
+  "secondary_sources": [],
+  "snapshot_hash": "995bf944b466d30210eadd0b737d039006f426cc77a10ac5e67df74d49a2990b",
+  "sources_considered": [
+    {
+      "authority_level": "primary",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32017L2455",
+      "publication_date": "2017-12-05",
+      "source_id": "eu-vat-ecommerce-directive-2017-2455",
+      "source_type": "eu_legislation",
+      "title": "Council Directive (EU) 2017/2455 amending VAT obligations for services and distance sales",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2017-12-05"
+    },
+    {
+      "authority_level": "primary",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "publication_date": null,
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_type": "eu_legislation",
+      "title": "Directive 2006/112/EC consolidated text dated 2025-04-14",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-04-14"
+    },
+    {
+      "authority_level": "official_guidance",
+      "official_url": "https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/place-taxation_en",
+      "publication_date": null,
+      "source_id": "eu-commission-place-of-taxation",
+      "source_type": "commission_guidance",
+      "title": "Place of taxation",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": null
+    }
+  ],
+  "topics": [
+    "vat",
+    "article58-electronic-b2c"
+  ],
+  "transaction_date": "2026-10-08",
+  "uncertainties": [
+    "No conclusion that any particular maintenance/SaaS service is electronically supplied."
+  ]
+}

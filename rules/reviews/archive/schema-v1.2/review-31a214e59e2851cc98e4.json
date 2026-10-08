@@ -1,0 +1,54 @@
+{
+  "candidate_id": "candidate-eu-vat-services-b2b-general-2010-v1-366b39",
+  "confidence": "low",
+  "effective_date_review": {
+    "findings": [],
+    "passed": true
+  },
+  "human_review_required": true,
+  "legal_basis_review": {
+    "findings": [],
+    "passed": true
+  },
+  "logic_review": {
+    "conditions": {
+      "findings": [],
+      "passed": true
+    },
+    "engine_compatibility": {
+      "findings": [
+        "Engine schema and source checks passed; human still must authorize promotion."
+      ],
+      "passed": true
+    },
+    "facts": {
+      "findings": [],
+      "passed": true
+    },
+    "outcome": {
+      "findings": [],
+      "passed": true
+    }
+  },
+  "missing_exceptions": [
+    "special place-of-supply exceptions not reviewed",
+    "recipient fixed establishment not identified",
+    "customer is not acting as taxable person"
+  ],
+  "required_changes": [
+    "Customer status and receiving establishment require facts; exceptions are outside this research scope.",
+    "Research confidence is low."
+  ],
+  "research_id": "research-e50ca307dbb80b366b39",
+  "review_id": "review-31a214e59e2851cc98e4",
+  "reviewed_at": "2026-10-08T09:05:22+00:00",
+  "source_review": {
+    "findings": [
+      "Customer status and receiving establishment require facts; exceptions are outside this research scope.",
+      "Research confidence is low."
+    ],
+    "passed": false
+  },
+  "status": "NEEDS_CHANGES",
+  "unsupported_assertions": []
+}

@@ -1,0 +1,3 @@
+# Tax-point model
+
+The engine records transaction date, tax-point date when supplied, service period, invoice/payment/prepayment/renewal/refund events. Tax point state is known only when explicitly supplied and reviewed; otherwise unknown or requires_review. Phase 3 does not calculate Hungarian continuous-supply or subscription tax points. A date used for rule selection is not an implied legal tax point.

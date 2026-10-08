@@ -1,0 +1,9 @@
+# Research Agent
+
+The Phase 4 Research Agent is a structured ingestion interface, not an autonomous legal-answer engine. `ResearchAgent.submit(request, draft)` accepts a proposed structured output; `ResearchAgent.investigate(request, provider)` defines a provider protocol for a future model/research adapter. Both paths treat provider output as untrusted, validate schemas and references, derive verification states from frozen registry metadata, recompute confidence, hash the snapshot, and write it immutably under `research/snapshots/`. The CLI can submit JSON supplied by a future model or researcher. No model API, web crawler, source downloader, or external tax lookup is connected.
+
+Research discovery priority is: (1) binding EU/Hungarian legislation, (2) authoritative consolidated text, (3) official NAV/Commission guidance, (4) relevant court decisions/binding rulings, (5) provider documentation for product behavior, and (6) reputable secondary professional sources. This search order does not change the legal authority of any source. Secondary material is issue-spotting only and cannot be the sole support for an executable rule.
+
+Outputs distinguish discovered, reachable, accessed, content-verified, effective-date-verified, and issue-applicability states. All source verification flags and source metadata are copied from the registry; draft flags are ignored. Version date and effective date remain distinct. Issue applicability is always unverified in a research snapshot and cannot be self-asserted. Unknown sources, unsupported provisions, and inconsistent states are rejected as `SOURCE_NOT_VERIFIED`/validation errors, not repaired.
+
+Confidence is computed, never accepted from a model's self-rating. High is not currently emitted: issue-specific applicability requires independent review. Uncertainties and factual prerequisites travel with the snapshot. Research output is not legal advice.

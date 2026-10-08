@@ -1,0 +1,12 @@
+{
+  "request_id": "synthetic-request-001",
+  "status": "cannot_determine",
+  "result": null,
+  "source_refs": [],
+  "uncertainty_categories": [
+    "MISSING_FACT"
+  ],
+  "requires_human_review": true,
+  "errors": [],
+  "generated_at": "2026-10-08T10:00:00Z"
+}

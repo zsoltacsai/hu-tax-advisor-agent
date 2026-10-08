@@ -1,0 +1,53 @@
+{
+  "candidate_id": "candidate-eu-vat-services-b2c-general-2010-v1-708851",
+  "confidence": "low",
+  "effective_date_review": {
+    "findings": [],
+    "passed": true
+  },
+  "human_review_required": true,
+  "legal_basis_review": {
+    "findings": [],
+    "passed": true
+  },
+  "logic_review": {
+    "conditions": {
+      "findings": [],
+      "passed": true
+    },
+    "engine_compatibility": {
+      "findings": [
+        "Engine schema and source checks passed; human still must authorize promotion."
+      ],
+      "passed": true
+    },
+    "facts": {
+      "findings": [],
+      "passed": true
+    },
+    "outcome": {
+      "findings": [],
+      "passed": true
+    }
+  },
+  "missing_exceptions": [
+    "special place-of-supply exceptions not reviewed",
+    "service falls under an exception"
+  ],
+  "required_changes": [
+    "Special place rules may displace the general rule; exact service characteristics are necessary.",
+    "Research confidence is low."
+  ],
+  "research_id": "research-80fa2af61030e5708851",
+  "review_id": "review-1ebb8c8016da9033edf7",
+  "reviewed_at": "2026-10-08T09:06:10+00:00",
+  "source_review": {
+    "findings": [
+      "Special place rules may displace the general rule; exact service characteristics are necessary.",
+      "Research confidence is low."
+    ],
+    "passed": false
+  },
+  "status": "NEEDS_CHANGES",
+  "unsupported_assertions": []
+}

@@ -1,0 +1,2 @@
+# EU source subset
+Canonical records are deduplicated in ../registry.json: eu-vat-directive-2006-112, eu-sme-directive-2020-285, eu-sme-implementing-regulation-2021-2007, eu-commission-place-of-taxation, eu-vies-validation, eu-vies-guidance, eu-commission-sme-portal. Read version and verification fields before use.

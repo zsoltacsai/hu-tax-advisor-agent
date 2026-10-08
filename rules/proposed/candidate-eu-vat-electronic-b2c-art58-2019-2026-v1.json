@@ -1,0 +1,116 @@
+{
+  "assumptions": [],
+  "author": "research-agent",
+  "candidate_id": "candidate-eu-vat-electronic-b2c-art58-2019-2026-v1",
+  "conditions": [
+    {
+      "field": "service_classification",
+      "operator": "equals",
+      "value": "ELECTRONICALLY_SUPPLIED_SERVICE"
+    },
+    {
+      "field": "classification_reviewed",
+      "operator": "equals",
+      "value": true
+    },
+    {
+      "field": "customer_status",
+      "operator": "equals",
+      "value": "B2C"
+    },
+    {
+      "field": "customer_location_status",
+      "operator": "equals",
+      "value": "determined"
+    },
+    {
+      "field": "customer_country_region",
+      "operator": "equals",
+      "value": "EU"
+    },
+    {
+      "field": "article59c_assessment",
+      "operator": "in",
+      "value": [
+        "above_threshold",
+        "option_exercised"
+      ]
+    }
+  ],
+  "created_at": "2026-10-08T09:23:25+00:00",
+  "description": "Unapproved high-risk proposal. No WP CareGrid classification; incomplete Article 59c facts and future-law interval are blockers.",
+  "effective_from": "2019-01-01",
+  "effective_to": "2027-01-01",
+  "evidence": [
+    {
+      "provision": "Article 1; Article 58(1)-(2); Article 59c",
+      "source_id": "eu-vat-ecommerce-directive-2017-2455",
+      "source_version": "2017-12-05",
+      "supports": "Article 58/59c framework applicable from 2019."
+    },
+    {
+      "provision": "Article 58",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_version": "2025-04-14",
+      "supports": "Current Article 58 classification, customer status and destination rule."
+    },
+    {
+      "provision": "Article 59c",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_version": "2025-04-14",
+      "supports": "2026 threshold framework, includes prior year and option."
+    },
+    {
+      "provision": "Article 59c",
+      "source_id": "eu-vat-digital-age-directive-2025-516",
+      "source_version": "2025-03-11",
+      "supports": "Future version boundary starts 2027-01-01."
+    },
+    {
+      "provision": "Article 58; Article 59c",
+      "source_id": "eu-commission-place-of-taxation",
+      "source_version": "retrieved 2026-10-08",
+      "supports": "Commission explanation of current rule."
+    }
+  ],
+  "exclusions": [
+    "WP CareGrid classification is unassigned"
+  ],
+  "human_review_if": [
+    "Article 59c threshold facts incomplete",
+    "option status/period unknown",
+    "service classification not independently reviewed"
+  ],
+  "jurisdiction": "EU",
+  "known_exceptions": [
+    "Article 59c sub-threshold/no-option treatment makes Article 58 inapplicable",
+    "Article 59c changes from 2027-01-01",
+    "electronic-service classification cannot be inferred from online supply"
+  ],
+  "outcome": {
+    "code": "ELECTRONIC_B2C_ART58",
+    "message": "Conditional Article 58 place-of-supply stage only; Article 59c displacement/exemption not decided.",
+    "stage": "place_of_supply",
+    "status": "determined",
+    "value_from": "customer_location_country"
+  },
+  "priority": 100,
+  "requires": [
+    "explicit reviewed electronic service classification",
+    "B2C status and customer location",
+    "complete current Article 59c assessment"
+  ],
+  "research_id": "research-14e807caa4ba8e0f50cf",
+  "review_required": true,
+  "rule_id": "eu-vat-electronic-b2c-art58",
+  "rule_scope": "SPECIFIC",
+  "rule_specificity": 100,
+  "rule_version_id": "eu-vat-electronic-b2c-art58@1",
+  "status": "PROPOSED",
+  "topic": "electronic_services",
+  "unresolved_questions": [
+    "Current-year threshold crossing date and prior-year threshold status cannot be represented by present facts/schema",
+    "Supplier single-Member-State condition, qualifying aggregate, currency conversion and option duration are not represented",
+    "Future 2027 Article 59c version needs a separate candidate"
+  ]
+}

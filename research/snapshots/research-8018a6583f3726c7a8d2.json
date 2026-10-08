@@ -1,0 +1,219 @@
+{
+  "as_of_date": "2026-10-08",
+  "candidate_conclusion": "Rule text researched for a narrowly gated proposal; this research is not a tax conclusion.",
+  "confidence": "medium",
+  "confidence_basis": [
+    "Fresh official-source content reviewed on 2026-10-08; verification is source-specific and does not decide applicability to a real transaction."
+  ],
+  "conflicting_sources": [],
+  "court_sources": [],
+  "facts": {
+    "research_phase": "4.5",
+    "scope": "synthetic narrow general-service rules; no CareGrid classification"
+  },
+  "facts_required": [
+    "customer is explicitly reviewed as non-taxable private recipient, not a registered non-taxable legal person treated as taxable",
+    "service is explicitly reviewed as GENERAL_SERVICE",
+    "reviewed exclusion screen confirms no special place-of-supply rule applies",
+    "supplier main business establishment is reviewed as relevant; no relevant fixed establishment from which service is supplied",
+    "transaction date is inside rule validity"
+  ],
+  "human_review_required": true,
+  "interpretation": "Article 45 is a general/default rule for services to a non-taxable person. The current consolidated text expressly contains supplier fixed-establishment and fallback branches. This candidate requires an explicit review that no relevant supplier fixed establishment changes the supplier location, plus an explicit general-service classification and exception screen. It cannot match electronic, consultancy, mixed or other specifically classified services. Hungarian NAV guidance supports Áfa tv. 37(2); the exact current NJT primary text was not directly retrievable and is marked unverified.",
+  "jurisdiction": [
+    "EU",
+    "HU"
+  ],
+  "official_guidance": [
+    "eu-commission-place-of-taxation",
+    "hu-nav-2026-place-of-supply-instructions"
+  ],
+  "primary_sources": [
+    "eu-vat-services-directive-2008-8",
+    "eu-vat-directive-current-consolidation-2025-04-14"
+  ],
+  "question": "Revalidate the narrow Article 45 general B2C place-of-supply rule for a reviewed HU supplier.",
+  "relevant_provisions": [
+    {
+      "applicability_notes": "Establishes effective start for Articles 44-45.",
+      "article": "Article 2",
+      "paragraph": null,
+      "provision": "Article 2",
+      "source_id": "eu-vat-services-directive-2008-8",
+      "summary": "Article 2 states the general service rules apply from 2010-01-01.",
+      "verified": true,
+      "version_date": "2008-02-12"
+    },
+    {
+      "applicability_notes": "Current consolidated wording; candidate does not resolve supplier fixed establishments.",
+      "article": "Article 45",
+      "paragraph": null,
+      "provision": "Article 45",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "summary": "B2C default is supplier business establishment, with supplier fixed establishment from which supplied and fallback domicile/residence clauses.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "B2C must be explicitly reviewed as non-taxable recipient.",
+      "article": "Article 43",
+      "paragraph": null,
+      "provision": "Article 43",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "summary": "Place-of-supply customer status includes definitions relevant to taxable versus non-taxable status.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Guidance only; never overrides a specific rule.",
+      "article": "Article 45",
+      "paragraph": null,
+      "provision": "Article 45",
+      "source_id": "eu-commission-place-of-taxation",
+      "summary": "Commission describes Article 45 as basic B2C rule and lists multiple special exceptions.",
+      "verified": true,
+      "version_date": "2026-10-08"
+    },
+    {
+      "applicability_notes": "Current Hungarian official administrative confirmation; not primary law.",
+      "article": "Article 37(2)",
+      "paragraph": null,
+      "provision": "Article 37(2)",
+      "source_id": "hu-nav-2026-place-of-supply-instructions",
+      "summary": "NAV official filing instructions state B2C general place is supplier economic establishment.",
+      "verified": true,
+      "version_date": "2026-01-01"
+    },
+    {
+      "applicability_notes": "Direct NJT page timed out; not relied on as verified primary evidence.",
+      "article": "Article 37(2)",
+      "paragraph": null,
+      "provision": "Article 37(2)",
+      "source_id": "hu-vat-act-2007-cxxvii",
+      "summary": "NJT indexed excerpt states domestic B2C general rule.",
+      "verified": false,
+      "version_date": null
+    }
+  ],
+  "research_id": "research-8018a6583f3726c7a8d2",
+  "secondary_sources": [],
+  "snapshot_hash": "072b6625435c0904f6939f1a1fb31e1576d964d2867a0cb26e2f5889c9e20266",
+  "snapshot_schema_version": "1.3.0",
+  "sources_considered": [
+    {
+      "authority_level": "primary",
+      "effective_from": "2010-01-01",
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008L0008",
+      "publication_date": "2008-02-12",
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-services-directive-2008-8",
+      "source_type": "eu_legislation",
+      "title": "Council Directive 2008/8/EC as regards place of supply of services",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2008-02-12"
+    },
+    {
+      "authority_level": "primary",
+      "effective_from": null,
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_type": "eu_legislation",
+      "title": "Directive 2006/112/EC consolidated text dated 2025-04-14",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-04-14"
+    },
+    {
+      "authority_level": "official_guidance",
+      "effective_from": null,
+      "effective_to": null,
+      "official_url": "https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/place-taxation_en",
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-commission-place-of-taxation",
+      "source_type": "commission_guidance",
+      "title": "Place of taxation",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": null
+    },
+    {
+      "authority_level": "official_guidance",
+      "effective_from": null,
+      "effective_to": null,
+      "official_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F26A60%2Fkitoltesi-utmutato",
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-nav-2026-place-of-supply-instructions",
+      "source_type": "nav_guidance",
+      "title": "26A60 filing instructions: place of supply of services",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": null
+    },
+    {
+      "authority_level": "primary",
+      "effective_from": null,
+      "effective_to": null,
+      "official_url": "https://njt.hu/jogszabaly/2007-127-00-00",
+      "publication_date": "2007-11-16",
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-vat-act-2007-cxxvii",
+      "source_type": "primary_legislation",
+      "title": "2007. évi CXXVII. törvény az általános forgalmi adóról",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": false,
+        "content_verified": false,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "DISCOVERED",
+        "url_reachable": false
+      },
+      "version_date": null
+    }
+  ],
+  "topics": [
+    "place_of_supply"
+  ],
+  "transaction_date": "2026-10-08",
+  "uncertainties": []
+}

@@ -1,0 +1,43 @@
+{
+  "decision_id": "synthetic-decision-001",
+  "as_of_date": "2026-10-08",
+  "transaction_date": "2026-10-08",
+  "facts": {
+    "customer_country": "DE",
+    "service": "maintenance as described; not classified"
+  },
+  "assumptions": [
+    "All facts are synthetic."
+  ],
+  "rules_applied": [],
+  "evidence": [
+    {
+      "source_id": "hu-nav-aam-2026-guidance",
+      "provision": "188. § (2) reference only",
+      "source_version": "2025-12-11",
+      "retrieved_at": "2026-10-08",
+      "supports": "Sample evidence link only",
+      "authority_level": "official_guidance",
+      "source_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "quote_or_extract": null,
+      "content_hash": null
+    }
+  ],
+  "interpretation": "No tax treatment is asserted.",
+  "conclusion": {
+    "status": "cannot_determine",
+    "reason": "MISSING_FACT",
+    "statement": "Synthetic provenance example only.",
+    "evidence_refs": [
+      "hu-nav-aam-2026-guidance"
+    ],
+    "uncertainty_categories": [
+      "MISSING_FACT"
+    ]
+  },
+  "confidence": "low",
+  "requires_human_review": true,
+  "unresolved_questions": [
+    "What service was actually performed?"
+  ]
+}

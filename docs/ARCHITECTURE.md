@@ -1,0 +1,2 @@
+# Architecture
+Phase 1 is a file-based foundation: prompts, source and temporal rules, reviewer workflow, skills, schemas, examples, evaluation plan and proposed MCP contracts. No runtime, database, crawler, tax calculator, provider integration, public deployment or automatic decisions. Future flow: minimized facts -> questions -> official-source retrieval -> date-versioned analysis -> challenge -> schema validation -> human review -> export. Host remains authoritative for identity, invoices, payments and final approval.

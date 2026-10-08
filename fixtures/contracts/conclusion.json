@@ -1,0 +1,11 @@
+{
+  "status": "cannot_determine",
+  "reason": "LIVE_VERIFICATION_REQUIRED",
+  "statement": "Cannot determine from supplied synthetic facts.",
+  "evidence_refs": [],
+  "uncertainty_categories": [
+    "MISSING_FACT",
+    "LIVE_VERIFICATION_REQUIRED",
+    "HUMAN_ACCOUNTANT_DECISION"
+  ]
+}

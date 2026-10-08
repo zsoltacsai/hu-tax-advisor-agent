@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "country",
+    "entity_type",
+    "vat_status_reported",
+    "eu_vat_number_present",
+    "establishment_country",
+    "tax_year",
+    "facts_as_of"
+  ],
+  "properties": {
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "entity_type": {
+      "enum": [
+        "sole_proprietor",
+        "company",
+        "other",
+        "unknown"
+      ]
+    },
+    "vat_status_reported": {
+      "enum": [
+        "AAM",
+        "general_vat",
+        "exempt_other",
+        "not_registered",
+        "unknown"
+      ]
+    },
+    "eu_vat_number_present": {
+      "type": "boolean"
+    },
+    "establishment_country": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[A-Z]{2}$"
+    },
+    "tax_year": {
+      "type": "integer",
+      "minimum": 2000,
+      "maximum": 2100
+    },
+    "facts_as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "annual_turnover": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "turnover_currency": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_fact_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "facts_reviewed": {
+      "type": "boolean"
+    }
+  }
+}

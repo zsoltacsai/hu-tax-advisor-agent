@@ -1,0 +1,135 @@
+{
+  "as_of_date": "2026-10-08",
+  "candidate_conclusion": "Article 59c can affect the Article 58 destination rule; threshold and option inputs need their own legal assessment.",
+  "confidence": "low",
+  "confidence_basis": [
+    "Confidence is recomputed from frozen source and provision metadata; submitted rating is ignored."
+  ],
+  "conflicting_sources": [],
+  "facts": {
+    "case": "synthetic research scope; not a taxpayer case"
+  },
+  "facts_required": [
+    "supplier establishment",
+    "EU turnover and applicable threshold period",
+    "customer location",
+    "whether option was exercised"
+  ],
+  "human_review_required": true,
+  "interpretation": "Article 59c can affect the Article 58 destination rule; threshold and option inputs need their own legal assessment.",
+  "jurisdiction": [
+    "EU",
+    "HU"
+  ],
+  "official_guidance": [
+    "eu-commission-place-of-taxation"
+  ],
+  "primary_sources": [
+    "eu-vat-ecommerce-directive-2017-2455",
+    "eu-vat-directive-current-consolidation-2025-04-14"
+  ],
+  "question": "What low-value exception/option must be assessed before applying Article 58?",
+  "relevant_provisions": [
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "59c",
+      "paragraph": null,
+      "provision": "Article 1 and Directive 2006/112/EC Article 59c",
+      "source_id": "eu-vat-ecommerce-directive-2017-2455",
+      "summary": "Amendment establishing the limited exception framework",
+      "verified": true,
+      "version_date": "2017-12-05"
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "59c",
+      "paragraph": null,
+      "provision": "Article 59c",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "summary": "Consolidated exception/option text",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "59c",
+      "paragraph": null,
+      "provision": "Article 59c",
+      "source_id": "eu-commission-place-of-taxation",
+      "summary": "Official guidance summary of low-value framework",
+      "verified": true,
+      "version_date": null
+    }
+  ],
+  "research_id": "research-0d575f35e9724171abe2",
+  "secondary_sources": [],
+  "snapshot_hash": "c906ba4828380ba07e558489b35c8781746ccf65bd8ff5592e5e0318f2d0e524",
+  "snapshot_schema_version": "1.0.0",
+  "sources_considered": [
+    {
+      "authority_level": "primary",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32017L2455",
+      "publication_date": "2017-12-05",
+      "source_id": "eu-vat-ecommerce-directive-2017-2455",
+      "source_type": "eu_legislation",
+      "title": "Council Directive (EU) 2017/2455 amending VAT obligations for services and distance sales",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2017-12-05"
+    },
+    {
+      "authority_level": "primary",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "publication_date": null,
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_type": "eu_legislation",
+      "title": "Directive 2006/112/EC consolidated text dated 2025-04-14",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-04-14"
+    },
+    {
+      "authority_level": "official_guidance",
+      "official_url": "https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/place-taxation_en",
+      "publication_date": null,
+      "source_id": "eu-commission-place-of-taxation",
+      "source_type": "commission_guidance",
+      "title": "Place of taxation",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": null
+    }
+  ],
+  "topics": [
+    "vat",
+    "article59c-gating"
+  ],
+  "transaction_date": "2026-10-08",
+  "uncertainties": [
+    "No threshold amount or eligibility conclusion is made for a real taxpayer."
+  ]
+}

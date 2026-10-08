@@ -1,0 +1,4 @@
+# WP CareGrid integration
+Only a reusable skill for a hypothetical Hungarian sole proprietor reporting AAM and an EU VAT number with WordPress/WooCommerce maintenance subscriptions. These are unverified assumptions. No WP CareGrid source or data accessed or modified.
+
+Proposed flow: minimized facts -> classify actual work/customer proof -> conditional sourced output -> accountant approval -> host applies approved treatment. No automatic decision. Resolve deliverables, human work, bundles, customer status/location/receiving establishment, seller status, annual turnover, AAM and EU SME election, contract/tax point, discounts/refunds, FX, provider behavior, invoices/reporting.

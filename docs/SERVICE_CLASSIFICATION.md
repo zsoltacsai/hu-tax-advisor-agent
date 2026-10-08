@@ -1,0 +1,5 @@
+# Service classification warning
+
+WP CareGrid is not classified in Phase 2 or Phase 3. A WordPress maintenance subscription must be classified from the actual contractual and operational service: who performs work, how automated delivery is, what the customer receives, whether hosting/software/license/support/security/consultancy are bundled, and whether elements are economically distinct or one composite supply.
+
+Possible fact patterns include automated electronic service, human-performed maintenance, consultancy, mixed/composite service, or another category. Internet delivery or recurring billing alone does not establish electronically supplied service status. EU VAT rules have general B2B/B2C service rules and special rules including B2C electronically supplied services (Directive Articles 44, 45, 58; current version must be date-verified). Classification may change place-of-supply analysis. Obtain transaction facts and accountant/legal review; do not encode a default tax result.

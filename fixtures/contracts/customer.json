@@ -1,0 +1,20 @@
+{
+  "country": "DE",
+  "business_establishment_country": "DE",
+  "customer_type_claimed": "business",
+  "business_status": "verified_business",
+  "business_status_evidence": [
+    "synthetic_valid_vat_id"
+  ],
+  "status_evidence_reviewed": true,
+  "vat_id": "SYNTHETIC-DE-001",
+  "vat_id_verification": "synthetic_valid",
+  "verification_at": "2026-10-08T10:00:00Z",
+  "evidence_country_signals": [
+    {
+      "kind": "business_establishment",
+      "country": "DE",
+      "observed_at": "2026-10-08T10:00:00Z"
+    }
+  ]
+}

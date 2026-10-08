@@ -1,0 +1,53 @@
+{
+  "candidate_id": "candidate-eu-vat-electronic-b2c-art58-2019-v1-478845",
+  "confidence": "low",
+  "effective_date_review": {
+    "findings": [],
+    "passed": true
+  },
+  "human_review_required": true,
+  "legal_basis_review": {
+    "findings": [],
+    "passed": true
+  },
+  "logic_review": {
+    "conditions": {
+      "findings": [],
+      "passed": true
+    },
+    "engine_compatibility": {
+      "findings": [
+        "Engine schema and source checks passed; human still must authorize promotion."
+      ],
+      "passed": true
+    },
+    "facts": {
+      "findings": [],
+      "passed": true
+    },
+    "outcome": {
+      "findings": [],
+      "passed": true
+    }
+  },
+  "missing_exceptions": [
+    "Article 59c low-threshold exception applies",
+    "service classification inferred from internet delivery"
+  ],
+  "required_changes": [
+    "No conclusion that any particular maintenance/SaaS service is electronically supplied.",
+    "Research confidence is low."
+  ],
+  "research_id": "research-23684edb73ae9b478845",
+  "review_id": "review-98e1852d8d781b83c9ec",
+  "reviewed_at": "2026-10-08T09:06:10+00:00",
+  "source_review": {
+    "findings": [
+      "No conclusion that any particular maintenance/SaaS service is electronically supplied.",
+      "Research confidence is low."
+    ],
+    "passed": false
+  },
+  "status": "NEEDS_CHANGES",
+  "unsupported_assertions": []
+}

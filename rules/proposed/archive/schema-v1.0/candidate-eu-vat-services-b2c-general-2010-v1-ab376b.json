@@ -1,0 +1,100 @@
+{
+  "assumptions": [],
+  "author": "research-agent",
+  "candidate_id": "candidate-eu-vat-services-b2c-general-2010-v1-ab376b",
+  "conditions": [
+    {
+      "field": "service_classification",
+      "operator": "equals",
+      "value": "GENERAL_SERVICE"
+    },
+    {
+      "field": "classification_reviewed",
+      "operator": "equals",
+      "value": true
+    },
+    {
+      "field": "special_place_of_supply_reviewed",
+      "operator": "equals",
+      "value": true
+    },
+    {
+      "field": "customer_status",
+      "operator": "equals",
+      "value": "B2C"
+    },
+    {
+      "field": "customer_location_status",
+      "operator": "equals",
+      "value": "determined"
+    },
+    {
+      "field": "supplier_country_verified",
+      "operator": "equals",
+      "value": true
+    }
+  ],
+  "created_at": "2026-10-08T10:00:00+00:00",
+  "description": "Place-of-supply stage only for specifically reviewed general service; does not decide AAM exemption or supplier VAT collection.",
+  "effective_from": "2010-01-01",
+  "effective_to": null,
+  "evidence": [
+    {
+      "provision": "Article 2; effective 2010-01-01, introducing Directive 2006/112/EC Article 45",
+      "source_id": "eu-vat-services-directive-2008-8",
+      "source_version": "2008-02-12 official act",
+      "supports": "Effective date and text of the harmonized general B2C place-of-supply rule."
+    },
+    {
+      "provision": "Article 45",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_version": "2025-04-14 consolidated text",
+      "supports": "Current consolidated text for the general B2C service rule; legal applicability of exceptions must be separately reviewed."
+    },
+    {
+      "provision": "Commission summary of Directive Article 45",
+      "source_id": "eu-commission-place-of-taxation",
+      "source_version": "retrieved 2026-10-08",
+      "supports": "Official explanatory summary that general B2C service place is supplier establishment; exceptions remain."
+    }
+  ],
+  "exclusions": [
+    "special place-of-supply exceptions not reviewed",
+    "service falls under an exception"
+  ],
+  "human_review_if": [
+    "country evidence conflict",
+    "service classification incomplete"
+  ],
+  "jurisdiction": "EU",
+  "known_exceptions": [
+    "special place-of-supply exceptions not reviewed",
+    "service falls under an exception"
+  ],
+  "outcome": {
+    "code": "GENERAL_B2C_ART45",
+    "message": "General B2C service place follows supplier establishment, subject to reviewed exceptions.",
+    "stage": "place_of_supply",
+    "status": "determined",
+    "value_from": "supplier_country"
+  },
+  "priority": 100,
+  "requires": [
+    "service_classification",
+    "classification_reviewed",
+    "special_place_of_supply_reviewed",
+    "customer_status",
+    "supplier_country_verified",
+    "customer_location_evidence"
+  ],
+  "research_id": "research-7db9f7b13f2655ab376b",
+  "review_required": true,
+  "rule_id": "eu-vat-services-b2c-general",
+  "rule_version_id": "eu-vat-services-b2c-general-2010-v1",
+  "status": "PROPOSED",
+  "topic": "place_of_supply",
+  "unresolved_questions": [
+    "country evidence conflict",
+    "service classification incomplete"
+  ]
+}

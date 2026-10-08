@@ -1,0 +1,14 @@
+{
+  "country": "HU",
+  "entity_type": "sole_proprietor",
+  "vat_status_reported": "AAM",
+  "eu_vat_number_present": true,
+  "establishment_country": "HU",
+  "tax_year": 2026,
+  "facts_as_of": "2026-10-08",
+  "annual_turnover": null,
+  "turnover_currency": "HUF",
+  "source_fact_ids": [
+    "synthetic-fact-1"
+  ]
+}

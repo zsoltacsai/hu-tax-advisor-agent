@@ -1,0 +1,161 @@
+{
+  "approval": {
+    "approval_event_hash": "469bd0fbe583f88f177e6b0f887941679d0a329731aee2033963e0042a578941",
+    "approved": true,
+    "approved_at": "2026-10-08T09:36:29+00:00",
+    "approved_by": "Local human operator",
+    "approved_rule_hash": "670de85d91a0417f10a8ab7bee566f37cb579af334c41e369c8c0860d07c2889",
+    "candidate_hash": "8add948f1f8e658bad910d83d1d71e3de8126d1643636cee48649a61e326fabf",
+    "candidate_id": "candidate-eu-vat-services-b2c-general-v1-2026",
+    "research_id": "research-8018a6583f3726c7a8d2",
+    "research_snapshot_hash": "072b6625435c0904f6939f1a1fb31e1576d964d2867a0cb26e2f5889c9e20266",
+    "review_hash": "b77f3fae03c0f92fa3784da55af350998abcab8afea5fe1a286f01cbe3e2308c",
+    "review_id": "review-91b5f430fd2c38c70366",
+    "source_versions": [
+      {
+        "provision": "Article 2",
+        "research_snapshot_id": "research-8018a6583f3726c7a8d2",
+        "source_id": "eu-vat-services-directive-2008-8",
+        "source_version": "2008-02-12",
+        "version_date": "2008-02-12"
+      },
+      {
+        "provision": "Article 45",
+        "research_snapshot_id": "research-8018a6583f3726c7a8d2",
+        "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+        "source_version": "2025-04-14",
+        "version_date": "2025-04-14"
+      },
+      {
+        "provision": "Article 43",
+        "research_snapshot_id": "research-8018a6583f3726c7a8d2",
+        "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+        "source_version": "2025-04-14",
+        "version_date": "2025-04-14"
+      },
+      {
+        "provision": "Article 45",
+        "research_snapshot_id": "research-8018a6583f3726c7a8d2",
+        "source_id": "eu-commission-place-of-taxation",
+        "source_version": "retrieved 2026-10-08",
+        "version_date": null
+      },
+      {
+        "provision": "Article 37(2)",
+        "research_snapshot_id": "research-8018a6583f3726c7a8d2",
+        "source_id": "hu-nav-2026-place-of-supply-instructions",
+        "source_version": "retrieved 2026-10-08",
+        "version_date": null
+      }
+    ]
+  },
+  "rule": {
+    "conditions": [
+      {
+        "field": "supplier_country",
+        "operator": "equals",
+        "value": "HU"
+      },
+      {
+        "field": "supplier_country_verified",
+        "operator": "equals",
+        "value": true
+      },
+      {
+        "field": "service_classification",
+        "operator": "equals",
+        "value": "GENERAL_SERVICE"
+      },
+      {
+        "field": "classification_reviewed",
+        "operator": "equals",
+        "value": true
+      },
+      {
+        "field": "special_place_of_supply_reviewed",
+        "operator": "equals",
+        "value": true
+      },
+      {
+        "field": "customer_status",
+        "operator": "equals",
+        "value": "B2C"
+      },
+      {
+        "field": "customer_location_status",
+        "operator": "equals",
+        "value": "determined"
+      },
+      {
+        "field": "supplier_establishment_review",
+        "operator": "equals",
+        "value": "no_relevant_fixed_establishment"
+      }
+    ],
+    "description": "Narrow general service place-of-supply stage for a synthetic HU supplier. Requires a reviewed GENERAL_SERVICE classification, reviewed special-rule exclusion screen, customer status/location evidence, and the applicable fixed-establishment boundary gate. No VAT collection, exemption, reverse charge, invoicing, or reporting conclusion.",
+    "effective_from": "2010-01-01",
+    "effective_to": null,
+    "enabled": true,
+    "evidence": [
+      {
+        "provision": "Article 2",
+        "source_id": "eu-vat-services-directive-2008-8",
+        "source_version": "2008-02-12",
+        "supports": "Commencement: general service Articles 44 and 45 apply from 2010-01-01."
+      },
+      {
+        "provision": "Article 45",
+        "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+        "source_version": "2025-04-14",
+        "supports": "Current text including supplier fixed-establishment clause."
+      },
+      {
+        "provision": "Article 43",
+        "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+        "source_version": "2025-04-14",
+        "supports": "Taxable/non-taxable customer status boundary."
+      },
+      {
+        "provision": "Article 45",
+        "source_id": "eu-commission-place-of-taxation",
+        "source_version": "retrieved 2026-10-08",
+        "supports": "Official description of B2C default and exceptions."
+      },
+      {
+        "provision": "Article 37(2)",
+        "source_id": "hu-nav-2026-place-of-supply-instructions",
+        "source_version": "retrieved 2026-10-08",
+        "supports": "NAV description of Hungarian domestic B2C general rule."
+      }
+    ],
+    "exclusions": [
+      "Specific place-of-supply categories are out of scope and must be excluded by reviewed classification",
+      "supplier fixed-establishment treatment is not resolved; only explicit no-relevant-fixed-establishment cases execute"
+    ],
+    "human_review_if": [
+      "service classification or exception screen incomplete",
+      "status/location evidence conflicts",
+      "relevant fixed establishment identified or unresolved"
+    ],
+    "jurisdiction": "EU",
+    "outcome": {
+      "code": "GENERAL_B2C_ARTICLE_45",
+      "message": "General place-of-supply stage only; does not decide VAT charging or reporting.",
+      "stage": "place_of_supply",
+      "status": "determined",
+      "value_from": "supplier_country"
+    },
+    "priority": 100,
+    "requires": [
+      "reviewed non-taxable consumer status",
+      "reviewed general service classification and specific-rule exclusion",
+      "verified supplier establishment",
+      "explicit no-relevant-supplier-fixed-establishment review"
+    ],
+    "rule_id": "eu-vat-services-b2c-general",
+    "rule_scope": "GENERAL",
+    "rule_specificity": 0,
+    "rule_version_id": "eu-vat-services-b2c-general@1",
+    "topic": "place_of_supply"
+  }
+}

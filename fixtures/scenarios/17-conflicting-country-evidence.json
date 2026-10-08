@@ -1,0 +1,74 @@
+{
+  "scenario_id": "17-conflicting-country-evidence",
+  "description": "Synthetic billing/IP/payment signals conflict; do not infer location.",
+  "taxpayer": {
+    "country": "HU",
+    "entity_type": "sole_proprietor",
+    "vat_status_reported": "AAM",
+    "facts_reviewed": false,
+    "eu_vat_number_present": true,
+    "establishment_country": "HU",
+    "tax_year": 2026,
+    "facts_as_of": "2026-10-08",
+    "annual_turnover": null,
+    "turnover_currency": "HUF",
+    "source_fact_ids": [
+      "synthetic-taxpayer-facts"
+    ]
+  },
+  "customer": {
+    "country": null,
+    "business_establishment_country": null,
+    "customer_type_claimed": "consumer",
+    "business_status": "unverified",
+    "business_status_evidence": [],
+    "status_evidence_reviewed": false,
+    "vat_id": null,
+    "vat_id_verification": "not_checked",
+    "verification_at": null,
+    "evidence_country_signals": [
+      {
+        "kind": "billing",
+        "country": "DE",
+        "observed_at": "2026-10-08T10:00:00Z"
+      },
+      {
+        "kind": "ip",
+        "country": "HU",
+        "observed_at": "2026-10-08T10:01:00Z"
+      },
+      {
+        "kind": "payment",
+        "country": "AT",
+        "observed_at": "2026-10-08T10:02:00Z"
+      }
+    ]
+  },
+  "transaction": {
+    "service_as_described": "Synthetic WordPress maintenance; delivery details unspecified.",
+    "service_classification": "unclassified",
+    "classification_basis": [],
+    "classification_reviewed": false,
+    "special_place_of_supply_reviewed": false,
+    "automation_level": "unknown",
+    "human_intervention": "unknown",
+    "article59c_assessment": "not_assessed",
+    "billing_frequency": "monthly",
+    "currency": "HUF",
+    "price_basis": "unknown",
+    "transaction_date": "2026-10-08",
+    "tax_point_date": null,
+    "payment_provider": "synthetic-no-connection",
+    "amount": 10000,
+    "events": []
+  },
+  "expected_validation": {
+    "expected_escalation": true,
+    "uncertainty_categories": [
+      "CONFLICTING_SOURCES",
+      "MISSING_FACT",
+      "HUMAN_ACCOUNTANT_DECISION"
+    ],
+    "notes": "Country signals conflict. No customer location or tax treatment is asserted."
+  }
+}

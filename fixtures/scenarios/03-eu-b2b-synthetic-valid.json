@@ -1,0 +1,69 @@
+{
+  "scenario_id": "03-eu-b2b-synthetic-valid",
+  "description": "Synthetic EU business with synthetic-valid VAT status; not a real identifier.",
+  "taxpayer": {
+    "country": "HU",
+    "entity_type": "sole_proprietor",
+    "vat_status_reported": "AAM",
+    "facts_reviewed": false,
+    "eu_vat_number_present": true,
+    "establishment_country": "HU",
+    "tax_year": 2026,
+    "facts_as_of": "2026-10-08",
+    "annual_turnover": null,
+    "turnover_currency": "HUF",
+    "source_fact_ids": [
+      "synthetic-taxpayer-facts"
+    ]
+  },
+  "customer": {
+    "country": "DE",
+    "business_establishment_country": null,
+    "customer_type_claimed": "business",
+    "business_status": "unverified",
+    "business_status_evidence": [],
+    "status_evidence_reviewed": false,
+    "vat_id": null,
+    "vat_id_verification": "synthetic_valid",
+    "verification_at": null,
+    "evidence_country_signals": [
+      {
+        "kind": "billing",
+        "country": "DE",
+        "observed_at": "2026-10-08T10:00:00Z"
+      },
+      {
+        "kind": "registry",
+        "country": "DE",
+        "observed_at": "2026-10-08T10:05:00Z"
+      }
+    ]
+  },
+  "transaction": {
+    "service_as_described": "Synthetic WordPress maintenance; delivery details unspecified.",
+    "service_classification": "unclassified",
+    "classification_basis": [],
+    "classification_reviewed": false,
+    "special_place_of_supply_reviewed": false,
+    "automation_level": "unknown",
+    "human_intervention": "unknown",
+    "article59c_assessment": "not_assessed",
+    "billing_frequency": "monthly",
+    "currency": "EUR",
+    "price_basis": "unknown",
+    "transaction_date": "2026-10-08",
+    "tax_point_date": null,
+    "payment_provider": "synthetic-no-connection",
+    "amount": 10000,
+    "events": []
+  },
+  "expected_validation": {
+    "expected_escalation": true,
+    "uncertainty_categories": [
+      "MISSING_FACT",
+      "LEGAL_INTERPRETATION",
+      "HUMAN_ACCOUNTANT_DECISION"
+    ],
+    "notes": "Synthetic facts only. No tax treatment or legal conclusion asserted."
+  }
+}

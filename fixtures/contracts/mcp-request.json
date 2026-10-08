@@ -1,0 +1,10 @@
+{
+  "request_id": "synthetic-request-001",
+  "tool": "tax_analyze_transaction",
+  "as_of_date": "2026-10-08",
+  "jurisdiction": "HU",
+  "payload": {
+    "fixture": "synthetic-only"
+  },
+  "authorization_context": null
+}

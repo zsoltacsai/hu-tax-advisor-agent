@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","type":"object","additionalProperties":false,"required":["registry_version","generated_at","thresholds"],"properties":{"registry_version":{"type":"string"},"generated_at":{"type":"string","format":"date"},"thresholds":{"type":"array","items":{"$ref":"threshold.schema.json"}}}}

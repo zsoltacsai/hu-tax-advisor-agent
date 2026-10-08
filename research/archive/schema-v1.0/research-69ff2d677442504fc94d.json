@@ -1,0 +1,147 @@
+{
+  "as_of_date": "2026-10-08",
+  "candidate_conclusion": "Cannot determine classification from the product label; request operational facts and accountant/legal review.",
+  "confidence": "low",
+  "confidence_basis": [
+    "Confidence is recomputed from frozen source and provision metadata; submitted rating is ignored."
+  ],
+  "conflicting_sources": [],
+  "facts": {
+    "case": "synthetic research scope; not a taxpayer case"
+  },
+  "facts_required": [
+    "automation and human work",
+    "maintenance/update/backup/security/support tasks",
+    "frequency and customization",
+    "contractual supply components",
+    "whether service can operate without human action"
+  ],
+  "human_review_required": true,
+  "interpretation": "Cannot determine classification from the product label; request operational facts and accountant/legal review.",
+  "jurisdiction": [
+    "EU",
+    "HU"
+  ],
+  "official_guidance": [
+    "eu-commission-place-of-taxation"
+  ],
+  "primary_sources": [
+    "eu-vat-directive-current-consolidation-2025-04-14"
+  ],
+  "question": "What facts are needed to classify a WordPress maintenance subscription for VAT place-of-supply analysis?",
+  "relevant_provisions": [
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "44",
+      "paragraph": null,
+      "provision": "Article 44",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "summary": "General B2B service rule; classification still required",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "45",
+      "paragraph": null,
+      "provision": "Article 45",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "summary": "General B2C service rule; classification still required",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "58",
+      "paragraph": null,
+      "provision": "Article 58",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "summary": "Special B2C electronic-services rule; classification still required",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "44",
+      "paragraph": null,
+      "provision": "Article 44",
+      "source_id": "eu-commission-place-of-taxation",
+      "summary": "Commission says service nature and customer status are needed",
+      "verified": true,
+      "version_date": null
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "45",
+      "paragraph": null,
+      "provision": "Article 45",
+      "source_id": "eu-commission-place-of-taxation",
+      "summary": "Commission says service nature and customer status are needed",
+      "verified": true,
+      "version_date": null
+    },
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": "58",
+      "paragraph": null,
+      "provision": "Article 58",
+      "source_id": "eu-commission-place-of-taxation",
+      "summary": "Commission says service nature and customer status are needed",
+      "verified": true,
+      "version_date": null
+    }
+  ],
+  "research_id": "research-69ff2d677442504fc94d",
+  "secondary_sources": [],
+  "snapshot_hash": "1161e84f9f2e8743bcdba87d03151625e3cea087da1a727c416e5b7cd94ea546",
+  "snapshot_schema_version": "1.0.0",
+  "sources_considered": [
+    {
+      "authority_level": "primary",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "publication_date": null,
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_type": "eu_legislation",
+      "title": "Directive 2006/112/EC consolidated text dated 2025-04-14",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-04-14"
+    },
+    {
+      "authority_level": "official_guidance",
+      "official_url": "https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/place-taxation_en",
+      "publication_date": null,
+      "source_id": "eu-commission-place-of-taxation",
+      "source_type": "commission_guidance",
+      "title": "Place of taxation",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": null
+    }
+  ],
+  "topics": [
+    "vat",
+    "wp-caregrid-classification-unresolved"
+  ],
+  "transaction_date": "2026-10-08",
+  "uncertainties": [
+    "WP CareGrid has not been inspected or classified",
+    "A full service-category legal analysis is pending"
+  ]
+}

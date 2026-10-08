@@ -1,0 +1,550 @@
+{
+  "registry_version": "1.0.0",
+  "generated_at": "2026-10-08",
+  "authority_ranking": [
+    {
+      "level": "primary",
+      "rank": 1,
+      "description": "Binding national legislation and EU legal acts; verify applicable version and legal effect."
+    },
+    {
+      "level": "court_authority",
+      "rank": 2,
+      "description": "Relevant court judgments and binding authority rulings within their legal scope; check finality and applicability."
+    },
+    {
+      "level": "official_guidance",
+      "rank": 3,
+      "description": "NAV and European Commission guidance; authoritative administrative support, not legislation."
+    },
+    {
+      "level": "official_operational",
+      "rank": 4,
+      "description": "Official registers, technical specifications and operational documentation; authoritative for system facts only."
+    },
+    {
+      "level": "provider",
+      "rank": 5,
+      "description": "Software/provider documentation; describes product behavior, never legal authority."
+    },
+    {
+      "level": "secondary",
+      "rank": 6,
+      "description": "Professional commentary; issue-spotting only and never sole support for a material tax conclusion."
+    }
+  ],
+  "sources": [
+    {
+      "id": "hu-vat-act-2007-cxxvii",
+      "jurisdiction": "HU",
+      "authority": "Hungarian Parliament / Nemzeti Jogszabálytár",
+      "source_type": "primary_legislation",
+      "title": "2007. évi CXXVII. törvény az általános forgalmi adóról",
+      "official_url": "https://njt.hu/jogszabaly/2007-127-00-00",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": "2007-11-16",
+      "retrieved_at": "2026-10-08",
+      "version_date": null,
+      "topics": [
+        "VAT",
+        "AAM",
+        "place_of_supply",
+        "invoicing",
+        "tax_point",
+        "SME"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": false,
+      "content_verified": false,
+      "notes": "NJT search-index excerpt identifies Article 37(1)-(2) general B2B/B2C text. Direct page access failed in this run; this entry is NOT treated as verified evidence for approval.",
+      "relevant_provisions": [
+        "188. §",
+        "195/A–195/K. §",
+        "377. §"
+      ],
+      "url_reachable": false,
+      "content_accessed": false,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "hu-nav-aam-2026-guidance",
+      "jurisdiction": "HU",
+      "authority": "National Tax and Customs Administration of Hungary (NAV)",
+      "source_type": "nav_guidance",
+      "title": "Emelkedik az alanyi adómentesség értékhatára",
+      "official_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "effective_from": "2026-01-01",
+      "effective_to": null,
+      "publication_date": "2025-12-11",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2025-12-11",
+      "topics": [
+        "AAM",
+        "threshold",
+        "2026",
+        "transition"
+      ],
+      "authority_level": "official_guidance",
+      "freshness_class": "ANNUAL_REVIEW",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "Page read. NAV states HUF 20m domestic ceiling for 2026, HUF 22m for 2027 and HUF 24m for 2028; conditions and transitional rules also apply. Guidance is not legislation. Exact legislation and eligibility must be checked for each tax year.",
+      "relevant_provisions": [
+        "Áfa tv. 188. § (2)",
+        "Áfa tv. 377. § (1)–(2)",
+        "Áfa tv. 191. § (3)",
+        "Áfa tv. 195/K. § (6)",
+        "Áfa tv. 192. § (2)"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": true,
+      "applicability_verified": false
+    },
+    {
+      "id": "hu-nav-sme-guidance",
+      "jurisdiction": "HU",
+      "authority": "National Tax and Customs Administration of Hungary (NAV)",
+      "source_type": "nav_guidance",
+      "title": "Új lehetőség a kisvállalkozásoknak az uniós alanyi adómentesség, azaz az SME-rendszer",
+      "official_url": "https://nav.gov.hu/ado/sme---kisvallalkozasok-kozossegi-alanyi-adomentessegi-rendszere",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "publication_date": "2026-03-04",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2026-03-04",
+      "topics": [
+        "SME",
+        "cross_border_exemption",
+        "AAM"
+      ],
+      "authority_level": "official_guidance",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "Page read. NAV describes cross-border SME framework and relevant Áfa tv sections 195/A–195/K. Confirm current rules, elections, country thresholds and taxpayer status.",
+      "relevant_provisions": [
+        "Áfa tv. 195/A–195/K. §",
+        "VAT Directive 2006/112/EC, Article 284"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "hu-nav-online-invoice-docs",
+      "jurisdiction": "HU",
+      "authority": "National Tax and Customs Administration of Hungary (NAV)",
+      "source_type": "official_register",
+      "title": "Online-Invoice public technical repository and developer documentation entry point",
+      "official_url": "https://github.com/nav-gov-hu/Online-Invoice",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "version_date": "2025-01-30",
+      "topics": [
+        "invoice_reporting",
+        "Online_Szamla",
+        "API",
+        "technical_documentation"
+      ],
+      "authority_level": "official_operational",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "NAV repository README identifies current API documentation entry point and links the NAV developer documentation. A versioned English interface specification dated 2025-01-30 was located. Confirm current API/schema version before technical implementation; this is not legal authority.",
+      "relevant_provisions": [
+        "API 3.0 technical specification; version-specific"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "eu-vat-directive-2006-112",
+      "jurisdiction": "EU",
+      "authority": "Council of the European Union",
+      "source_type": "eu_legislation",
+      "title": "Council Directive 2006/112/EC on the common system of value added tax",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:02006L0112-20250101",
+      "effective_from": "2007-01-01",
+      "effective_to": null,
+      "publication_date": "2006-11-28",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2025-01-01",
+      "topics": [
+        "VAT",
+        "Articles_44_45_58",
+        "place_of_supply",
+        "reverse_charge",
+        "SME"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "Specific consolidated text dated 2025-01-01; retained as a historical snapshot. A newer official consolidated snapshot dated 2025-04-14 is separately registered. EUR-Lex consolidated texts are documentation tools; authentic acts in the Official Journal control.",
+      "relevant_provisions": [
+        "Articles 44",
+        "45",
+        "58",
+        "196",
+        "284"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "eu-sme-directive-2020-285",
+      "jurisdiction": "EU",
+      "authority": "Council of the European Union",
+      "source_type": "eu_legislation",
+      "title": "Council Directive (EU) 2020/285 amending VAT rules for the special scheme for small enterprises",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32020L0285",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "publication_date": "2020-02-18",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2025-01-01",
+      "topics": [
+        "SME",
+        "cross_border_exemption",
+        "VAT"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "LOW_CHANGE",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "EUR-Lex record identifies current consolidated version 2025-01-01. Read with Directive 2006/112/EC as amended and national implementation.",
+      "relevant_provisions": [
+        "Amendments concerning SME special scheme; effective application from 2025-01-01"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": true,
+      "applicability_verified": false
+    },
+    {
+      "id": "eu-sme-implementing-regulation-2021-2007",
+      "jurisdiction": "EU",
+      "authority": "European Commission",
+      "source_type": "eu_legislation",
+      "title": "Commission Implementing Regulation (EU) 2021/2007 laying down detailed rules for the SME special scheme",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R2007",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "publication_date": "2021-11-16",
+      "retrieved_at": "2026-10-08",
+      "version_date": null,
+      "topics": [
+        "SME",
+        "administrative_cooperation",
+        "registration"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "LOW_CHANGE",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "EUR-Lex text accessed; states applies from 2025-01-01. Verify amendments and applicable consolidated text.",
+      "relevant_provisions": [
+        "Implementing rules for SME special scheme"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "eu-commission-place-of-taxation",
+      "jurisdiction": "EU",
+      "authority": "European Commission, DG Taxation and Customs Union",
+      "source_type": "commission_guidance",
+      "title": "Place of taxation",
+      "official_url": "https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/place-taxation_en",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "version_date": null,
+      "topics": [
+        "place_of_supply",
+        "B2B",
+        "B2C",
+        "electronic_services",
+        "VAT"
+      ],
+      "authority_level": "official_guidance",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "Fresh European Commission DG TAXUD page read on 2026-10-08; states service nature and customer status matter, labels Articles 44/45 basic rules, and lists exceptions including Articles 47, 58 and 59c.",
+      "relevant_provisions": [
+        "Article 44",
+        "Article 45",
+        "Article 47",
+        "Article 58",
+        "Article 59c"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "eu-vies-validation",
+      "jurisdiction": "EU",
+      "authority": "European Commission",
+      "source_type": "official_register",
+      "title": "VIES VAT number validation portal",
+      "official_url": "https://ec.europa.eu/taxation_customs/vies?locale=en",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "version_date": null,
+      "topics": [
+        "VIES",
+        "VAT_ID",
+        "customer_status"
+      ],
+      "authority_level": "official_operational",
+      "freshness_class": "LIVE_VERIFICATION_REQUIRED",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "Portal reference accessed; no VAT-ID lookup was performed. VIES is a live verification tool, not static evidence. Store actual response/status, timestamp and consultation reference when future authorized verification is implemented.",
+      "relevant_provisions": [
+        "Live VAT-ID status query; no tax exemption conclusion"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "eu-commission-sme-portal",
+      "jurisdiction": "EU",
+      "authority": "European Commission, SME VAT portal",
+      "source_type": "commission_guidance",
+      "title": "Cross-border SME scheme",
+      "official_url": "https://sme-vat-rules.ec.europa.eu/sme-scheme/cross-border-sme-scheme_en",
+      "effective_from": "2025-01-01",
+      "effective_to": null,
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "version_date": null,
+      "topics": [
+        "SME",
+        "cross_border_exemption",
+        "Union_turnover"
+      ],
+      "authority_level": "official_guidance",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "Page read. Describes EUR 100,000 Union turnover and national threshold tests, prior notification, start date after EX confirmation, and SME/OSS jurisdiction interaction. Verify law and each Member State's current thresholds.",
+      "relevant_provisions": [
+        "Cross-border SME scheme: turnover thresholds, prior notification, EX confirmation"
+      ],
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "eu-vies-guidance",
+      "authority": "European Commission, Your Europe",
+      "retrieved_at": "2026-10-08",
+      "title": "Check a VAT number (VIES)",
+      "topics": [
+        "VIES",
+        "VAT_ID",
+        "customer_status",
+        "source_availability"
+      ],
+      "publication_date": null,
+      "official_url": "https://europa.eu/youreurope/business/finance-and-tax/vat/check-vat-number-vies/index_en.htm",
+      "url_checked": true,
+      "effective_from": null,
+      "jurisdiction": "EU",
+      "version_date": "2026-06-18",
+      "notes": "Commission Your Europe explanation accessed; page states VIES is a search engine over national databases, errors may reflect unavailability, and validation records should be retained. Page reports last checked 2026-06-18. It is not a legal determination for a specific transaction.",
+      "freshness_class": "HIGH_CHANGE",
+      "source_type": "commission_guidance",
+      "relevant_provisions": [],
+      "effective_to": null,
+      "content_verified": true,
+      "authority_level": "official_guidance",
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "title": "Directive 2006/112/EC consolidated text dated 2025-04-14",
+      "jurisdiction": "EU",
+      "authority": "Council of the European Union",
+      "source_type": "eu_legislation",
+      "publication_date": null,
+      "notes": "Fresh current EUR-Lex consolidated version identified as 2025-04-14. Relevant English Article 44-45 and latest Article 59c snippets accessed in official EUR-Lex indexed content; direct HTML can require anti-bot verification. Consolidation is a reference, not a separate legislative act.",
+      "url_checked": true,
+      "version_date": "2025-04-14",
+      "topics": [
+        "VAT",
+        "Articles_44_45_58",
+        "place_of_supply"
+      ],
+      "authority_level": "primary",
+      "effective_from": null,
+      "relevant_provisions": [
+        "Article 43",
+        "Article 44",
+        "Article 45",
+        "Article 58",
+        "Article 59c"
+      ],
+      "content_verified": true,
+      "retrieved_at": "2026-10-08",
+      "freshness_class": "HIGH_CHANGE",
+      "id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "title": "Council Directive 2008/8/EC as regards place of supply of services",
+      "jurisdiction": "EU",
+      "authority": "Council of the European Union",
+      "source_type": "eu_legislation",
+      "publication_date": "2008-02-12",
+      "notes": "Freshly re-opened official EUR-Lex act; Article 2 applies the Articles 44-45 general service rules from 2010-01-01. This does not establish dates for other provisions.",
+      "url_checked": true,
+      "version_date": "2008-02-12",
+      "topics": [
+        "Articles_44_45",
+        "place_of_supply",
+        "service_taxation"
+      ],
+      "authority_level": "primary",
+      "effective_from": "2010-01-01",
+      "relevant_provisions": [
+        "Article 2",
+        "Article 44",
+        "Article 45"
+      ],
+      "content_verified": true,
+      "retrieved_at": "2026-10-08",
+      "freshness_class": "STATIC_HISTORICAL",
+      "id": "eu-vat-services-directive-2008-8",
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008L0008",
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": true,
+      "applicability_verified": false
+    },
+    {
+      "title": "Council Directive (EU) 2017/2455 amending VAT obligations for services and distance sales",
+      "jurisdiction": "EU",
+      "authority": "Council of the European Union",
+      "source_type": "eu_legislation",
+      "publication_date": "2017-12-05",
+      "notes": "Fresh official EUR-Lex text reviewed. Relevant Article 58 amendment/Article 59c framework; Article 58 amendment applies from 2019-01-01.",
+      "url_checked": true,
+      "version_date": "2017-12-05",
+      "topics": [
+        "Article_58",
+        "electronically_supplied_services",
+        "threshold"
+      ],
+      "authority_level": "primary",
+      "effective_from": "2019-01-01",
+      "relevant_provisions": [
+        "Article 58(1)-(2)",
+        "Article 59c"
+      ],
+      "content_verified": true,
+      "retrieved_at": "2026-10-08",
+      "freshness_class": "STATIC_HISTORICAL",
+      "id": "eu-vat-ecommerce-directive-2017-2455",
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32017L2455",
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": true,
+      "applicability_verified": false
+    },
+    {
+      "id": "hu-nav-2026-place-of-supply-instructions",
+      "jurisdiction": "HU",
+      "authority": "Hungarian National Tax and Customs Administration (NAV)",
+      "source_type": "nav_guidance",
+      "title": "26A60 filing instructions: place of supply of services",
+      "official_url": "https://nav.gov.hu/pfile/file?path=%2Fnyomtatvanyok%2Fletoltesek%2Fnyomtatvanykitolto_programok%2Fnyomtatvanykitolto_programok_nav%2F26A60%2Fkitoltesi-utmutato",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "version_date": null,
+      "topics": [
+        "place_of_supply",
+        "B2B",
+        "B2C"
+      ],
+      "relevant_provisions": [
+        "Article 37(1)",
+        "Article 37(2)"
+      ],
+      "authority_level": "official_guidance",
+      "freshness_class": "ANNUAL_REVIEW",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "Fresh 2026 NAV filing-instruction search result states the general B2B recipient-location and B2C supplier-location rules and references Áfa tv. 37. §. Operational guidance only; not the primary legal text.",
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": false,
+      "applicability_verified": false
+    },
+    {
+      "id": "eu-vat-digital-age-directive-2025-516",
+      "jurisdiction": "EU",
+      "authority": "Council of the European Union",
+      "source_type": "eu_legislation",
+      "title": "Council Directive (EU) 2025/516 (VAT in the Digital Age)",
+      "official_url": "https://eur-lex.europa.eu/eli/dir/2025/516/oj/eng",
+      "effective_from": "2027-01-01",
+      "effective_to": null,
+      "publication_date": "2025-03-11",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2025-03-11",
+      "topics": [
+        "Article 59c",
+        "digital_services",
+        "threshold"
+      ],
+      "relevant_provisions": [
+        "Article 59c",
+        "Article 2"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "STATIC_HISTORICAL",
+      "url_checked": true,
+      "content_verified": true,
+      "notes": "Official EUR-Lex act reviewed. Its relevant amendments to Directive 2006/112 Article 59c have effect from 2027-01-01; not applicable to 2026 transactions.",
+      "url_reachable": true,
+      "content_accessed": true,
+      "effective_date_verified": true,
+      "applicability_verified": false
+    }
+  ]
+}

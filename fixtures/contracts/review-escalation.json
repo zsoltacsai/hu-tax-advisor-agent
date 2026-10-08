@@ -1,0 +1,13 @@
+{
+  "escalate": true,
+  "reasons": [
+    "SERVICE_CLASSIFICATION_UNCLEAR",
+    "LIVE_STATUS_REQUIRED"
+  ],
+  "reviewer_role": "accountant",
+  "required_evidence": [
+    "Service work description",
+    "Current VAT status evidence"
+  ],
+  "decision_blocked": true
+}

@@ -1,0 +1,15 @@
+{
+ "registry_version":"1.0.0",
+ "generated_at":"2026-10-08",
+ "thresholds":[
+  {
+   "threshold_id":"hu-aam-domestic-2026",
+   "year":2026,"currency":"HUF","amount":20000000,
+   "source_id":"hu-nav-aam-2026-guidance",
+   "provision":"NAV identifies Áfa tv. 188. § (2) from 2026-01-01 and transition in 377. §",
+   "effective_from":"2026-01-01","effective_to":"2027-01-01","retrieved_at":"2026-10-08",
+   "status":"verified_guidance_value",
+   "limitations":["Arithmetic comparison only.","Does not decide AAM election/eligibility.","Prior-year and current-year expected/actual turnover tests and exclusions are not evaluated.","Does not imply AAM applies cross-border."]
+  }
+ ]
+}

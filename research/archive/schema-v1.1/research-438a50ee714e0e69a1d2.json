@@ -1,0 +1,75 @@
+{
+  "as_of_date": "2026-10-08",
+  "candidate_conclusion": "NAV guidance reports a HUF 20 million 2026 domestic threshold; this is not an eligibility conclusion.",
+  "confidence": "low",
+  "confidence_basis": [
+    "Confidence is recomputed from frozen source and provision metadata; submitted rating is ignored."
+  ],
+  "conflicting_sources": [],
+  "facts": {
+    "case": "synthetic research scope; not a taxpayer case"
+  },
+  "facts_required": [
+    "correct qualifying turnover base",
+    "prior and current-year actual/expected turnover",
+    "election and transitional eligibility",
+    "cross-border SME status"
+  ],
+  "human_review_required": true,
+  "interpretation": "NAV guidance reports a HUF 20 million 2026 domestic threshold; this is not an eligibility conclusion.",
+  "jurisdiction": [
+    "EU",
+    "HU"
+  ],
+  "official_guidance": [
+    "hu-nav-aam-2026-guidance"
+  ],
+  "primary_sources": [],
+  "question": "What annual domestic AAM threshold does NAV describe for 2026?",
+  "relevant_provisions": [
+    {
+      "applicability_notes": "Identifies relevant text only; issue-specific application remains subject to review.",
+      "article": null,
+      "paragraph": null,
+      "provision": "NAV 2026 annual threshold guidance; Áfa tv. 188. § (2) reference",
+      "source_id": "hu-nav-aam-2026-guidance",
+      "summary": "NAV reports HUF 20 million 2026 ceiling; conditions and transition rules apply",
+      "verified": true,
+      "version_date": "2025-12-11"
+    }
+  ],
+  "research_id": "research-438a50ee714e0e69a1d2",
+  "secondary_sources": [],
+  "snapshot_hash": "28c2e140428f1550dcb33b96e125fae5d91c327f3b84028b50d7a89e909894d4",
+  "snapshot_schema_version": "1.1.0",
+  "sources_considered": [
+    {
+      "authority_level": "official_guidance",
+      "official_url": "https://nav.gov.hu/ado/afa/Emelkedik_az_alanyi_adomentesseg_ertekhatara",
+      "publication_date": "2025-12-11",
+      "source_id": "hu-nav-aam-2026-guidance",
+      "source_type": "nav_guidance",
+      "title": "Emelkedik az alanyi adómentesség értékhatára",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": "2026-10-08T10:00:00+00:00",
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Frozen registry research record; no live lookup performed for this snapshot.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-12-11"
+    }
+  ],
+  "topics": [
+    "vat",
+    "hungary-2026-aam-threshold"
+  ],
+  "transaction_date": "2026-10-08",
+  "uncertainties": [
+    "Underlying Act was not verified in this repository",
+    "AAM election, calculation base, transitions and SME scheme need separate review"
+  ]
+}

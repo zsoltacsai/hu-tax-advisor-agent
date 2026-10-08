@@ -1,0 +1,2 @@
+# Hungary source subset
+Canonical records are deduplicated in ../registry.json: hu-vat-act-2007-cxxvii, hu-nav-aam-2026-guidance, hu-nav-sme-guidance, hu-nav-online-invoice-docs. Read verification flags before use.

@@ -1,0 +1,4 @@
+# Date-aware research
+Capture transaction/supply dates, tax and filing periods, retrieval date, rule effective dates, current rule and future enacted changes. The version ledger supports publication date, effective-from/to (effective-to exclusive), tax year, transitional references, future-announced flag, lifecycle status (proposed, enacted-not-effective, effective, superseded, historical), source ID/version and freshness class. Preserve history.
+
+Fix date and jurisdiction; locate official text/amendments; read the version effective then; check transition provisions; report current/future law separately; verify annual thresholds and measurement base; link conclusions to evidence; recheck before use. The pure selector in src/effective_dates.py selects only interval metadata and rejects overlap; it does not interpret transition provisions or tax law. Never assume retroactivity.

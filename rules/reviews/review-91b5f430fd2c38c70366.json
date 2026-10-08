@@ -1,0 +1,47 @@
+{
+  "candidate_id": "candidate-eu-vat-services-b2c-general-v1-2026",
+  "confidence": "medium",
+  "effective_date_review": {
+    "findings": [],
+    "passed": true
+  },
+  "human_review_required": true,
+  "legal_basis_review": {
+    "findings": [],
+    "passed": true
+  },
+  "logic_review": {
+    "conditions": {
+      "findings": [],
+      "passed": true
+    },
+    "engine_compatibility": {
+      "findings": [
+        "Engine schema and source checks passed; human still must authorize promotion."
+      ],
+      "passed": true
+    },
+    "facts": {
+      "findings": [],
+      "passed": true
+    },
+    "outcome": {
+      "findings": [],
+      "passed": true
+    }
+  },
+  "missing_exceptions": [
+    "Specific place-of-supply categories are out of scope and must be excluded by reviewed classification",
+    "supplier fixed-establishment treatment is not resolved; only explicit no-relevant-fixed-establishment cases execute"
+  ],
+  "required_changes": [],
+  "research_id": "research-8018a6583f3726c7a8d2",
+  "review_id": "review-91b5f430fd2c38c70366",
+  "reviewed_at": "2026-10-08T09:28:28+00:00",
+  "source_review": {
+    "findings": [],
+    "passed": true
+  },
+  "status": "APPROVE_FOR_HUMAN_REVIEW",
+  "unsupported_assertions": []
+}

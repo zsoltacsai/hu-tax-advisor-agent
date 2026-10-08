@@ -1,0 +1,109 @@
+{
+  "assumptions": [],
+  "author": "research-agent",
+  "candidate_id": "candidate-eu-vat-electronic-b2c-art58-2019-v1",
+  "conditions": [
+    {
+      "field": "service_classification",
+      "operator": "equals",
+      "value": "ELECTRONICALLY_SUPPLIED_SERVICE"
+    },
+    {
+      "field": "classification_reviewed",
+      "operator": "equals",
+      "value": true
+    },
+    {
+      "field": "special_place_of_supply_reviewed",
+      "operator": "equals",
+      "value": true
+    },
+    {
+      "field": "customer_status",
+      "operator": "equals",
+      "value": "B2C"
+    },
+    {
+      "field": "customer_location_status",
+      "operator": "equals",
+      "value": "determined"
+    },
+    {
+      "field": "customer_country_region",
+      "operator": "equals",
+      "value": "EU"
+    },
+    {
+      "field": "article59c_assessment",
+      "operator": "in",
+      "value": [
+        "not_applicable",
+        "above_threshold",
+        "option_exercised"
+      ]
+    }
+  ],
+  "created_at": "2026-10-08T10:00:00+00:00",
+  "description": "Conditional place-of-supply rule only; does not decide OSS, local tax rate, AAM, collection, or invoicing.",
+  "effective_from": "2019-01-01",
+  "effective_to": null,
+  "evidence": [
+    {
+      "provision": "Article 1, effective 2019-01-01; Directive 2006/112/EC Article 58(1)-(2)",
+      "source_id": "eu-vat-ecommerce-directive-2017-2455",
+      "source_version": "2017-12-05 official act",
+      "supports": "Article 58 destination rule and limited low-value exception framework for B2C electronic services."
+    },
+    {
+      "provision": "Article 58; Article 59c",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_version": "2025-04-14 consolidated text",
+      "supports": "Current consolidated electronic-services destination rule and threshold exception text."
+    },
+    {
+      "provision": "Commission summary of Directive Article 58 and 59c",
+      "source_id": "eu-commission-place-of-taxation",
+      "source_version": "retrieved 2026-10-08",
+      "supports": "Official guidance on B2C telecommunications/broadcasting/electronic service place and low-value exception."
+    }
+  ],
+  "exclusions": [
+    "Article 59c low-threshold exception applies",
+    "service classification inferred from internet delivery"
+  ],
+  "human_review_if": [
+    "classification not reviewed",
+    "Article 59c facts unknown",
+    "customer location evidence conflicts"
+  ],
+  "jurisdiction": "EU",
+  "known_exceptions": [
+    "Article 59c low-threshold exception applies",
+    "service classification inferred from internet delivery"
+  ],
+  "outcome": {
+    "code": "ELECTRONIC_B2C_ART58",
+    "message": "Destination rule applies only after explicit electronic-service and Article 59c assessment.",
+    "stage": "place_of_supply",
+    "status": "determined",
+    "value_from": "customer_location_country"
+  },
+  "priority": 100,
+  "requires": [
+    "explicit reviewed electronic-service category",
+    "customer status B2C",
+    "customer location evidence",
+    "Article 59c assessment"
+  ],
+  "research_id": "research-4ba49541cfb7a58426ef",
+  "review_required": true,
+  "rule_id": "eu-vat-electronic-b2c-art58",
+  "rule_version_id": "eu-vat-electronic-b2c-art58-2019-v1",
+  "status": "PROPOSED",
+  "topic": "electronic_services",
+  "unresolved_questions": [
+    "classification not reviewed",
+    "Article 59c facts unknown",
+    "customer location evidence conflicts"
+  ]
+}

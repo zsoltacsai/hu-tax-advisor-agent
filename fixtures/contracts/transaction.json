@@ -1,0 +1,18 @@
+{
+  "service_as_described": "Synthetic maintenance subscription; facts incomplete.",
+  "service_classification": "unclassified",
+  "classification_basis": [],
+  "classification_reviewed": false,
+  "special_place_of_supply_reviewed": false,
+  "automation_level": "unknown",
+  "human_intervention": "unknown",
+  "article59c_assessment": "not_assessed",
+  "billing_frequency": "monthly",
+  "currency": "EUR",
+  "price_basis": "unknown",
+  "transaction_date": "2026-10-08",
+  "tax_point_date": null,
+  "payment_provider": "synthetic-no-connection",
+  "amount": 10000,
+  "events": []
+}

@@ -1,0 +1,51 @@
+{
+  "candidate_id": "candidate-eu-vat-services-b2b-general--1",
+  "confidence": "low",
+  "effective_date_review": {
+    "findings": [],
+    "passed": true
+  },
+  "human_review_required": true,
+  "legal_basis_review": {
+    "findings": [],
+    "passed": true
+  },
+  "logic_review": {
+    "conditions": {
+      "findings": [],
+      "passed": true
+    },
+    "engine_compatibility": {
+      "findings": [
+        "executable-rule.schema.json: 'customer_establishment_country' is not one of ['supplier_country', 'customer_location_country']"
+      ],
+      "passed": false
+    },
+    "facts": {
+      "findings": [],
+      "passed": true
+    },
+    "outcome": {
+      "findings": [],
+      "passed": true
+    }
+  },
+  "missing_exceptions": [
+    "Specific place-of-supply categories are out of scope and must be excluded by reviewed classification",
+    "recipient fixed-establishment treatment is not resolved; only explicit no-relevant-fixed-establishment cases execute"
+  ],
+  "required_changes": [
+    "Candidate is not engine-compatible: executable-rule.schema.json: 'customer_establishment_country' is not one of ['supplier_country', 'customer_location_country']"
+  ],
+  "research_id": "research-81efbc33abe0d0b310eb",
+  "review_id": "review-405e773c73ba9b364ef7",
+  "reviewed_at": "2026-10-08T09:23:26+00:00",
+  "source_review": {
+    "findings": [
+      "Candidate is not engine-compatible: executable-rule.schema.json: 'customer_establishment_country' is not one of ['supplier_country', 'customer_location_country']"
+    ],
+    "passed": false
+  },
+  "status": "NEEDS_CHANGES",
+  "unsupported_assertions": []
+}

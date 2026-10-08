@@ -1,0 +1,120 @@
+{
+  "assumptions": [],
+  "author": "research-agent",
+  "candidate_id": "candidate-eu-vat-services-b2c-general-v1-2026",
+  "conditions": [
+    {
+      "field": "supplier_country",
+      "operator": "equals",
+      "value": "HU"
+    },
+    {
+      "field": "supplier_country_verified",
+      "operator": "equals",
+      "value": true
+    },
+    {
+      "field": "service_classification",
+      "operator": "equals",
+      "value": "GENERAL_SERVICE"
+    },
+    {
+      "field": "classification_reviewed",
+      "operator": "equals",
+      "value": true
+    },
+    {
+      "field": "special_place_of_supply_reviewed",
+      "operator": "equals",
+      "value": true
+    },
+    {
+      "field": "customer_status",
+      "operator": "equals",
+      "value": "B2C"
+    },
+    {
+      "field": "customer_location_status",
+      "operator": "equals",
+      "value": "determined"
+    },
+    {
+      "field": "supplier_establishment_review",
+      "operator": "equals",
+      "value": "no_relevant_fixed_establishment"
+    }
+  ],
+  "created_at": "2026-10-08T09:23:25+00:00",
+  "description": "Narrow general service place-of-supply stage for a synthetic HU supplier. Requires a reviewed GENERAL_SERVICE classification, reviewed special-rule exclusion screen, customer status/location evidence, and the applicable fixed-establishment boundary gate. No VAT collection, exemption, reverse charge, invoicing, or reporting conclusion.",
+  "effective_from": "2010-01-01",
+  "effective_to": null,
+  "evidence": [
+    {
+      "provision": "Article 2",
+      "source_id": "eu-vat-services-directive-2008-8",
+      "source_version": "2008-02-12",
+      "supports": "Commencement: general service Articles 44 and 45 apply from 2010-01-01."
+    },
+    {
+      "provision": "Article 45",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_version": "2025-04-14",
+      "supports": "Current text including supplier fixed-establishment clause."
+    },
+    {
+      "provision": "Article 43",
+      "source_id": "eu-vat-directive-current-consolidation-2025-04-14",
+      "source_version": "2025-04-14",
+      "supports": "Taxable/non-taxable customer status boundary."
+    },
+    {
+      "provision": "Article 45",
+      "source_id": "eu-commission-place-of-taxation",
+      "source_version": "retrieved 2026-10-08",
+      "supports": "Official description of B2C default and exceptions."
+    },
+    {
+      "provision": "Article 37(2)",
+      "source_id": "hu-nav-2026-place-of-supply-instructions",
+      "source_version": "retrieved 2026-10-08",
+      "supports": "NAV description of Hungarian domestic B2C general rule."
+    }
+  ],
+  "exclusions": [
+    "Specific place-of-supply categories are out of scope and must be excluded by reviewed classification",
+    "supplier fixed-establishment treatment is not resolved; only explicit no-relevant-fixed-establishment cases execute"
+  ],
+  "human_review_if": [
+    "service classification or exception screen incomplete",
+    "status/location evidence conflicts",
+    "relevant fixed establishment identified or unresolved"
+  ],
+  "jurisdiction": "EU",
+  "known_exceptions": [
+    "Specific place-of-supply categories are out of scope and must be excluded by reviewed classification",
+    "supplier fixed-establishment treatment is not resolved; only explicit no-relevant-fixed-establishment cases execute"
+  ],
+  "outcome": {
+    "code": "GENERAL_B2C_ARTICLE_45",
+    "message": "General place-of-supply stage only; does not decide VAT charging or reporting.",
+    "stage": "place_of_supply",
+    "status": "determined",
+    "value_from": "supplier_country"
+  },
+  "priority": 100,
+  "requires": [
+    "reviewed non-taxable consumer status",
+    "reviewed general service classification and specific-rule exclusion",
+    "verified supplier establishment",
+    "explicit no-relevant-supplier-fixed-establishment review"
+  ],
+  "research_id": "research-8018a6583f3726c7a8d2",
+  "review_required": true,
+  "rule_id": "eu-vat-services-b2c-general",
+  "rule_scope": "GENERAL",
+  "rule_specificity": 0,
+  "rule_version_id": "eu-vat-services-b2c-general@1",
+  "status": "PROPOSED",
+  "topic": "place_of_supply",
+  "unresolved_questions": []
+}

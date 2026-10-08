@@ -1,0 +1,56 @@
+{
+  "candidate_id": "candidate-eu-vat-electronic-b2c-art58-2019-2026-v1",
+  "confidence": "low",
+  "effective_date_review": {
+    "findings": [],
+    "passed": true
+  },
+  "human_review_required": true,
+  "legal_basis_review": {
+    "findings": [],
+    "passed": true
+  },
+  "logic_review": {
+    "conditions": {
+      "findings": [],
+      "passed": true
+    },
+    "engine_compatibility": {
+      "findings": [
+        "Engine schema and source checks passed; human still must authorize promotion."
+      ],
+      "passed": true
+    },
+    "facts": {
+      "findings": [],
+      "passed": true
+    },
+    "outcome": {
+      "findings": [],
+      "passed": true
+    }
+  },
+  "missing_exceptions": [
+    "Article 59c sub-threshold/no-option treatment makes Article 58 inapplicable",
+    "Article 59c changes from 2027-01-01",
+    "electronic-service classification cannot be inferred from online supply"
+  ],
+  "required_changes": [
+    "The existing single enum article59c_assessment cannot faithfully encode threshold crossing date, prior-year turnover, single-MS establishment, qualifying supply aggregation and option period.",
+    "The 2027 Article 59c amendment requires an effective-date split.",
+    "Research confidence is low."
+  ],
+  "research_id": "research-14e807caa4ba8e0f50cf",
+  "review_id": "review-cfc77d096fcfbb28a9b1",
+  "reviewed_at": "2026-10-08T09:23:26+00:00",
+  "source_review": {
+    "findings": [
+      "The existing single enum article59c_assessment cannot faithfully encode threshold crossing date, prior-year turnover, single-MS establishment, qualifying supply aggregation and option period.",
+      "The 2027 Article 59c amendment requires an effective-date split.",
+      "Research confidence is low."
+    ],
+    "passed": false
+  },
+  "status": "NEEDS_CHANGES",
+  "unsupported_assertions": []
+}
