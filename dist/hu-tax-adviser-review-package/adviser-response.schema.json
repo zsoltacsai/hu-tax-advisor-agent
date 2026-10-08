@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["review_id", "reviewer_role", "review_date", "candidate_id", "candidate_hash", "research_id", "research_hash", "decision", "required_changes", "missing_exceptions", "missing_facts", "corrected_interpretation", "effective_date_notes", "source_notes", "confidence", "comments"],
+  "properties": {
+    "review_id": {"type": "string", "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{2,79}$"},
+    "reviewer_role": {"const": "qualified_vat_adviser"},
+    "review_date": {"type": "string", "format": "date"},
+    "candidate_id": {"type": "string"},
+    "candidate_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "research_id": {"type": "string"},
+    "research_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "decision": {"enum": ["APPROVE_AS_PROPOSED", "APPROVE_WITH_CHANGES", "REJECT", "INSUFFICIENT_INFORMATION", "OUTSIDE_REVIEW_SCOPE"]},
+    "required_changes": {"type": "array", "items": {"type": "string"}},
+    "missing_exceptions": {"type": "array", "items": {"type": "string"}},
+    "missing_facts": {"type": "array", "items": {"type": "string"}},
+    "corrected_interpretation": {"type": "string"},
+    "effective_date_notes": {"type": "array", "items": {"type": "string"}},
+    "source_notes": {"type": "array", "items": {"type": "string"}},
+    "confidence": {"enum": ["high", "medium", "low"]},
+    "comments": {"type": "string"}
+  }
+}

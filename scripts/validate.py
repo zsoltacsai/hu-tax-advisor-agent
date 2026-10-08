@@ -204,6 +204,56 @@ if src_registry is not None:
                     if cid not in phase56_candidate_ids: errors.append(f"country pack has broken candidate reference: {country}/{cid}")
                 rid=pack.get("research_id")
                 if rid and not (ROOT/"research/snapshots"/(rid+".json")).exists(): errors.append(f"country pack has broken research reference: {country}/{rid}")
+    adviser_store=ROOT/"rules/adviser_reviews"
+    for path in sorted(adviser_store.glob("*.json")) if adviser_store.exists() else []:
+        obj=load(path)
+        if obj is None: continue
+        validate(obj,"adviser-review-record.schema.json",str(path.relative_to(ROOT)))
+        response=obj.get("response",{})
+        cid=response.get("candidate_id")
+        candidate_path=phase56/"candidates"/(cid+".json")
+        if not candidate_path.exists(): errors.append(f"adviser response has unknown candidate: {path.name}")
+        else:
+            candidate=load(candidate_path)
+            expected_hash=digest({k:v for k,v in candidate.items() if k!="candidate_hash"})
+            if response.get("candidate_hash")!=expected_hash or candidate.get("candidate_hash")!=expected_hash: errors.append(f"adviser response candidate hash mismatch: {path.name}")
+            if response.get("research_id")!=candidate.get("research_id"): errors.append(f"adviser response research linkage mismatch: {path.name}")
+            snapshot_path=ROOT/"research/snapshots"/(response.get("research_id","")+".json")
+            snapshot=load(snapshot_path) if snapshot_path.exists() else None
+            if not snapshot or response.get("research_hash")!=snapshot.get("snapshot_hash"): errors.append(f"adviser response snapshot hash mismatch: {path.name}")
+        if obj.get("response_hash")!=digest(response): errors.append(f"adviser response content hash mismatch: {path.name}")
+        if obj.get("execution_approval_created") is not False: errors.append(f"adviser response claims execution approval: {path.name}")
+        if obj.get("adviser_status")=="ADVISER_APPROVED" and response.get("decision")!="APPROVE_AS_PROPOSED": errors.append(f"adviser status/decision mismatch: {path.name}")
+    dossier=ROOT/"docs/adviser-review"
+    required_adviser_docs=["START_HERE.md","VAT_ADVISER_REVIEW_PACKAGE.md","REFERENCE_SCENARIO.json","FACT_MODEL_REVIEW.md","ASSUMPTIONS.md","OPEN_ISSUES.md","EFFECTIVE_DATE_REVIEW.md","SOURCE_INDEX.md","adviser-response.schema.json"]
+    candidate_sheet_names=["01_ARTICLE_196_ELIGIBILITY.md","02_DE_REVERSE_CHARGE.md","03_HU_SUPPLIER_VAT_CHARGING.md","04_ARTICLE_219A_INVOICE_JURISDICTION.md","05_EU_INVOICE_METADATA.md","06_HU_INVOICE_IMPLEMENTATION.md","07_ARTICLE_262_RECAP.md","08_HU_A60.md"]
+    for name in required_adviser_docs+candidate_sheet_names:
+        if not (dossier/name).is_file(): errors.append(f"missing adviser review package document: {name}")
+    expected_sections=["Question","Proposed rule","Required facts","Known exclusions","Primary legal sources","Supporting guidance","Effective-date basis","Current interpretation","Known uncertainty","Current blocker","Questions for adviser","Possible adviser decision"]
+    for name in candidate_sheet_names:
+        path=dossier/name
+        if path.is_file():
+            headings=re.findall(r"^## (.+)$",path.read_text(encoding="utf-8"),re.MULTILINE)
+            if headings!=expected_sections: errors.append(f"adviser review sheet section/order mismatch: {name}")
+    portable=ROOT/"dist/hu-tax-adviser-review-package"
+    manifest_path=portable/"MANIFEST.json"
+    if not manifest_path.is_file(): errors.append("portable adviser package manifest missing")
+    else:
+        manifest=load(manifest_path)
+        if manifest:
+            material={k:v for k,v in manifest.items() if k!="package_hash"}
+            if manifest.get("package_hash")!=digest(material): errors.append("portable adviser package manifest hash mismatch")
+            if set(manifest.get("files",{}))!={"START_HERE.md","VAT_ADVISER_REVIEW_PACKAGE.md","REFERENCE_SCENARIO.json","FACT_MODEL_REVIEW.md","ASSUMPTIONS.md","OPEN_ISSUES.md","EFFECTIVE_DATE_REVIEW.md","SOURCE_INDEX.md","adviser-response.schema.json",*candidate_sheet_names}:
+                errors.append("portable adviser package file manifest does not match the curated handoff contents")
+            if len(manifest.get("candidate_ids",[]))!=8 or set(manifest.get("candidate_ids",[]))-phase56_candidate_ids:
+                errors.append("portable adviser package candidate manifest is incomplete or unknown")
+            for name,expected_hash in manifest.get("files",{}).items():
+                file_path=portable/name
+                if not file_path.is_file(): errors.append(f"portable adviser package file missing: {name}")
+                elif digest(file_path.read_text(encoding="utf-8"))!=expected_hash: errors.append(f"portable adviser package file hash mismatch: {name}")
+            actual_files={x.name for x in portable.iterdir() if x.is_file() and x.name!="MANIFEST.json"}
+            if actual_files!=set(manifest.get("files",{})): errors.append("portable adviser package contains unmanifested or missing files")
+            if manifest.get("contains_customer_data") is not False or manifest.get("contains_execution_approval") is not False: errors.append("portable adviser package has prohibited contents")
     for path in sorted((ROOT/"state/source_checks").glob("*.json")):
         obj=load(path)
         if obj is not None:

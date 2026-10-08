@@ -1,0 +1,46 @@
+{
+  "scenario_id": "synthetic-hu-de-general-b2b-2026",
+  "synthetic_only": true,
+  "transaction_year": 2026,
+  "supplier": {
+    "country": "HU",
+    "taxable_person": "ASSUMED_FOR_LEGAL_REVIEW",
+    "hungarian_vat_id": "ASSUMED_PRESENT_FOR_REVIEW; VERIFY_AT_RUNTIME",
+    "aam_status": "NOT_ASSUMED; RECORD_SEPARATELY_AT_RUNTIME",
+    "relevant_de_fixed_establishment": "ASSUMED_NONE_FOR_REVIEW; VERIFY_AND_ASSESS_PARTICIPATION_AT_RUNTIME"
+  },
+  "customer": {
+    "country": "DE",
+    "business_claim": "ASSUMED_FOR_REVIEW; VERIFY_AT_RUNTIME",
+    "taxable_person_status": "ASSUMED_VERIFIED_FOR_REVIEW; VERIFY_AT_RUNTIME",
+    "german_vat_id": "SYNTHETIC_PRESENT_AND_VERIFIED_FOR_REVIEW_ONLY; LIVE_CHECK_REQUIRED_IF_USED_OPERATIONALLY",
+    "relevant_establishment": "ASSUMED_GERMANY_FOR_REVIEW; VERIFY_AT_RUNTIME"
+  },
+  "service": {
+    "classification_hypothesis": "GENERAL_B2B_SERVICE",
+    "special_place_rule": "ASSUMED_NONE_ONLY_TO_FRAME_REVIEW; SCREEN_ACTUAL_SERVICE_AT_RUNTIME",
+    "actual_service_description": "NOT_SUPPLIED",
+    "wp_caregrid_classification": "NOT_CLASSIFIED",
+    "destination_exemption": "NOT_ASSUMED; adviser to review conditional taxable-service branch"
+  },
+  "transaction": {
+    "date": "2026-10-08 (synthetic Phase 5.6 fixture date; actual date must be supplied at runtime)",
+    "tax_point": "NOT_ASSESSED",
+    "self_billing": "NOT_ASSUMED; VERIFY_AT_RUNTIME"
+  },
+  "review_only_assumptions": [
+    "All facts are fictitious and exist only to ask narrow legal questions.",
+    "No VAT treatment, tax amount, invoice text, filing duty or period is assumed.",
+    "Where a candidate requires a taxable/non-exempt service, that is a conditional branch for adviser validation, not an established fact."
+  ],
+  "runtime_verification_facts": [
+    "Supplier/cust country and entity status",
+    "Taxable-person capacity and evidence",
+    "VAT IDs and current validation where legally/operationally required",
+    "Supplier/recipient fixed establishments and participation/receipt",
+    "Actual service terms and performance",
+    "Special-rule and exemption classification",
+    "Transaction date, tax point, self-billing, consideration, corrections",
+    "AAM/registration/filing status, reporting period and required form version"
+  ]
+}

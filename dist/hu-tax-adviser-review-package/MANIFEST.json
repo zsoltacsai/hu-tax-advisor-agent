@@ -1,0 +1,36 @@
+{
+  "package_id": "hu-tax-adviser-review-phase5.7",
+  "research_id": "research-4f02d5661e1790d85b50",
+  "candidate_ids": [
+    "candidate-eu-article196-eligibility-phase5.6",
+    "candidate-de-vat-b2b-cross-border-services-reverse-charge-phase5.6",
+    "candidate-hu-supplier-vat-territorial-charging-phase5.6",
+    "candidate-eu-invoice-jurisdiction-219a-phase5.6",
+    "candidate-eu-invoice-metadata-general-b2b-rc-phase5.6",
+    "candidate-hu-invoice-cross-border-service-phase5.6",
+    "candidate-eu-recap-article262-service-phase5.6",
+    "candidate-hu-a60-article262-implementation-phase5.6"
+  ],
+  "files": {
+    "START_HERE.md": "0a20cc317356e9c606770bbdea67b04fa6dc52016a86acc261530481a9e26534",
+    "VAT_ADVISER_REVIEW_PACKAGE.md": "f8ce35e041b7af2cb2258ae3878d438a87a36f2fbc4f20f0132c351b502b2cac",
+    "REFERENCE_SCENARIO.json": "3dc98dce0708bb3f2861c4aa57fe5eb197b0ac32954b3daffd7f8ddc4d088ac9",
+    "FACT_MODEL_REVIEW.md": "e2c075cec8345c8fc053292e9507a46821b4f26eae0a47a9340659da4de8621b",
+    "ASSUMPTIONS.md": "28d28c2559542a17907bc2beaa3c051acbe976f870b7da1469534cb4c3bddd82",
+    "OPEN_ISSUES.md": "da15aa3b73358f02739383f37e93485cb84eb6635cfb7c7e14aa2a0df1bf14f7",
+    "EFFECTIVE_DATE_REVIEW.md": "bd1d5db8b6a14aaae737b01b3569cef3fc80f01d569840a5e5b8242d1e822526",
+    "SOURCE_INDEX.md": "92a6c58c98916071e8966bc9f2dc7d0278dc6fdb977acadebf66b518890244b1",
+    "adviser-response.schema.json": "1dd91fae015475038835a533115d493fb7b0db0639022f717ce6642244af8195",
+    "01_ARTICLE_196_ELIGIBILITY.md": "eca4d3197e28fbef80263912e3574527768fe059a16dd08419ea43a18725e60e",
+    "02_DE_REVERSE_CHARGE.md": "d35c9da3e040ebe8d68916b75f8c52006483ca240ccfe5d4b67a20af370931d6",
+    "03_HU_SUPPLIER_VAT_CHARGING.md": "4310e8be5c847577bb945b8dcf183f8aec5f861e85a29494979a31ada862c802",
+    "04_ARTICLE_219A_INVOICE_JURISDICTION.md": "cd9d7c875e1c01d8db61037724422c8432fcdbbcf4f94458c7101175e87be7d7",
+    "05_EU_INVOICE_METADATA.md": "7ed65f7c4a3a5b7ae6b112af086a51c8ec819657a786bb9538bcc83999ba2069",
+    "06_HU_INVOICE_IMPLEMENTATION.md": "f34629adabf39c22bd0e01c14dfaea04182a456dcf09b9b9818dd3a5c7636cd6",
+    "07_ARTICLE_262_RECAP.md": "7b10c21673ec5a625661c40a4070fb1ddbf07ae6c7db56b84fc6a3472a31d845",
+    "08_HU_A60.md": "70ed79326bc85cb6057516ebc36a741e0cc8b110983b7b20e2177a933df697e2"
+  },
+  "contains_customer_data": false,
+  "contains_execution_approval": false,
+  "package_hash": "74d627d3a686537ea1acd0710827374d7007da28d14cec3dc7e7303551c557a2"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["response", "response_hash", "adviser_status", "imported_at", "execution_approval_created"],
+  "properties": {
+    "response": {"$ref": "adviser-response.schema.json"},
+    "response_hash": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "adviser_status": {"enum": ["ADVISER_REVIEW_PENDING", "ADVISER_APPROVED", "ADVISER_CHANGES_REQUIRED", "ADVISER_REJECTED"]},
+    "imported_at": {"type": "string", "format": "date-time"},
+    "execution_approval_created": {"const": false}
+  }
+}
