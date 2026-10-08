@@ -1,0 +1,64 @@
+{
+  "blockers": [
+    "BLOCKED: no independent qualified legal/tax reviewer has verified the complete law, effective dates, scope, exceptions, and taxpayer-specific applicability. Structural checks are not legal approval.",
+    "Provision-level effective dates are not fully verified for the target transaction date.",
+    "Candidate-specific exception analysis is incomplete."
+  ],
+  "candidate_hash": "23d673b128588adef6f9241ecd1cb5dc486ccabc02fee949d0c8571a69324214",
+  "candidate_id": "candidate-eu-invoice-metadata-general-b2b-rc-phase5.6",
+  "conditions": [
+    "invoice jurisdiction determined",
+    "both VAT IDs and parties evidenced",
+    "service and taxable amount facts",
+    "invoice deadline inputs resolved"
+  ],
+  "effective_from": null,
+  "effective_to": null,
+  "evidence": [
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "Article 192a",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "source_version": "2025-04-14",
+      "supports": "Invoice metadata requirements under Directive Articles 222, 226 and 226a"
+    },
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "14 Absatz 4",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "de-ustg-2026-14-14a",
+      "source_url": "https://www.gesetze-im-internet.de/ustg_1980/__14a.html",
+      "source_version": "2026-06-29",
+      "supports": "Invoice metadata requirements under Directive Articles 222, 226 and 226a"
+    },
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "37. § (1)",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "source_url": "https://njt.hu/jogszabaly/2007-127-00-00.100",
+      "source_version": "2025-12-20",
+      "supports": "Invoice metadata requirements under Directive Articles 222, 226 and 226a"
+    }
+  ],
+  "exceptions": [
+    "All special and mixed service categories excluded pending separately reviewed rules.",
+    "Unknown or conflicting facts require human review.",
+    "No implementation outside the stated stage."
+  ],
+  "jurisdiction": "EU",
+  "outcome_scope": "Metadata requirement model only; no rendered invoice",
+  "research_hash": "60b8a04622effe249947ac8fb873e9f08817b18dbe847fab55201dd1ec23cc1b",
+  "research_id": "research-4f02d5661e1790d85b50",
+  "rule_version_id": "eu-invoice-metadata-general-b2b-rc@1",
+  "scope": "Invoice metadata requirements under Directive Articles 222, 226 and 226a",
+  "status": "BLOCKED"
+}

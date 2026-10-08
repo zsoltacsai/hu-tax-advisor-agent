@@ -76,7 +76,8 @@ if src_registry is not None:
       "decision-provenance":"decision-provenance.schema.json","mcp-request":"mcp-request.schema.json",
       "mcp-response":"mcp-response.schema.json","rule-version":"rule-version.schema.json",
       "vat-operational-stages":"vat-operational-stages.schema.json",
-      "article196-assessment":"article196-assessment.schema.json"}
+      "article196-assessment":"article196-assessment.schema.json",
+      "cross-border-assessment":"cross-border-assessment.schema.json"}
     for path in sorted((ROOT/"fixtures/contracts").glob("*.json")):
         obj=load(path)
         if obj is not None:
@@ -91,6 +92,10 @@ if src_registry is not None:
     for path in sorted((ROOT/"fixtures/scenarios").glob("*.json")):
         obj=load(path)
         if obj is not None: validate(obj,"scenario-fixture.schema.json",str(path.relative_to(ROOT)))
+    cross_fixture=ROOT/"fixtures/cross_border/de-general-b2b-synthetic.json"
+    if cross_fixture.exists():
+        obj=load(cross_fixture)
+        if obj is not None: validate(obj,"cross-border-assessment.schema.json",str(cross_fixture.relative_to(ROOT)))
 
     # Validate the isolated lifecycle stores, evidence links, snapshots, and executable approved rules.
     from src.tax_engine import TaxEngine
@@ -140,6 +145,65 @@ if src_registry is not None:
             approval=obj.get("approval",{})
             if approval.get("candidate_id") not in candidate_ids: errors.append(f"approved rule has broken candidate reference: {path.name}")
             if not (ROOT/"research/snapshots"/(approval.get("research_id","")+".json")).exists(): errors.append(f"approved rule has broken research reference: {path.name}")
+    phase56=ROOT/"rules/country-candidates/phase5.6"
+    phase56_candidate_ids=set()
+    candidate_hashes={}
+    for path in sorted((phase56/"candidates").glob("*.json")) if (phase56/"candidates").exists() else []:
+        obj=load(path)
+        if obj is None: continue
+        validate(obj,"country-rule-candidate.schema.json",str(path.relative_to(ROOT)))
+        phase56_candidate_ids.add(obj.get("candidate_id"))
+        material={k:v for k,v in obj.items() if k!="candidate_hash"}
+        if obj.get("candidate_hash")!=digest(material): errors.append(f"country candidate hash mismatch: {path.name}")
+        candidate_hashes[obj.get("candidate_id")]=obj.get("candidate_hash")
+        snapshot_path=ROOT/"research/snapshots"/(obj.get("research_id","")+".json")
+        if not snapshot_path.exists(): errors.append(f"Phase 5.6 candidate has broken research reference: {path.name}")
+        else:
+            snap=load(snapshot_path)
+            if snap and obj.get("research_hash")!=snap.get("snapshot_hash"): errors.append(f"Phase 5.6 candidate research hash mismatch: {path.name}")
+            if snap:
+                frozen={x.get("source_id"):x for x in snap.get("sources_considered",[])}
+                for ev in obj.get("evidence",[]):
+                    pin=frozen.get(ev.get("source_id"))
+                    if pin is None: errors.append(f"Phase 5.6 evidence source absent from snapshot: {path.name}/{ev.get('source_id')}")
+                    elif not pin.get("verification",{}).get("content_verified"): errors.append(f"Phase 5.6 evidence relies on unverified source text: {path.name}/{ev.get('source_id')}")
+                    elif ev.get("source_version")!=(pin.get("version_date") or "accessed-2026-10-08"): errors.append(f"Phase 5.6 source version pin mismatch: {path.name}/{ev.get('source_id')}")
+                    if not any(x.get("source_id")==ev.get("source_id") and x.get("provision")==ev.get("provision") and x.get("verified") for x in snap.get("relevant_provisions",[])):
+                        errors.append(f"Phase 5.6 evidence provision absent from verified research: {path.name}/{ev.get('source_id')}/{ev.get('provision')}")
+        for ev in obj.get("evidence",[]):
+            if ev.get("source_id") not in source_ids: errors.append(f"Phase 5.6 candidate has unknown source: {path.name}")
+    phase56_review_ids=set()
+    phase56_reviews={}
+    for path in sorted((phase56/"reviews").glob("*.json")) if (phase56/"reviews").exists() else []:
+        obj=load(path)
+        if obj is None: continue
+        validate(obj,"country-rule-review.schema.json",str(path.relative_to(ROOT)))
+        phase56_review_ids.add(obj.get("candidate_id"))
+        phase56_reviews[obj.get("candidate_id")]=obj
+        material={k:v for k,v in obj.items() if k!="review_hash"}
+        if obj.get("review_hash")!=digest(material): errors.append(f"Phase 5.6 review hash mismatch: {path.name}")
+        if obj.get("candidate_id") not in phase56_candidate_ids: errors.append(f"Phase 5.6 review has missing candidate: {path.name}")
+        if obj.get("candidate_hash")!=candidate_hashes.get(obj.get("candidate_id")): errors.append(f"Phase 5.6 review candidate hash mismatch: {path.name}")
+        if obj.get("status") not in {"READY_FOR_HUMAN_REVIEW","NEEDS_CHANGES","BLOCKED","REJECTED"}: errors.append(f"Phase 5.6 review has invalid lifecycle status: {path.name}")
+    if phase56_candidate_ids!=phase56_review_ids: errors.append("Phase 5.6 candidates/reviews are not a one-to-one set")
+    for candidate_id,review in phase56_reviews.items():
+        candidate=next((load(p) for p in (phase56/"candidates").glob("*.json") if (load(p) or {}).get("candidate_id")==candidate_id),None)
+        if candidate and candidate.get("status")!=review.get("status"): errors.append(f"Phase 5.6 candidate/review status mismatch: {candidate_id}")
+        if review.get("status")=="READY_FOR_HUMAN_REVIEW" and (set(review.get("checklist",{}).values())!={"PASS"} or "independent" not in review.get("reviewer_type","").lower()):
+            errors.append(f"Phase 5.6 ready status lacks all-pass independent review: {candidate_id}")
+    pack_path=ROOT/"jurisdictions/registry.json"
+    if pack_path.exists():
+        pack_data=load(pack_path)
+        if pack_data:
+            validate(pack_data,"country-pack-registry.schema.json",str(pack_path.relative_to(ROOT)))
+            packs={x.get("country"):x for x in pack_data.get("packs",[])}
+            if len(packs)!=len(pack_data.get("packs",[])): errors.append("duplicate destination country pack")
+            for country,pack in packs.items():
+                if pack.get("status")=="EXECUTABLE" and not pack.get("approved_rule_version_ids"): errors.append(f"executable country pack has no approved rule: {country}")
+                for cid in pack.get("candidate_ids",[]):
+                    if cid not in phase56_candidate_ids: errors.append(f"country pack has broken candidate reference: {country}/{cid}")
+                rid=pack.get("research_id")
+                if rid and not (ROOT/"research/snapshots"/(rid+".json")).exists(): errors.append(f"country pack has broken research reference: {country}/{rid}")
     for path in sorted((ROOT/"state/source_checks").glob("*.json")):
         obj=load(path)
         if obj is not None:
@@ -206,6 +270,13 @@ try:
     print(f"Dependency graph valid and acyclic: {len(dependency_graph)} stages")
 except Exception as exc:
     errors.append(f"dependency graph invalid: {exc}")
+try:
+    cross_graph=load(ROOT/"rules/cross-border-dependencies.json")
+    from src.tax_engine.dependencies import validate_acyclic
+    validate_acyclic(cross_graph["stages"])
+    print(f"Cross-border dependency graph valid and acyclic: {len(cross_graph['stages'])} stages")
+except Exception as exc:
+    errors.append(f"cross-border dependency graph invalid: {exc}")
 print(f"Schema files valid: {counts['schema_files']}")
 print(f"Registry entries: {len(src_registry.get('sources',[])) if src_registry else 0}")
 if src_registry:

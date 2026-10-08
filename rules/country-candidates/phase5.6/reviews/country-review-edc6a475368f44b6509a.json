@@ -1,0 +1,30 @@
+{
+  "candidate_hash": "17c37a122ef61490af6e6d5a607057ce6ac89ce1496a9497d919c90dd26043ec",
+  "candidate_id": "candidate-hu-a60-article262-implementation-phase5.6",
+  "checklist": {
+    "customer_status": "UNRESOLVED",
+    "destination_exemption": "UNRESOLVED",
+    "effective_dates": "UNRESOLVED",
+    "establishment": "UNRESOLVED",
+    "eu_national_mapping": "UNRESOLVED",
+    "exceptions": "UNRESOLVED",
+    "fact_completeness": "UNRESOLVED",
+    "invoice_jurisdiction": "UNRESOLVED",
+    "reporting_dependencies": "UNRESOLVED",
+    "scope": "UNRESOLVED",
+    "vat_id": "UNRESOLVED"
+  },
+  "findings": [
+    "BLOCKED: no independent qualified legal/tax reviewer has verified the complete law, effective dates, scope, exceptions, and taxpayer-specific applicability. Structural checks are not legal approval.",
+    "BLOCKED: no independent qualified legal/tax reviewer has verified the complete law, effective dates, scope, exceptions, and taxpayer-specific applicability. Structural checks are not legal approval.",
+    "Provision-level effective dates are not fully verified for the target transaction date.",
+    "Candidate-specific exception analysis is incomplete."
+  ],
+  "research_hash": "60b8a04622effe249947ac8fb873e9f08817b18dbe847fab55201dd1ec23cc1b",
+  "research_id": "research-4f02d5661e1790d85b50",
+  "review_hash": "ec2d77d521d881b0eb1bdc0737ff4882232a43c112e507af41f8952da6ebbc12",
+  "review_id": "country-review-edc6a475368f44b6509a",
+  "reviewed_at": "2026-10-08",
+  "reviewer_type": "structural-coding-agent-not-independent-legal-review",
+  "status": "BLOCKED"
+}

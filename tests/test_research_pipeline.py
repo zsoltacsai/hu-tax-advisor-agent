@@ -49,7 +49,7 @@ class ResearchPipelineTests(unittest.TestCase):
     def test_repository_examples_are_schema_valid_and_non_executable(self):
         p=ResearchPipeline(ROOT)
         snapshots=list((ROOT/"research/snapshots").glob("*.json"));candidates=list((ROOT/"rules/proposed").glob("*.json"))
-        self.assertEqual(len(snapshots),16);self.assertEqual(len(candidates),8)
+        self.assertEqual(len(snapshots),17);self.assertEqual(len(candidates),8)
         for x in snapshots:p.read_snapshot(x.stem)
         loaded=TaxEngine(ROOT).rules
         self.assertEqual([r["rule_version_id"] for r in loaded],["eu-vat-services-b2b-general@1","eu-vat-services-b2c-general@1"])

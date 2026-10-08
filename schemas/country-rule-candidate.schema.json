@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["candidate_id", "rule_version_id", "jurisdiction", "research_id", "research_hash", "scope", "conditions", "outcome_scope", "evidence", "effective_from", "effective_to", "exceptions", "status", "blockers", "candidate_hash"],
+  "properties": {
+    "candidate_id": {"type": "string"}, "rule_version_id": {"type": "string"},
+    "jurisdiction": {"enum": ["EU", "DE", "HU"]}, "research_id": {"type": "string"}, "research_hash": {"type": "string"},
+    "scope": {"type": "string"}, "conditions": {"type": "array", "items": {"type": "string"}},
+    "outcome_scope": {"type": "string"}, "evidence": {"type": "array", "minItems": 1, "items": {"$ref": "evidence.schema.json"}},
+    "effective_from": {"type": ["string", "null"], "format": "date"}, "effective_to": {"type": ["string", "null"], "format": "date"},
+    "exceptions": {"type": "array", "items": {"type": "string"}},
+    "status": {"enum": ["READY_FOR_HUMAN_REVIEW", "NEEDS_CHANGES", "BLOCKED", "REJECTED"]},
+    "blockers": {"type": "array", "items": {"type": "string"}}, "candidate_hash": {"type": "string"}
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "blockers": [
+    "BLOCKED: no independent qualified legal/tax reviewer has verified the complete law, effective dates, scope, exceptions, and taxpayer-specific applicability. Structural checks are not legal approval.",
+    "Provision-level effective dates are not fully verified for the target transaction date.",
+    "Candidate-specific exception analysis is incomplete."
+  ],
+  "candidate_hash": "43d05f3556b0ebd6ae85a89c722d1167c5a81a6af3b1425bcbfa0818bd0cf66a",
+  "candidate_id": "candidate-de-vat-b2b-cross-border-services-reverse-charge-phase5.6",
+  "conditions": [
+    "Article 44 path in DE",
+    "taxable person established",
+    "supplier elsewhere in EU",
+    "no participating relevant DE establishment",
+    "DE taxable supply and exception screen complete"
+  ],
+  "effective_from": null,
+  "effective_to": null,
+  "evidence": [
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "Article 192a",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "source_version": "2025-04-14",
+      "supports": "German §13b implementation for qualifying cross-border general services"
+    },
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "13b Absatz 1",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "de-ustg-2026-13b",
+      "source_url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "source_version": "2026-06-29",
+      "supports": "German §13b implementation for qualifying cross-border general services"
+    },
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "3a Absatz 2",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "de-ustg-2026-3a",
+      "source_url": "https://www.gesetze-im-internet.de/ustg_1980/__3a.html",
+      "source_version": "2026-06-29",
+      "supports": "German §13b implementation for qualifying cross-border general services"
+    },
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "4 Nummer 8 bis 29",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "de-ustg-2026-4",
+      "source_url": "https://www.gesetze-im-internet.de/ustg_1980/__4.html",
+      "source_version": "2026-06-29",
+      "supports": "German §13b implementation for qualifying cross-border general services"
+    }
+  ],
+  "exceptions": [
+    "All special and mixed service categories excluded pending separately reviewed rules.",
+    "Unknown or conflicting facts require human review.",
+    "No implementation outside the stated stage."
+  ],
+  "jurisdiction": "DE",
+  "outcome_scope": "German destination reverse-charge liability only",
+  "research_hash": "60b8a04622effe249947ac8fb873e9f08817b18dbe847fab55201dd1ec23cc1b",
+  "research_id": "research-4f02d5661e1790d85b50",
+  "rule_version_id": "de-vat-b2b-cross-border-services-reverse-charge@1",
+  "scope": "German §13b implementation for qualifying cross-border general services",
+  "status": "BLOCKED"
+}

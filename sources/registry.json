@@ -678,7 +678,9 @@
         "Article 226(11a)",
         "Article 262(1)(c)",
         "Article 263",
-        "Article 264"
+        "Article 264",
+        "Article 222",
+        "Article 226a"
       ],
       "notes": "Official EUR-Lex consolidated text accessed in English/other official language indexes on 2026-10-08. The authenticated amending acts and transaction-date consolidation govern. Directive 2025/516 has future phased amendments; check temporal applicability before use."
     },
@@ -715,6 +717,209 @@
         "169. § n)"
       ],
       "notes": "Direct official NJT full-text page accessed 2026-10-08; page header showed consolidated text date 2025-12-20. That consolidation date is not a global effective-from date for every provision. No transaction-specific applicability conclusion is encoded."
+    },
+    {
+      "id": "de-bmf-ustae-current",
+      "jurisdiction": "DE",
+      "authority": "Federal Ministry of Finance (BMF)",
+      "source_type": "de_official_guidance",
+      "title": "Umsatzsteuer-Anwendungserlass (current consolidated administrative guidance)",
+      "official_url": "https://www.bundesfinanzministerium.de/Content/DE/Downloads/BMF_Schreiben/Steuerarten/Umsatzsteuer/Umsatzsteuer-Anwendungserlass/Umsatzsteuer-Anwendungserlass-aktuell.pdf?__blob=publicationFile&v=44",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": null,
+      "retrieved_at": "2026-10-08",
+      "version_date": null,
+      "topics": [
+        "DE_VAT",
+        "reverse_charge",
+        "fixed_establishment"
+      ],
+      "authority_level": "official_guidance",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": false,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "Abschnitt 3a.1",
+        "Abschnitt 13b.11"
+      ],
+      "notes": "Official BMF current UStAE PDF accessed by official search result on 2026-10-08; version date not established. Administrative interpretation only, subordinate to statute and courts. Any version-sensitive interpretation requires retrieval of dated amendment history."
+    },
+    {
+      "id": "de-ustg-2026-13b",
+      "jurisdiction": "DE",
+      "authority": "Federal Ministry of Justice / Federal Office of Justice",
+      "source_type": "primary_legislation",
+      "title": "German Umsatzsteuergesetz (UStG), § 13b recipient liability",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__13b.html",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": "1979-11-26",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2026-06-29",
+      "topics": [
+        "DE_VAT",
+        "cross_border_services",
+        "reverse_charge",
+        "invoicing",
+        "reporting"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": false,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "13b Absatz 1",
+        "13b Absatz 5",
+        "13b Absatz 6",
+        "13b Absatz 7"
+      ],
+      "notes": "Official current consolidated statutory text accessed 2026-10-08. §13b(1), (5), (6), and (7) are distinct elements; the fixed-establishment non-intervention test is transaction-specific. Gesamt-UStG source citation states last amended by Art. 5 G v. 29.06.2026, BGBl. 2026 I Nr. 197; section-level amendment/effective history and transaction-date prior versions still require comparison."
+    },
+    {
+      "id": "de-ustg-2026-14-14a",
+      "jurisdiction": "DE",
+      "authority": "Federal Ministry of Justice / Federal Office of Justice",
+      "source_type": "primary_legislation",
+      "title": "German Umsatzsteuergesetz (UStG), §§ 14 and 14a invoices",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__14a.html",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": "1979-11-26",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2026-06-29",
+      "topics": [
+        "DE_VAT",
+        "cross_border_services",
+        "reverse_charge",
+        "invoicing",
+        "reporting"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": false,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "14 Absatz 2",
+        "14 Absatz 4",
+        "14 Absatz 7",
+        "14a Absatz 1",
+        "14a Absatz 5"
+      ],
+      "notes": "Official current consolidated statutory text accessed 2026-10-08. Includes mandatory particulars, invoice jurisdiction cross-reference, reverse-charge indicator and intra-EU service deadline; applicability depends on Article 219a and facts. Gesamt-UStG source citation states last amended by Art. 5 G v. 29.06.2026, BGBl. 2026 I Nr. 197; section-level amendment/effective history and transaction-date prior versions still require comparison."
+    },
+    {
+      "id": "de-ustg-2026-18a",
+      "jurisdiction": "DE",
+      "authority": "Federal Ministry of Justice / Federal Office of Justice",
+      "source_type": "primary_legislation",
+      "title": "German Umsatzsteuergesetz (UStG), § 18a recapitulative statements",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__18a.html",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": "1979-11-26",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2026-06-29",
+      "topics": [
+        "DE_VAT",
+        "cross_border_services",
+        "reverse_charge",
+        "invoicing",
+        "reporting"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": false,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "18a Absatz 2",
+        "18a Absatz 7 Nummer 3",
+        "18a Absatz 8",
+        "18a Absatz 10"
+      ],
+      "notes": "Official current consolidated statutory text accessed 2026-10-08. §18a(2) covers qualifying §3a(2) services; quarterly period, content, filing timing and corrections are separate. Gesamt-UStG source citation states last amended by Art. 5 G v. 29.06.2026, BGBl. 2026 I Nr. 197; section-level amendment/effective history and transaction-date prior versions still require comparison."
+    },
+    {
+      "id": "de-ustg-2026-3a",
+      "jurisdiction": "DE",
+      "authority": "Federal Ministry of Justice / Federal Office of Justice",
+      "source_type": "primary_legislation",
+      "title": "German Umsatzsteuergesetz (UStG), § 3a place of supply",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__3a.html",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": "1979-11-26",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2026-06-29",
+      "topics": [
+        "DE_VAT",
+        "cross_border_services",
+        "reverse_charge",
+        "invoicing",
+        "reporting"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": false,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "3a Absatz 2",
+        "3a Absatz 3",
+        "3a Absatz 5"
+      ],
+      "notes": "Official current consolidated statutory text accessed 2026-10-08. It distinguishes the B2B recipient-location rule from listed exceptions; current-law access does not establish earlier-in-2026 text without historical version selection. Gesamt-UStG source citation states last amended by Art. 5 G v. 29.06.2026, BGBl. 2026 I Nr. 197; section-level amendment/effective history and transaction-date prior versions still require comparison."
+    },
+    {
+      "id": "de-ustg-2026-4",
+      "jurisdiction": "DE",
+      "authority": "Federal Ministry of Justice / Federal Office of Justice",
+      "source_type": "primary_legislation",
+      "title": "German Umsatzsteuergesetz (UStG), § 4 exemptions",
+      "official_url": "https://www.gesetze-im-internet.de/ustg_1980/__4.html",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": "1979-11-26",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2026-06-29",
+      "topics": [
+        "DE_VAT",
+        "cross_border_services",
+        "reverse_charge",
+        "invoicing",
+        "reporting"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": false,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "4 Nummer 8 bis 29"
+      ],
+      "notes": "Official current consolidated statutory text accessed 2026-10-08. No general conclusion about exemption is made from the generic service label. Gesamt-UStG source citation states last amended by Art. 5 G v. 29.06.2026, BGBl. 2026 I Nr. 197; section-level amendment/effective history and transaction-date prior versions still require comparison."
     }
   ]
 }

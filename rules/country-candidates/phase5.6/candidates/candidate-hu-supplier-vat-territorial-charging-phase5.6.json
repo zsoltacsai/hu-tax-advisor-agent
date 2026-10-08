@@ -1,0 +1,63 @@
+{
+  "blockers": [
+    "BLOCKED: no independent qualified legal/tax reviewer has verified the complete law, effective dates, scope, exceptions, and taxpayer-specific applicability. Structural checks are not legal approval.",
+    "Provision-level effective dates are not fully verified for the target transaction date.",
+    "Candidate-specific exception analysis is incomplete."
+  ],
+  "candidate_hash": "bb80f2e4e9a51e85aee826783d871aefc467659d80aa86bfe6153bd26c7b151f",
+  "candidate_id": "candidate-hu-supplier-vat-territorial-charging-phase5.6",
+  "conditions": [
+    "place of supply determined outside HU",
+    "supply within Áfa tv. charging scope reviewed",
+    "supplier/taxpayer facts complete"
+  ],
+  "effective_from": null,
+  "effective_to": null,
+  "evidence": [
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "Article 192a",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "source_version": "2025-04-14",
+      "supports": "Hungarian territorial charging consequence for a DE place of supply"
+    },
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "37. § (1)",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "source_url": "https://njt.hu/jogszabaly/2007-127-00-00.100",
+      "source_version": "2025-12-20",
+      "supports": "Hungarian territorial charging consequence for a DE place of supply"
+    },
+    {
+      "authority_level": "official_guidance",
+      "content_hash": null,
+      "provision": "26A60 03-as lap",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-nav-26a60-2026-filing-guidance",
+      "source_url": "https://nav.gov.hu/print/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/26A60",
+      "source_version": "2026-09-02",
+      "supports": "Hungarian territorial charging consequence for a DE place of supply"
+    }
+  ],
+  "exceptions": [
+    "All special and mixed service categories excluded pending separately reviewed rules.",
+    "Unknown or conflicting facts require human review.",
+    "No implementation outside the stated stage."
+  ],
+  "jurisdiction": "HU",
+  "outcome_scope": "HU VAT territorial charging only; no rate",
+  "research_hash": "60b8a04622effe249947ac8fb873e9f08817b18dbe847fab55201dd1ec23cc1b",
+  "research_id": "research-4f02d5661e1790d85b50",
+  "rule_version_id": "hu-supplier-vat-territorial-charging@1",
+  "scope": "Hungarian territorial charging consequence for a DE place of supply",
+  "status": "BLOCKED"
+}

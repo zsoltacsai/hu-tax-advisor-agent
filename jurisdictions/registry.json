@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "packs": [
+    {
+      "country": "DE",
+      "status": "RESEARCH_ONLY",
+      "research_id": "research-4f02d5661e1790d85b50",
+      "candidate_ids": [
+        "candidate-de-vat-b2b-cross-border-services-reverse-charge-phase5.6"
+      ],
+      "approved_rule_version_ids": [],
+      "notes": "Non-executable country research. No approval record exists."
+    }
+  ]
+}

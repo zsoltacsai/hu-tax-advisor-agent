@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object", "additionalProperties": false,
+  "required": ["review_id", "candidate_id", "candidate_hash", "research_id", "research_hash", "status", "checklist", "findings", "reviewer_type", "reviewed_at", "review_hash"],
+  "properties": {
+    "review_id": {"type": "string"}, "candidate_id": {"type": "string"}, "candidate_hash": {"type": "string"},
+    "research_id": {"type": "string"}, "research_hash": {"type": "string"},
+    "status": {"enum": ["READY_FOR_HUMAN_REVIEW", "NEEDS_CHANGES", "BLOCKED", "REJECTED"]},
+    "checklist": {"type": "object", "additionalProperties": false,
+      "required": ["eu_national_mapping", "scope", "exceptions", "effective_dates", "establishment", "customer_status", "vat_id", "destination_exemption", "invoice_jurisdiction", "reporting_dependencies", "fact_completeness"],
+      "properties": {"eu_national_mapping": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "scope": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "exceptions": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "effective_dates": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "establishment": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "customer_status": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "vat_id": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "destination_exemption": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "invoice_jurisdiction": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "reporting_dependencies": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}, "fact_completeness": {"enum": ["PASS", "FAIL", "UNRESOLVED"]}}},
+    "findings": {"type": "array", "items": {"type": "string"}}, "reviewer_type": {"type": "string"}, "reviewed_at": {"type": "string", "format": "date"}, "review_hash": {"type": "string"}
+  }
+}

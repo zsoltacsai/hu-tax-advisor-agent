@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["assessment_id", "as_of_date", "transaction_date", "facts", "stages", "requires_human_review", "unresolved_questions"],
+  "properties": {
+    "assessment_id": {"type": "string"},
+    "as_of_date": {"type": "string", "format": "date"},
+    "transaction_date": {"type": "string", "format": "date"},
+    "facts": {"$ref": "#/$defs/facts"},
+    "stages": {"type": "array", "items": {"$ref": "#/$defs/stage"}},
+    "requires_human_review": {"type": "boolean"},
+    "unresolved_questions": {"type": "array", "items": {"type": "string"}}
+  },
+  "$defs": {
+    "facts": {"type": "object", "additionalProperties": false,
+      "required": ["transaction_date", "supplier_country", "supplier_taxable_person", "supplier_destination_establishment", "customer_country", "customer_claims_business", "customer_taxable_person_status", "customer_vat_id", "service_classification", "special_rule_screened", "destination_taxability_status", "place_of_supply", "aam_status", "tax_point_status"],
+      "properties": {
+        "supplier_country": {"type": "string", "pattern": "^[A-Z]{2}$"},
+        "transaction_date": {"type": "string", "format": "date"},
+        "supplier_taxable_person": {"enum": ["YES", "NO", "UNKNOWN"]},
+        "supplier_destination_establishment": {"type": "object", "additionalProperties": false, "required": ["country", "state", "intervenes_in_supply"], "properties": {"country": {"type": "string", "pattern": "^[A-Z]{2}$"}, "state": {"enum": ["NONE", "EXISTS", "UNKNOWN"]}, "intervenes_in_supply": {"enum": ["YES", "NO", "UNKNOWN", "NOT_APPLICABLE"]}}},
+        "customer_country": {"type": "string", "pattern": "^[A-Z]{2}$"},
+        "customer_claims_business": {"type": "boolean"},
+        "customer_taxable_person_status": {"enum": ["TAXABLE_PERSON_ACTING_AS_SUCH", "NON_TAXABLE_LEGAL_PERSON_VAT_IDENTIFIED", "NOT_TAXABLE_PERSON", "UNKNOWN", "CONFLICTING"]},
+        "customer_vat_id": {"type": "object", "additionalProperties": false, "required": ["country", "present", "verification"], "properties": {"country": {"type": "string", "pattern": "^[A-Z]{2}$"}, "present": {"type": "boolean"}, "verification": {"enum": ["SYNTHETIC_VALID", "INVALID", "UNVERIFIED", "MISSING", "LIVE_CHECK_NOT_PERFORMED"]}}},
+        "service_classification": {"enum": ["GENERAL_SERVICE", "STANDARD_TAXABLE_GENERAL_TECHNICAL_SERVICE", "ELECTRONICALLY_SUPPLIED_SERVICE", "SPECIAL_SERVICE", "MIXED_OR_COMPOSITE", "UNKNOWN"]},
+        "special_rule_screened": {"enum": ["YES_NO_SPECIAL_RULE", "NO", "UNKNOWN"]},
+        "destination_taxability_status": {"enum": ["REVIEWED_TAXABLE_NO_EXEMPTION_IDENTIFIED", "EXEMPT", "UNKNOWN", "CONFLICTING"]},
+        "place_of_supply": {"type": "object", "additionalProperties": false, "required": ["status", "country", "rule_version_id", "evidence"], "properties": {"status": {"enum": ["DETERMINED", "NOT_DETERMINED", "CONFLICTING"]}, "country": {"type": ["string", "null"]}, "rule_version_id": {"type": ["string", "null"]}, "evidence": {"type": "array", "items": {"$ref": "evidence.schema.json"}}}},
+        "aam_status": {"enum": ["AAM", "NOT_AAM", "UNKNOWN"]},
+        "tax_point_status": {"enum": ["NOT_ASSESSED", "REVIEWED", "CONFLICTING"]}
+      }
+    },
+    "stage": {"type": "object", "additionalProperties": false,
+      "required": ["stage", "status", "value", "rule_id", "evidence", "dependencies", "reason"],
+      "properties": {
+        "stage": {"enum": ["article_196_eligibility", "destination_reverse_charge", "supplier_vat_charging", "invoice_jurisdiction", "invoice_metadata", "eu_recap_reporting", "a60_reporting", "aam_effect", "tax_point"]},
+        "status": {"enum": ["determined", "partial", "not_assessed", "cannot_determine", "requires_review", "unsupported"]},
+        "value": {}, "rule_id": {"type": ["string", "null"]},
+        "evidence": {"type": "array", "items": {"$ref": "evidence.schema.json"}},
+        "dependencies": {"type": "array", "items": {"type": "string"}},
+        "reason": {"type": "string"}
+      }
+    }
+  }
+}

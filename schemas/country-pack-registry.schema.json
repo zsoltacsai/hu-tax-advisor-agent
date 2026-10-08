@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "packs"],
+  "properties": {
+    "version": {"type": "string"},
+    "packs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["country", "status", "research_id", "candidate_ids", "approved_rule_version_ids", "notes"],
+        "properties": {
+          "country": {"type": "string", "pattern": "^[A-Z]{2}$"},
+          "status": {"enum": ["RESEARCH_ONLY", "EXECUTABLE"]},
+          "research_id": {"type": "string"},
+          "candidate_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+          "approved_rule_version_ids": {"type": "array", "uniqueItems": true, "items": {"type": "string"}},
+          "notes": {"type": "string"}
+        },
+        "allOf": [{"if": {"properties": {"status": {"const": "EXECUTABLE"}}}, "then": {"properties": {"approved_rule_version_ids": {"minItems": 1}}}}]
+      }
+    }
+  }
+}

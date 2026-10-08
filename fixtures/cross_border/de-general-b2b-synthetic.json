@@ -1,0 +1,41 @@
+{
+  "assessment_id": "synthetic-hu-de-general-b2b-2026",
+  "as_of_date": "2026-10-08",
+  "transaction_date": "2026-10-08",
+  "facts": {
+    "transaction_date": "2026-10-08",
+    "supplier_country": "HU",
+    "supplier_taxable_person": "YES",
+    "supplier_destination_establishment": {"country":"DE", "state": "NONE", "intervenes_in_supply": "NOT_APPLICABLE"},
+    "customer_country": "DE",
+    "customer_claims_business": true,
+    "customer_taxable_person_status": "TAXABLE_PERSON_ACTING_AS_SUCH",
+    "customer_vat_id": {"country": "DE", "present": true, "verification": "SYNTHETIC_VALID"},
+    "service_classification": "STANDARD_TAXABLE_GENERAL_TECHNICAL_SERVICE",
+    "special_rule_screened": "YES_NO_SPECIAL_RULE",
+    "destination_taxability_status": "REVIEWED_TAXABLE_NO_EXEMPTION_IDENTIFIED",
+    "place_of_supply": {
+      "status": "DETERMINED",
+      "country": "DE",
+      "rule_version_id": "eu-vat-services-b2b-general@1",
+      "evidence": [
+        {"source_id":"eu-vat-directive-current-consolidation-2025-04-14","provision":"Article 44","source_version":"2025-04-14","retrieved_at":"2026-10-08","supports":"Synthetic upstream Article 44 place-of-supply stage only.","authority_level":"primary","source_url":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A02006L0112-20250414","quote_or_extract":null,"content_hash":null}
+      ]
+    },
+    "aam_status": "UNKNOWN",
+    "tax_point_status": "NOT_ASSESSED"
+  },
+  "stages": [
+    {"stage":"article_196_eligibility","status":"determined","value":"ELIGIBLE","rule_id":null,"evidence":[],"dependencies":["place_of_supply"],"reason":"Synthetic eligibility screen; not national implementation."},
+    {"stage":"destination_reverse_charge","status":"not_assessed","value":"DESTINATION_RULE_NOT_APPROVED","rule_id":null,"evidence":[],"dependencies":["article_196_eligibility","destination_implementation_pack"],"reason":"DE candidate has no human approval and is not executable."},
+    {"stage":"supplier_vat_charging","status":"not_assessed","value":"NOT_ASSESSED","rule_id":null,"evidence":[],"dependencies":["HU territorial scope rule"],"reason":"Separate Hungarian candidate is blocked."},
+    {"stage":"invoice_jurisdiction","status":"not_assessed","value":"NOT_ASSESSED","rule_id":null,"evidence":[],"dependencies":["Article 219a"],"reason":"Candidate is blocked."},
+    {"stage":"invoice_metadata","status":"not_assessed","value":"NOT_ASSESSED","rule_id":null,"evidence":[],"dependencies":["invoice_jurisdiction"],"reason":"No invoice fields are generated."},
+    {"stage":"eu_recap_reporting","status":"not_assessed","value":"NOT_ASSESSED","rule_id":null,"evidence":[],"dependencies":["Article 262 conditions"],"reason":"Separate recap candidate is blocked."},
+    {"stage":"a60_reporting","status":"not_assessed","value":"NOT_ASSESSED","rule_id":null,"evidence":[],"dependencies":["EU recap","HU filing status"],"reason":"Separate A60 candidate is blocked."},
+    {"stage":"aam_effect","status":"not_assessed","value":"NOT_ASSESSED","rule_id":null,"evidence":[],"dependencies":["HU AAM rule"],"reason":"AAM is isolated."},
+    {"stage":"tax_point","status":"not_assessed","value":"NOT_ASSESSED","rule_id":null,"evidence":[],"dependencies":["chargeable event"],"reason":"Tax point is isolated."}
+  ],
+  "requires_human_review": true,
+  "unresolved_questions": ["No candidate has qualified legal review or human approval."]
+}

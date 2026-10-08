@@ -1,0 +1,30 @@
+{
+  "candidate_hash": "aa025ecaa1aff2a989f94bbc02710d96c13b40cdca68f55cdbdeee03ce17b4b9",
+  "candidate_id": "candidate-eu-article196-eligibility-phase5.6",
+  "checklist": {
+    "customer_status": "UNRESOLVED",
+    "destination_exemption": "UNRESOLVED",
+    "effective_dates": "UNRESOLVED",
+    "establishment": "UNRESOLVED",
+    "eu_national_mapping": "UNRESOLVED",
+    "exceptions": "UNRESOLVED",
+    "fact_completeness": "UNRESOLVED",
+    "invoice_jurisdiction": "UNRESOLVED",
+    "reporting_dependencies": "UNRESOLVED",
+    "scope": "UNRESOLVED",
+    "vat_id": "UNRESOLVED"
+  },
+  "findings": [
+    "BLOCKED: no independent qualified legal/tax reviewer has verified the complete law, effective dates, scope, exceptions, and taxpayer-specific applicability. Structural checks are not legal approval.",
+    "BLOCKED: no independent qualified legal/tax reviewer has verified the complete law, effective dates, scope, exceptions, and taxpayer-specific applicability. Structural checks are not legal approval.",
+    "Provision-level effective dates are not fully verified for the target transaction date.",
+    "Candidate-specific exception analysis is incomplete."
+  ],
+  "research_hash": "60b8a04622effe249947ac8fb873e9f08817b18dbe847fab55201dd1ec23cc1b",
+  "research_id": "research-4f02d5661e1790d85b50",
+  "review_hash": "de90c04c0b958d03cbe343804b3f9585e21d915b54a26a132bca14670083c764",
+  "review_id": "country-review-867e40996eaa62679c37",
+  "reviewed_at": "2026-10-08",
+  "reviewer_type": "structural-coding-agent-not-independent-legal-review",
+  "status": "BLOCKED"
+}

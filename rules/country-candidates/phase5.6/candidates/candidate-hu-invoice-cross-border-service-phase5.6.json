@@ -1,0 +1,64 @@
+{
+  "blockers": [
+    "BLOCKED: no independent qualified legal/tax reviewer has verified the complete law, effective dates, scope, exceptions, and taxpayer-specific applicability. Structural checks are not legal approval.",
+    "Provision-level effective dates are not fully verified for the target transaction date.",
+    "Candidate-specific exception analysis is incomplete."
+  ],
+  "candidate_hash": "b0b35b006f7a7428f1d6efa55c69a63d21c88b38213f2fea2b878aad4df038dd",
+  "candidate_id": "candidate-hu-invoice-cross-border-service-phase5.6",
+  "conditions": [
+    "Article 219a routes invoicing to HU",
+    "Hungarian issuer and invoice facts",
+    "service date and tax point",
+    "community VAT IDs and RC wording reviewed"
+  ],
+  "effective_from": null,
+  "effective_to": null,
+  "evidence": [
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "Article 192a",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "source_version": "2025-04-14",
+      "supports": "Hungarian invoice implementation for cross-border service"
+    },
+    {
+      "authority_level": "primary",
+      "content_hash": null,
+      "provision": "37. § (1)",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "source_url": "https://njt.hu/jogszabaly/2007-127-00-00.100",
+      "source_version": "2025-12-20",
+      "supports": "Hungarian invoice implementation for cross-border service"
+    },
+    {
+      "authority_level": "official_guidance",
+      "content_hash": null,
+      "provision": "26A60 03-as lap",
+      "quote_or_extract": null,
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-nav-26a60-2026-filing-guidance",
+      "source_url": "https://nav.gov.hu/print/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/26A60",
+      "source_version": "2026-09-02",
+      "supports": "Hungarian invoice implementation for cross-border service"
+    }
+  ],
+  "exceptions": [
+    "All special and mixed service categories excluded pending separately reviewed rules.",
+    "Unknown or conflicting facts require human review.",
+    "No implementation outside the stated stage."
+  ],
+  "jurisdiction": "HU",
+  "outcome_scope": "Hungarian invoice implementation only",
+  "research_hash": "60b8a04622effe249947ac8fb873e9f08817b18dbe847fab55201dd1ec23cc1b",
+  "research_id": "research-4f02d5661e1790d85b50",
+  "rule_version_id": "hu-invoice-cross-border-service@1",
+  "scope": "Hungarian invoice implementation for cross-border service",
+  "status": "BLOCKED"
+}

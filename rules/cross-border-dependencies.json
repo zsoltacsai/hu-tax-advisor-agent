@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "description": "Cross-border dependency DAG; EU eligibility and national implementation are separate stages.",
+  "stages": {
+    "place_of_supply": {"depends_on": ["transaction_date", "customer_establishment", "service_classification"]},
+    "article_196_eligibility": {"depends_on": ["place_of_supply", "customer_taxable_person_status", "supplier_destination_establishment", "service_classification", "special_rule_screen"]},
+    "destination_reverse_charge": {"depends_on": ["article_196_eligibility", "destination_country_pack", "destination_taxability"]},
+    "supplier_vat_charging": {"depends_on": ["place_of_supply", "hu_territorial_scope_rule"]},
+    "invoice_jurisdiction": {"depends_on": ["article_219a", "destination_reverse_charge", "supplier_establishment", "self_billing"]},
+    "invoice_metadata": {"depends_on": ["invoice_jurisdiction", "article_222", "article_226", "article_226a", "hu_invoice_law"]},
+    "eu_recap_reporting": {"depends_on": ["destination_reverse_charge", "customer_vat_id", "destination_exemption", "article_262"]},
+    "a60_reporting": {"depends_on": ["eu_recap_reporting", "hu_filing_status", "a60_form_version"]},
+    "aam_effect": {"depends_on": ["taxpayer_aam_status", "hu_cross_border_aam_rule"]},
+    "tax_point": {"depends_on": ["chargeable_event_facts", "tax_point_law"]}
+  }
+}
