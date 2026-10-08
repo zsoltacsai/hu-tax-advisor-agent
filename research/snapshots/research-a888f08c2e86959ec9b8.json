@@ -1,0 +1,262 @@
+{
+  "as_of_date": "2026-10-08",
+  "candidate_conclusion": "BLOCKED: source evidence establishes legal questions and conditional provisions, not an exception-complete executable outcome.",
+  "confidence": "low",
+  "confidence_basis": [
+    "Official EUR-Lex, NJT and NAV sources were accessed on 2026-10-08.",
+    "Consolidated dates, statutory effective dates and transaction applicability are distinct.",
+    "No complete fact evaluator or qualified human review is present."
+  ],
+  "conflicting_sources": [],
+  "court_sources": [],
+  "exceptions_modeled": [
+    "Supplier and recipient fixed establishments",
+    "customer taxable-person status distinct from VAT-ID status",
+    "special service categories and exemptions",
+    "AAM/SME and registration effects",
+    "tax point, amendments and corrections",
+    "destination Member-State implementation",
+    "reporting period and taxpayer filing scope"
+  ],
+  "facts": {
+    "candidate_ids": [
+      "candidate-phase5-rc",
+      "candidate-phase5-invoice-eu",
+      "candidate-phase5-invoice-hu",
+      "candidate-phase5-recap",
+      "candidate-phase5-a60"
+    ],
+    "no_tax_conclusion": true,
+    "synthetic_only": true
+  },
+  "facts_required": [
+    "exact taxable-person status, not just claimed label",
+    "supplier and customer establishments and relevant fixed-establishment intervention",
+    "actual service classification and special-rule screening",
+    "transaction tax point",
+    "applicable destination-state implementation",
+    "supplier/customer VAT IDs and verification state",
+    "taxpayer registration, exemption/AAM/SME facts",
+    "reporting period and correction facts"
+  ],
+  "human_review_required": true,
+  "interpretation": "Official EU VAT Directive text sets conditional rules for recipient liability, invoice jurisdiction and recapitulative reporting. Hungarian statute and NAV guidance provide related but distinct national context. Article 44/place-of-supply alone does not establish reverse charge, invoice treatment or reporting obligation. No conclusion is enabled by this snapshot.",
+  "jurisdiction": [
+    "HU",
+    "EU"
+  ],
+  "official_guidance": [
+    "hu-nav-2026-community-transactions-guidance",
+    "hu-nav-26a60-2026-filing-guidance"
+  ],
+  "primary_sources": [
+    "eu-vat-directive-2025-04-operational",
+    "hu-vat-act-njt-consolidation-2025-12-20"
+  ],
+  "question": "Phase 5.5 fresh authoritative re-review of Phase 5 reverse charge, invoice, recapitulative statement, and A60 candidate family; identify supported source text and unresolved conditions without deciding tax outcomes.",
+  "relevant_provisions": [
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "Article 192a",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Supplier fixed-establishment treatment is conditional.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "Article 196",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Recipient-liability rule has stated supplier and recipient conditions.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "Article 219a",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Invoice jurisdiction depends on facts and applicable liability conditions.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "Article 226(11a)",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Reverse-charge invoice indication provision; transaction date matters.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "Article 262(1)(c)",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Recap scope includes specified non-exempt services for which recipient is liable under Article 196.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "Article 263",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Reporting period and national options must be checked.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "Article 264",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Recap statement data items.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "37",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "summary": "HU domestic general place-of-supply provision.",
+      "verified": true,
+      "version_date": "2025-12-20"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "140",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "summary": "HU domestic recipient tax-liability provision; not a destination-state conclusion.",
+      "verified": true,
+      "version_date": "2025-12-20"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "159",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "summary": "HU invoice obligation provision; exceptions/applicability need review.",
+      "verified": true,
+      "version_date": "2025-12-20"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "169",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "summary": "HU invoice content provision; no invoice conclusion.",
+      "verified": true,
+      "version_date": "2025-12-20"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08; this note does not establish transaction-specific applicability or provision effective date.",
+      "provision": "26A60 03",
+      "source_id": "hu-nav-26a60-2026-filing-guidance",
+      "summary": "NAV 2026 service-supply form page/instructions; not independent proof of filing duty.",
+      "verified": true,
+      "version_date": "2026-09-02"
+    }
+  ],
+  "research_id": "research-a888f08c2e86959ec9b8",
+  "secondary_sources": [],
+  "snapshot_hash": "007066b57a1db2e491b334073f93e36b6ea338ef4d628572c01157d8e9081f1e",
+  "snapshot_schema_version": "1.3.0",
+  "sources_considered": [
+    {
+      "authority_level": "primary",
+      "effective_from": "2007-01-01",
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "publication_date": "2006-11-28",
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "source_type": "eu_legislation",
+      "title": "Council Directive 2006/112/EC consolidated text — 2025-04-14 version, operational provisions",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-04-14"
+    },
+    {
+      "authority_level": "primary",
+      "effective_from": null,
+      "effective_to": null,
+      "official_url": "https://njt.hu/jogszabaly/2007-127-00-00.100",
+      "publication_date": "2007-11-16",
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "source_type": "primary_legislation",
+      "title": "2007. évi CXXVII. törvény az általános forgalmi adóról — NJT consolidated text shown 2025-12-20",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-12-20"
+    },
+    {
+      "authority_level": "official_guidance",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "official_url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026",
+      "publication_date": "2026-01-26",
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-nav-2026-community-transactions-guidance",
+      "source_type": "nav_guidance",
+      "title": "29. információs füzet — Az általános szabályok szerint adózó áfaalanyok közösségi ügyletei (2026)",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2026-01-26"
+    },
+    {
+      "authority_level": "official_guidance",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "official_url": "https://nav.gov.hu/print/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/26A60",
+      "publication_date": "2026-04-29",
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-nav-26a60-2026-filing-guidance",
+      "source_type": "nav_guidance",
+      "title": "26A60 form and 2026 completion guidance",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2026-09-02"
+    }
+  ],
+  "topics": [
+    "reverse_charge",
+    "invoice_treatment",
+    "eu_recap_reporting",
+    "a60_reporting"
+  ],
+  "transaction_date": "2026-10-08",
+  "uncertainties": [
+    "Destination Member State implementation and transaction applicability not verified.",
+    "Taxpayer AAM/SME, exemption and registration effects unresolved.",
+    "Tax point, corrections, invoice jurisdiction and reporting period need review.",
+    "Later amendments and national transposition require date-specific verification."
+  ]
+}

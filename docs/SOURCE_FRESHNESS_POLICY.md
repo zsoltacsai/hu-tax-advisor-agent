@@ -15,3 +15,5 @@ Provider documentation is version-dependent and must be checked before describin
 No VIES lookup or provider API connection is performed. Phase 3 makes no live verification claims.
 
 Phase 5 notes: the NJT Hungary VAT Act page was fetched directly on 2026-10-08 (HTTP 200; page version header 2025-12-20) and NAV A60 form/page and 2026 instructions were accessed the same date. These records do not certify transaction applicability or future freshness. Recheck NAV form/guidance before current reporting reliance. EU consolidated texts are date-pinned and later amendments must be checked.
+
+Never describe cached material as currently verified solely because its URL was once checked. Verify the precise text/version and effective date before relying on mutable rules. The 2025-04-14 VAT Directive consolidation is a pinned text; authentic later amendments and their staged dates still require checking. The NJT 2025-12-20 consolidation label is not an effective-from date for every provision. NAV forms and procedural guidance require the relevant annual/current version. VIES status is live verification only.

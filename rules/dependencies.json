@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "description": "Explicit, acyclic prerequisites for downstream stages. Edges describe data/legal-stage prerequisites, not a tax decision.",
+  "stages": {
+    "place_of_supply": {"depends_on": ["tax_point", "customer_country", "customer_status", "service_classification", "establishment_facts"]},
+    "vat_jurisdiction": {"depends_on": ["place_of_supply"]},
+    "supplier_vat_charging": {"depends_on": ["place_of_supply", "taxpayer_vat_status", "supply_taxability"]},
+    "reverse_charge": {"depends_on": ["place_of_supply", "customer_status", "service_classification", "supplier_establishment_facts", "recipient_establishment_facts", "destination_member_state_rule"]},
+    "invoice_treatment": {"depends_on": ["supplier_vat_charging", "reverse_charge", "invoice_jurisdiction_and_tax_point"]},
+    "eu_recap_reporting": {"depends_on": ["place_of_supply", "reverse_charge", "customer_vat_id", "supplier_reporting_status", "reporting_period"]},
+    "a60_reporting": {"depends_on": ["eu_recap_reporting", "hungarian_registration_and_form_scope", "reporting_period"]},
+    "aam": {"depends_on": ["taxpayer_vat_status", "tax_year_turnover", "election_and_eligibility_facts"]}
+  }
+}

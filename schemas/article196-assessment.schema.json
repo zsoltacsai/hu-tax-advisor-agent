@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "article196-assessment.schema.json",
+  "title": "Article 196 fact and assessment envelope (non-executable)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["assessment_id", "transaction_date", "facts", "outcome", "uncertainties", "human_review_required"],
+  "properties": {
+    "assessment_id": {"type": "string", "minLength": 1},
+    "transaction_date": {"type": "string", "format": "date"},
+    "facts": {"type": "object", "additionalProperties": false,
+      "required": ["supplier_establishment", "supplier_fixed_establishment", "customer_taxable_person_status", "customer_establishment", "customer_receiving_fixed_establishment", "customer_vat_id", "service_classification", "place_of_supply_rule"],
+      "properties": {
+        "supplier_establishment": {"$ref": "#/$defs/fact"},
+        "supplier_fixed_establishment": {"$ref": "#/$defs/fact"},
+        "customer_taxable_person_status": {"$ref": "#/$defs/fact"},
+        "customer_establishment": {"$ref": "#/$defs/fact"},
+        "customer_receiving_fixed_establishment": {"$ref": "#/$defs/fact"},
+        "customer_vat_id": {"$ref": "#/$defs/fact"},
+        "service_classification": {"$ref": "#/$defs/fact"},
+        "place_of_supply_rule": {"$ref": "#/$defs/fact"}
+      }},
+    "outcome": {"enum": ["NOT_ASSESSED", "APPLIES", "DOES_NOT_APPLY", "CANNOT_DETERMINE", "REQUIRES_HUMAN_REVIEW"]},
+    "uncertainties": {"type": "array", "uniqueItems": true, "items": {"enum": ["MISSING_FACT", "SOURCE_NOT_VERIFIED", "LEGAL_INTERPRETATION", "CONFLICTING_SOURCES", "PROVIDER_BEHAVIOR_UNKNOWN", "LIVE_VERIFICATION_REQUIRED", "HUMAN_ACCOUNTANT_DECISION"]}},
+    "human_review_required": {"type": "boolean"},
+    "evidence": {"type": "array", "items": {"$ref": "evidence.schema.json"}},
+    "notes": {"type": "string"}
+  },
+  "$defs": {"fact": {"type": "object", "additionalProperties": false, "required": ["state", "value", "evidence_ids"], "properties": {
+    "state": {"enum": ["KNOWN", "UNKNOWN", "CONFLICTING", "NOT_APPLICABLE"]},
+    "value": {}, "evidence_ids": {"type": "array", "items": {"type": "string"}}, "verification_state": {"enum": ["VERIFIED", "UNVERIFIED", "NOT_PROVIDED", "NOT_APPLICABLE"]}
+  }}}
+}

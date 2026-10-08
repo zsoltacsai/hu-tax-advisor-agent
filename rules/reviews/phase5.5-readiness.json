@@ -1,0 +1,148 @@
+{
+  "phase": "5.5",
+  "as_of_date": "2026-10-08",
+  "research_id": "research-a888f08c2e86959ec9b8",
+  "snapshot_hash": "007066b57a1db2e491b334073f93e36b6ea338ef4d628572c01157d8e9081f1e",
+  "reviewer_type": "structured coding-agent review; not independent legal review",
+  "candidate_assessments": [
+    {
+      "candidate_id": "candidate-phase5-rc",
+      "candidate_version": "eu-vat-reverse-charge-article-196-general-b2b@1",
+      "candidate_hash": "eb6894ff7e2b38af793b99a204b8005a27a205c862024ad1afde748a09d4a5a3",
+      "research_id": "research-c59256b4c02e5b85a8c0",
+      "snapshot_hash": "f2230eb2496f74287b4b76674d50c0643954379c9564d021bfddcc86d9b2dc4f",
+      "status": "BLOCKED",
+      "reviewed_at": "2026-10-08",
+      "checklist": {
+        "source_authority": "PASS_WITH_LIMITS",
+        "source_version": "PASS_WITH_LIMITS",
+        "effective_date": "BLOCKED",
+        "conditions_and_facts": "BLOCKED",
+        "legal_exceptions": "BLOCKED",
+        "fixed_establishment": "BLOCKED",
+        "dependency": "BLOCKED",
+        "outcome_scope": "PASS_NO_OUTCOME_ENABLED",
+        "evidence": "PASS_WITH_LIMITS",
+        "human_review": "REQUIRED"
+      },
+      "blockers": [
+        "Destination-state Article 196 implementation and customer taxable-person status not determined.",
+        "Supplier establishment/FE intervention, exceptions and AAM/SME interaction not fully modeled.",
+        "Qualified human tax-adviser review is not present."
+      ]
+    },
+    {
+      "candidate_id": "candidate-phase5-invoice-eu",
+      "candidate_version": "eu-invoice-reverse-charge-metadata@1",
+      "candidate_hash": "d64f8e81f8f9d4740b19a69a65d69e6b1783920ef97dd84c1bf80435e94e6354",
+      "research_id": "research-a888f08c2e86959ec9b8",
+      "snapshot_hash": "007066b57a1db2e491b334073f93e36b6ea338ef4d628572c01157d8e9081f1e",
+      "status": "BLOCKED",
+      "reviewed_at": "2026-10-08",
+      "checklist": {
+        "source_authority": "PASS_WITH_LIMITS",
+        "source_version": "PASS_WITH_LIMITS",
+        "effective_date": "BLOCKED",
+        "conditions_and_facts": "BLOCKED",
+        "legal_exceptions": "BLOCKED",
+        "fixed_establishment": "BLOCKED",
+        "dependency": "BLOCKED",
+        "outcome_scope": "PASS_NO_OUTCOME_ENABLED",
+        "evidence": "PASS_WITH_LIMITS",
+        "human_review": "REQUIRED"
+      },
+      "blockers": [
+        "Article 219a invoice jurisdiction and national implementation unresolved.",
+        "Invoice duty/content exceptions and 2025/516 staged changes need date-specific review.",
+        "Qualified human tax-adviser review is not present."
+      ]
+    },
+    {
+      "candidate_id": "candidate-phase5-invoice-hu",
+      "candidate_version": "hu-invoice-reverse-charge-support@1",
+      "candidate_hash": "402553d67f0e6414903c2679d8f2caddec0925a53cfaa29dc4b4095ea96e32b3",
+      "research_id": "research-a888f08c2e86959ec9b8",
+      "snapshot_hash": "007066b57a1db2e491b334073f93e36b6ea338ef4d628572c01157d8e9081f1e",
+      "status": "BLOCKED",
+      "reviewed_at": "2026-10-08",
+      "checklist": {
+        "source_authority": "PASS_WITH_LIMITS",
+        "source_version": "PASS_WITH_LIMITS",
+        "effective_date": "BLOCKED",
+        "conditions_and_facts": "BLOCKED",
+        "legal_exceptions": "BLOCKED",
+        "fixed_establishment": "BLOCKED",
+        "dependency": "BLOCKED",
+        "outcome_scope": "PASS_NO_OUTCOME_ENABLED",
+        "evidence": "PASS_WITH_LIMITS",
+        "human_review": "REQUIRED"
+      },
+      "blockers": [
+        "Exact HU invoice duty/content applicability, exceptions and cross-border jurisdiction unresolved.",
+        "The NJT consolidation date is not a global commencement date for cited provisions.",
+        "Qualified human tax-adviser review is not present."
+      ]
+    },
+    {
+      "candidate_id": "candidate-phase5-recap",
+      "candidate_version": "eu-recap-services-reporting-candidate@1",
+      "candidate_hash": "7198e0c2d7ce7db358499f8563a156c95a67ecd17bd80130e3858b46e91c3595",
+      "research_id": "research-a888f08c2e86959ec9b8",
+      "snapshot_hash": "007066b57a1db2e491b334073f93e36b6ea338ef4d628572c01157d8e9081f1e",
+      "status": "BLOCKED",
+      "reviewed_at": "2026-10-08",
+      "checklist": {
+        "source_authority": "PASS_WITH_LIMITS",
+        "source_version": "PASS_WITH_LIMITS",
+        "effective_date": "BLOCKED",
+        "conditions_and_facts": "BLOCKED",
+        "legal_exceptions": "BLOCKED",
+        "fixed_establishment": "BLOCKED",
+        "dependency": "BLOCKED",
+        "outcome_scope": "PASS_NO_OUTCOME_ENABLED",
+        "evidence": "PASS_WITH_LIMITS",
+        "human_review": "REQUIRED"
+      },
+      "blockers": [
+        "Article 262 prerequisites include non-exemption and Article 196 liability; not established by Article 44 alone.",
+        "National reporting period/options, supplier VAT identification and corrections not fully modeled.",
+        "Qualified human tax-adviser review is not present."
+      ]
+    },
+    {
+      "candidate_id": "candidate-phase5-a60",
+      "candidate_version": "hu-a60-services-reporting-candidate@1",
+      "candidate_hash": "2d3c497a54395be752c0ed6ec93e70bfeb75c5b92776949a2178c9be6613091f",
+      "research_id": "research-a888f08c2e86959ec9b8",
+      "snapshot_hash": "007066b57a1db2e491b334073f93e36b6ea338ef4d628572c01157d8e9081f1e",
+      "status": "BLOCKED",
+      "reviewed_at": "2026-10-08",
+      "checklist": {
+        "source_authority": "PASS_WITH_LIMITS",
+        "source_version": "PASS_WITH_LIMITS",
+        "effective_date": "BLOCKED",
+        "conditions_and_facts": "BLOCKED",
+        "legal_exceptions": "BLOCKED",
+        "fixed_establishment": "BLOCKED",
+        "dependency": "BLOCKED",
+        "outcome_scope": "PASS_NO_OUTCOME_ENABLED",
+        "evidence": "PASS_WITH_LIMITS",
+        "human_review": "REQUIRED"
+      },
+      "blockers": [
+        "NAV form guidance does not itself prove each taxpayer filing duty.",
+        "Hungarian statutory basis, taxpayer-specific AAM/SME effects and filing eligibility not fully verified.",
+        "Qualified human tax-adviser review is not present."
+      ]
+    }
+  ],
+  "ready_candidates": [],
+  "priority_order": [
+    "candidate-phase5-rc",
+    "candidate-phase5-invoice-eu",
+    "candidate-phase5-invoice-hu",
+    "candidate-phase5-recap",
+    "candidate-phase5-a60"
+  ],
+  "human_approval_prompt_required": false
+}

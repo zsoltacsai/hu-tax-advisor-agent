@@ -75,7 +75,8 @@ if src_registry is not None:
       "review-escalation":"review-escalation.schema.json","evidence":"evidence.schema.json",
       "decision-provenance":"decision-provenance.schema.json","mcp-request":"mcp-request.schema.json",
       "mcp-response":"mcp-response.schema.json","rule-version":"rule-version.schema.json",
-      "vat-operational-stages":"vat-operational-stages.schema.json"}
+      "vat-operational-stages":"vat-operational-stages.schema.json",
+      "article196-assessment":"article196-assessment.schema.json"}
     for path in sorted((ROOT/"fixtures/contracts").glob("*.json")):
         obj=load(path)
         if obj is not None:
@@ -93,7 +94,7 @@ if src_registry is not None:
 
     # Validate the isolated lifecycle stores, evidence links, snapshots, and executable approved rules.
     from src.tax_engine import TaxEngine
-    from src.research_pipeline.workflow import ResearchPipeline
+    from src.research_pipeline.workflow import ResearchPipeline, digest
     pipeline=ResearchPipeline(ROOT)
     thresholds=load(ROOT/"rules/thresholds.json")
     if thresholds is not None:
@@ -121,9 +122,17 @@ if src_registry is not None:
     for path in sorted((ROOT/"rules/reviews").glob("*.json")):
         obj=load(path)
         if obj is not None:
-            validate(obj,"rule-review.schema.json",str(path.relative_to(ROOT)))
-            if obj.get("candidate_id") not in candidate_ids: errors.append(f"review has broken candidate reference: {path.name}")
-            if not (ROOT/"research/snapshots"/(obj.get("research_id","")+".json")).exists(): errors.append(f"review has broken research reference: {path.name}")
+            if path.name=="phase5.5-readiness.json":
+                validate(obj,"phase5-readiness.schema.json",str(path.relative_to(ROOT)))
+                if not (ROOT/"research/snapshots"/(obj.get("research_id","")+".json")).exists(): errors.append("Phase 5.5 readiness has broken research reference")
+                for assessment in obj.get("candidate_assessments",[]):
+                    candidate=load(ROOT/"rules/proposed"/(assessment.get("candidate_id","")+".json"))
+                    if candidate is None or digest(candidate)!=assessment.get("candidate_hash"): errors.append("Phase 5.5 readiness candidate hash/reference mismatch")
+                    if assessment.get("status")=="READY_FOR_HUMAN_REVIEW" and assessment.get("blockers"): errors.append("readiness marked ready with blockers")
+            else:
+                validate(obj,"rule-review.schema.json",str(path.relative_to(ROOT)))
+                if obj.get("candidate_id") not in candidate_ids: errors.append(f"review has broken candidate reference: {path.name}")
+                if not (ROOT/"research/snapshots"/(obj.get("research_id","")+".json")).exists(): errors.append(f"review has broken research reference: {path.name}")
     for path in sorted((ROOT/"rules/approved").glob("*.json")):
         obj=load(path)
         if obj is not None:
@@ -191,6 +200,12 @@ if src_registry and src_registry.get("sources"):
     else: counts["negative_probes"]+=1
 
 scenario_count=len(list((ROOT/"fixtures/scenarios").glob("*.json")))
+try:
+    from src.tax_engine.dependencies import load_dependencies
+    dependency_graph=load_dependencies(ROOT/"rules/dependencies.json")
+    print(f"Dependency graph valid and acyclic: {len(dependency_graph)} stages")
+except Exception as exc:
+    errors.append(f"dependency graph invalid: {exc}")
 print(f"Schema files valid: {counts['schema_files']}")
 print(f"Registry entries: {len(src_registry.get('sources',[])) if src_registry else 0}")
 if src_registry:

@@ -681,6 +681,40 @@
         "Article 264"
       ],
       "notes": "Official EUR-Lex consolidated text accessed in English/other official language indexes on 2026-10-08. The authenticated amending acts and transaction-date consolidation govern. Directive 2025/516 has future phased amendments; check temporal applicability before use."
+    },
+    {
+      "id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "jurisdiction": "HU",
+      "authority": "Hungarian Parliament / Nemzeti Jogszabálytár",
+      "source_type": "primary_legislation",
+      "title": "2007. évi CXXVII. törvény az általános forgalmi adóról — NJT consolidated text shown 2025-12-20",
+      "official_url": "https://njt.hu/jogszabaly/2007-127-00-00.100",
+      "effective_from": null,
+      "effective_to": null,
+      "publication_date": "2007-11-16",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2025-12-20",
+      "topics": [
+        "VAT",
+        "reverse_charge",
+        "invoicing",
+        "place_of_supply"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": false,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "37. § (1)",
+        "140. §",
+        "159. § (2) c)",
+        "169. § n)"
+      ],
+      "notes": "Direct official NJT full-text page accessed 2026-10-08; page header showed consolidated text date 2025-12-20. That consolidation date is not a global effective-from date for every provision. No transaction-specific applicability conclusion is encoded."
     }
   ]
 }

@@ -153,7 +153,8 @@ class ResearchPipeline:
         primary=set(item.get("primary_sources",[]))
         verified=any(source_by_id.get(s,{}).get("content_verified") and source_by_id.get(s,{}).get("effective_date_verified") for s in primary)
         provision=any(x.get("verified") for x in item.get("relevant_provisions",[]))
-        if verified and provision and not item.get("conflicting_sources") and not item.get("uncertainties"): return "medium"
+        exceptions=bool(item.get("exceptions_modeled"))
+        if verified and provision and exceptions and not item.get("conflicting_sources") and not item.get("uncertainties"): return "medium"
         return "low"
 
     def read_snapshot(self,research_id):

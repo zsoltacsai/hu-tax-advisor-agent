@@ -1,0 +1,156 @@
+{
+  "as_of_date": "2026-10-08",
+  "candidate_conclusion": "BLOCKED: current source evidence does not support executable downstream tax or filing advice.",
+  "confidence": "low",
+  "confidence_basis": [
+    "Official texts/pages accessed; source versions recorded.",
+    "Consolidated text is not equivalent to transaction-date applicability.",
+    "No exception-complete rule model or qualified human review."
+  ],
+  "conflicting_sources": [],
+  "court_sources": [],
+  "exceptions_modeled": [
+    "Supplier/recipient fixed establishments",
+    "customer status and VAT-ID evidence",
+    "special service/exemption",
+    "AAM/SME and reporting status",
+    "tax point, amendments and corrections",
+    "destination-state implementation"
+  ],
+  "facts": {
+    "candidate_id": "candidate-phase5-rc",
+    "no_tax_conclusion": true,
+    "synthetic_only": true
+  },
+  "facts_required": [
+    "exact taxable-person status",
+    "supplier/recipient establishments and FE intervention",
+    "service classification",
+    "tax point",
+    "applicable national implementation",
+    "taxpayer registration and reporting period"
+  ],
+  "human_review_required": true,
+  "interpretation": "Accessed sources provide conditional legal frameworks and administrative form guidance. They do not establish the candidate operational outcome across all relevant facts and national rules. No conclusion is enabled.",
+  "jurisdiction": [
+    "HU",
+    "EU"
+  ],
+  "official_guidance": [
+    "hu-nav-2026-community-transactions-guidance"
+  ],
+  "primary_sources": [
+    "eu-vat-directive-2025-04-operational",
+    "hu-vat-act-njt-consolidation-2025-12-20"
+  ],
+  "question": "Phase 5.5 fresh re-review of eu-vat-reverse-charge-article-196-general-b2b@1; record legal/fact blockers without deciding tax treatment.",
+  "relevant_provisions": [
+    {
+      "applicability_notes": "Official content accessed 2026-10-08. This source version does not determine transaction-specific applicability/effective date.",
+      "provision": "Article 192a",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Fixed-establishment supplier rule",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08. This source version does not determine transaction-specific applicability/effective date.",
+      "provision": "Article 196",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Conditional EU recipient-liability provision",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Official content accessed 2026-10-08. This source version does not determine transaction-specific applicability/effective date.",
+      "provision": "140",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "summary": "HU domestic recipient-liability provision; does not establish destination-state result",
+      "verified": true,
+      "version_date": "2025-12-20"
+    }
+  ],
+  "research_id": "research-c59256b4c02e5b85a8c0",
+  "secondary_sources": [],
+  "snapshot_hash": "f2230eb2496f74287b4b76674d50c0643954379c9564d021bfddcc86d9b2dc4f",
+  "snapshot_schema_version": "1.3.0",
+  "sources_considered": [
+    {
+      "authority_level": "primary",
+      "effective_from": "2007-01-01",
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "publication_date": "2006-11-28",
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "source_type": "eu_legislation",
+      "title": "Council Directive 2006/112/EC consolidated text — 2025-04-14 version, operational provisions",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-04-14"
+    },
+    {
+      "authority_level": "primary",
+      "effective_from": null,
+      "effective_to": null,
+      "official_url": "https://njt.hu/jogszabaly/2007-127-00-00.100",
+      "publication_date": "2007-11-16",
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-vat-act-njt-consolidation-2025-12-20",
+      "source_type": "primary_legislation",
+      "title": "2007. évi CXXVII. törvény az általános forgalmi adóról — NJT consolidated text shown 2025-12-20",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-12-20"
+    },
+    {
+      "authority_level": "official_guidance",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "official_url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026",
+      "publication_date": "2026-01-26",
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-nav-2026-community-transactions-guidance",
+      "source_type": "nav_guidance",
+      "title": "29. információs füzet — Az általános szabályok szerint adózó áfaalanyok közösségi ügyletei (2026)",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2026-01-26"
+    }
+  ],
+  "topics": [
+    "eu-vat-services-b2b-general",
+    "reverse_charge"
+  ],
+  "transaction_date": "2026-10-08",
+  "uncertainties": [
+    "Destination Member State implementation and applicability not verified per transaction.",
+    "Taxpayer AAM/SME status and effect unresolved.",
+    "Tax point, exemption, liability, invoice, and reporting period facts need review.",
+    "Future amendments and national transposition require date-specific review."
+  ]
+}

@@ -47,3 +47,7 @@ Submit/review/propose/approve commands are available through `python scripts/res
 ## Limitations
 
 There is no LLM integration, autonomous source retrieval, identity provider, accountant approval, or production integration. Research is a curated snapshot, not a comprehensive legal search or legal opinion. No source is automatically marked current; a human must record checks. The approval actor label is not authentication. Source freshness windows are policy defaults requiring governance review. Article 44/45 exceptions and all downstream tax issues remain incompletely analyzed. Never use partial output as an operational tax instruction.
+
+## Phase 5.5 status
+
+Phase 5.5 adds a fresh source-pinned operational-candidate research snapshot, a separate machine-readable readiness assessment, a non-executable Article 196 fact envelope, and an acyclic downstream dependency graph. All five Phase 5 operational candidates remain `BLOCKED`; no approval prompt is eligible. The VAT-ID fixture keeps verified VAT-ID state separate from customer taxable-person status. See [docs/PHASE5_5_REVIEW.md](docs/PHASE5_5_REVIEW.md) and [docs/PHASE5_5_DEPENDENCIES.md](docs/PHASE5_5_DEPENDENCIES.md).
