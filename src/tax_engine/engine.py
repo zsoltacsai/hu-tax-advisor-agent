@@ -65,7 +65,8 @@ class TaxEngine:
         status_reason=("Claimed customer type conflicts with reviewed status evidence." if status=="CONFLICT" else
                        None if status_stage=="determined" else "Claimed business/consumer label is not proof of customer status.")
         stages.append(_stage("customer_status",status_stage,{"claimed":claimed,"normalized":status,
-           "business_status":f["customer"].get("business_status"),"evidence":f["customer"].get("business_status_evidence",[])},
+           "business_status":f["customer"].get("business_status"),"evidence":f["customer"].get("business_status_evidence",[]),
+           "vat_id_evidence_status":f["customer"].get("vat_id_evidence_status","NOT_PROVIDED")},
            confidence="high" if status_stage=="determined" else "low",reason=status_reason))
         if status=="CONFLICT": questions.append("Resolve contradictory claimed and evidenced customer status.")
         elif status=="UNKNOWN": questions.append("Verify whether the customer is a taxable person acting as such or a consumer.")
@@ -143,12 +144,31 @@ class TaxEngine:
                 else:
                     overall="UNSUPPORTED_SCENARIO"; place_status="unsupported"; reason="No reviewed executable rule matches this scenario."
                 stages.append(_stage("place_of_supply",place_status,None,confidence="low",reason=reason))
+        place_stage=next((s for s in stages if s["stage"]=="place_of_supply"),None)
+        if place_stage and place_stage["status"]=="determined":
+            stages.append(_stage("vat_jurisdiction","partial",{
+                "place_of_supply_country":place_stage["value"]["country"],
+                "taxability_and_exemption":"not_assessed"},
+                rule_id=place_stage["rule_id"],evidence=place_stage["evidence"],confidence="medium",
+                reason="Carries the determined place-of-supply country only; it does not determine taxability, exemption, or supplier charging."))
+        else:
+            stages.append(_stage("vat_jurisdiction","not_assessed",None,confidence="low",
+                reason="No determined place-of-supply result is available to carry forward."))
         stages.append(_stage("vat_treatment","not_assessed",{"reported_aam":f["aam_status_reported"],"result":"not_determined"},
-             confidence="low",reason="Supplier VAT charging/exemption treatment is intentionally outside Phase 3 rule scope."))
+             confidence="low",reason="Supplier VAT charging/exemption treatment is not assessed."))
+        stages.append(_stage("supplier_vat_charging","not_assessed",{"result":"not_determined"},confidence="low",
+             reason="No approved Phase 5 supplier-charging rule exists; AAM/SME and exemption status are not inferred."))
         stages.append(_stage("reverse_charge","not_assessed",{"result":"not_determined"},confidence="low",
-             reason="Article 196/recipient liability and supplier establishment facts are not fully evaluated."))
+             reason="Article 196 conditions are not executed; no approved Phase 5 rule exists."))
         stages.append(_stage("invoice_reporting","not_assessed",{"invoice_requirements":[],"reporting_requirements":[]},
-             confidence="low",reason="Invoice wording, reporting, OSS and provider behavior are not implemented."))
+             confidence="low",reason="Legacy combined placeholder retained for compatibility; invoice and reporting are separately exposed as not assessed."))
+        stages.append(_stage("invoice_treatment","not_assessed",{"metadata":{},"wording":"NOT_IMPLEMENTED"},
+             confidence="low",reason="No approved invoice metadata rule exists; no mandatory wording is generated."))
+        stages.append(_stage("eu_recap_reporting","not_assessed",{"assessment":"NOT_ASSESSED"},
+             confidence="low",reason="Article 44 alone does not establish a recapitulative statement duty; no approved reporting rule exists."))
+        stages.append(_stage("aam","not_assessed",{"taxpayer_vat_status":f["aam_status_reported"],
+            "aam_eligibility_status":"NOT_ASSESSED","aam_effect_on_transaction":"NOT_ASSESSED"},
+             confidence="low",reason="AAM eligibility and transaction effect are not assessed; AAM is not treated as a universal exemption."))
         if overall=="PARTIALLY_DETERMINED":
             questions.extend(["Confirm AAM/SME status and supplier VAT charging treatment.",
                               "Review any reverse-charge, invoicing, reporting, and tax-point implications."])

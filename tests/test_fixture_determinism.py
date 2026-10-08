@@ -14,6 +14,6 @@ class FixtureDeterminismTests(unittest.TestCase):
         subprocess.run(command,cwd=ROOT,check=True,capture_output=True,text=True)
         second={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
         self.assertEqual(first,second)
-        self.assertEqual(len(paths),17)
+        self.assertEqual(len(paths),23)
 
 if __name__=="__main__": unittest.main()

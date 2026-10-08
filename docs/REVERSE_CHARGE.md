@@ -1,0 +1,5 @@
+# Reverse-charge assessment (Phase 5)
+
+The Article 196 research snapshot separates the upstream Article 44 place-of-supply result from recipient liability. Article 196 covers Article 44 services supplied by a taxable person not established in the taxing Member State to a taxable person, or VAT-identified non-taxable legal person, under the Directive conditions. Supplier establishments and Article 192a intervention are fact-sensitive. Hungarian Áfa tv. §140 is separately recorded as the domestic recipient-liability implementation support.
+
+The candidate `eu-vat-reverse-charge-article-196-general-b2b@1` is `PROPOSED`, reviewed as `NEEDS_CHANGES`, and not executable. No VAT-ID live check is performed. Synthetic-valid fixture status is test-only; future execution needs reviewed business-capacity, VAT-ID, place-of-supply, establishment, service classification, exemptions and special-rule conditions. Article 44 alone never proves reverse charge. No reverse-charge decision is currently emitted.

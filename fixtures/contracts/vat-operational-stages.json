@@ -1,0 +1,56 @@
+{
+  "vat_jurisdiction": {
+    "status": "partial",
+    "value": {
+      "place_of_supply_country": "DE",
+      "taxability_and_exemption": "not_assessed"
+    },
+    "rule_id": "eu-vat-services-b2b-general@1",
+    "evidence": [],
+    "assumptions": [],
+    "reason": "Synthetic example carries place of supply only."
+  },
+  "supplier_vat_charging": {
+    "status": "not_assessed",
+    "value": null,
+    "rule_id": null,
+    "evidence": [],
+    "assumptions": [],
+    "reason": "No approved Phase 5 rule."
+  },
+  "reverse_charge": {
+    "status": "not_assessed",
+    "value": null,
+    "rule_id": null,
+    "evidence": [],
+    "assumptions": [],
+    "reason": "No approved Phase 5 rule."
+  },
+  "invoice_treatment": {
+    "status": "not_assessed",
+    "value": null,
+    "rule_id": null,
+    "evidence": [],
+    "assumptions": [],
+    "reason": "No approved Phase 5 rule."
+  },
+  "eu_recap_reporting": {
+    "status": "not_assessed",
+    "value": null,
+    "rule_id": null,
+    "evidence": [],
+    "assumptions": [],
+    "reason": "Article 44 does not suffice."
+  },
+  "aam": {
+    "status": "not_assessed",
+    "value": {
+      "aam_eligibility_status": "NOT_ASSESSED",
+      "aam_effect_on_transaction": "NOT_ASSESSED"
+    },
+    "rule_id": null,
+    "evidence": [],
+    "assumptions": [],
+    "reason": "AAM is not a universal exemption."
+  }
+}

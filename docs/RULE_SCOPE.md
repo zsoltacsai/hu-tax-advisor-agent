@@ -19,3 +19,7 @@
 
 ## REQUIRES HUMAN REVIEW
 - All final VAT charging/invoice/reporting outcomes; uncertain classification/status/location/tax point; AAM eligibility or threshold boundary; special-rule exceptions; conflicting sources/rules; any non-EU local consequence. Every Phase 3 overall result is conservative and may remain partial or unresolved.
+
+## Phase 5 boundary
+
+Five researched operational candidates now cover reverse charge, EU/HU invoice metadata, EU recapitulative statements and Hungarian A60 reporting. Their statuses are `PROPOSED` and AI review `NEEDS_CHANGES`; none is executable. The engine carries place-of-supply country only into a partial jurisdiction stage and leaves charging, reverse charge, invoices, reporting and AAM effects not assessed. No WP CareGrid classification, external integration, OSS, rates, refunds or tax-point logic was added.

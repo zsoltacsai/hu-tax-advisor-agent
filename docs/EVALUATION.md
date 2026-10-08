@@ -16,7 +16,11 @@ The validator checks every local schema, Phase 2 contract/scenario fixture, sour
 
 The harness separates structural validity from tax correctness. It measures snapshot schema validity, citation/source IDs, source ranking, effective-date handling, unsupported assertions, reviewer disagreement, approval boundary, candidate isolation, source dependency integrity, rule freshness and append-only audit integrity. Research confidence is deterministic and cannot use the model's self-rating.
 
-Do not score substantive tax correctness until expected outcomes are supported by reviewed primary material and qualified adviser review. Research examples are issue-spotting packets, not legal opinions. The three Phase 3 rules have been moved to **proposed** candidate files and no repository rules are currently human-approved for execution.
+Do not score substantive tax correctness until expected outcomes are supported by reviewed primary material and qualified adviser review. Research examples are issue-spotting packets, not legal opinions. The Phase 4.5 approved executable set consists of the human-approved general Article 44 and Article 45 rules. Phase 5 candidates remain proposed and non-executable.
 
 
 Phase 4.5 adds approval-chain tamper/missing-record checks, full rule-version provenance, specific-over-general selection, reviewed fixed-establishment gates, Article 58 no-fallback behavior, and synthetic end-to-end Article 44/45 place-of-supply tests. Test approvals use isolated temporary repositories and synthetic actors; they never approve rules in the repository.
+
+## Phase 5 evaluation
+
+Phase 5 adds tests for synthetic-only scenarios, source/evidence snapshots, non-executable candidate review state, jurisdiction carry-forward, and the prohibition on inferring supplier charging, reverse charge, invoice treatment, reporting or AAM effects. `python scripts/validate.py` checks all schemas, source and internal references, scenarios, contracts, snapshots, candidates, reviews and approval loading. No substantive correctness score is assigned to unapproved candidates. Current executable set: the human-approved Article 44 and Article 45 rules only.

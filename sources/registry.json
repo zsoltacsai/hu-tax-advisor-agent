@@ -545,6 +545,142 @@
       "content_accessed": true,
       "effective_date_verified": true,
       "applicability_verified": false
+    },
+    {
+      "id": "hu-vat-act-2025-12-20-operational",
+      "jurisdiction": "HU",
+      "authority": "Hungarian Parliament / Nemzeti Jogszabálytár",
+      "source_type": "primary_legislation",
+      "title": "2007. évi CXXVII. törvény az általános forgalmi adóról — NJT version shown 2025-12-20",
+      "official_url": "https://njt.hu/jogszabaly/2007-127-00-00.100",
+      "effective_from": "2025-12-20",
+      "effective_to": null,
+      "publication_date": "2007-11-16",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2025-12-20",
+      "topics": [
+        "VAT",
+        "reverse_charge",
+        "invoicing",
+        "place_of_supply"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": true,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "37. § (1)",
+        "140. §",
+        "159. § (2) c)",
+        "169. § n)"
+      ],
+      "notes": "Direct official NJT page fetch succeeded on 2026-10-08. Page version header reported 2025-12-20. Article 140 states recipient tax liability when §37(1) place-of-supply rule applies; §§159(2)(c), 169(n) concern invoice obligation/data and reverse-charge mention. Version applicability to a specific transaction is not pre-judged."
+    },
+    {
+      "id": "hu-nav-2026-community-transactions-guidance",
+      "jurisdiction": "HU",
+      "authority": "National Tax and Customs Administration of Hungary (NAV)",
+      "source_type": "nav_guidance",
+      "title": "29. információs füzet — Az általános szabályok szerint adózó áfaalanyok közösségi ügyletei (2026)",
+      "official_url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "publication_date": "2026-01-26",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2026-01-26",
+      "topics": [
+        "EU_services",
+        "reverse_charge",
+        "invoicing",
+        "A60"
+      ],
+      "authority_level": "official_guidance",
+      "freshness_class": "ANNUAL_REVIEW",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": true,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "Info füzet 29, §12",
+        "Info füzet 29, §13",
+        "Info füzet 29, §14"
+      ],
+      "notes": "NAV official 2026 information booklet 29, version dated 2026-01-26. Official administrative guidance supporting reverse-charge conditions, invoice obligation and A60 scope; not primary legislation."
+    },
+    {
+      "id": "hu-nav-26a60-2026-filing-guidance",
+      "jurisdiction": "HU",
+      "authority": "National Tax and Customs Administration of Hungary (NAV)",
+      "source_type": "nav_guidance",
+      "title": "26A60 form and 2026 completion guidance",
+      "official_url": "https://nav.gov.hu/print/nyomtatvanyok/letoltesek/nyomtatvanykitolto_programok/nyomtatvanykitolto_programok_nav/26A60",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "publication_date": "2026-04-29",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2026-09-02",
+      "topics": [
+        "A60",
+        "recapitulative_statement",
+        "reporting"
+      ],
+      "authority_level": "official_guidance",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": true,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "26A60 03-as lap",
+        "26A60 04-es lap",
+        "26A60 version 3.0"
+      ],
+      "notes": "NAV page and filing instruction accessed 2026-10-08. Current 2026 form page lists version 3.0 dated 2026-09-02; service-supply A60-03 and service-receipt A60-04 descriptions verified. This proves reporting form guidance, not any particular transaction obligation."
+    },
+    {
+      "id": "eu-vat-directive-2025-04-operational",
+      "jurisdiction": "EU",
+      "authority": "Council of the European Union",
+      "source_type": "eu_legislation",
+      "title": "Council Directive 2006/112/EC consolidated text — 2025-04-14 version, operational provisions",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "effective_from": "2007-01-01",
+      "effective_to": null,
+      "publication_date": "2006-11-28",
+      "retrieved_at": "2026-10-08",
+      "version_date": "2025-04-14",
+      "topics": [
+        "reverse_charge",
+        "invoicing",
+        "recapitulative_statement",
+        "VAT"
+      ],
+      "authority_level": "primary",
+      "freshness_class": "HIGH_CHANGE",
+      "url_checked": true,
+      "url_reachable": true,
+      "content_accessed": true,
+      "content_verified": true,
+      "effective_date_verified": false,
+      "applicability_verified": false,
+      "relevant_provisions": [
+        "Article 192a",
+        "Article 196",
+        "Article 219a",
+        "Article 226(11a)",
+        "Article 262(1)(c)",
+        "Article 263",
+        "Article 264"
+      ],
+      "notes": "Official EUR-Lex consolidated text accessed in English/other official language indexes on 2026-10-08. The authenticated amending acts and transaction-date consolidation govern. Directive 2025/516 has future phased amendments; check temporal applicability before use."
     }
   ]
 }

@@ -1,0 +1,181 @@
+{
+  "as_of_date": "2026-10-08",
+  "candidate_conclusion": "Non-executable candidate may be prepared for review; no legal output is issued.",
+  "confidence": "low",
+  "confidence_basis": [
+    "Official primary and/or NAV source material accessed 2026-10-08.",
+    "Unresolved applicability and future amendments prevent operational reliance."
+  ],
+  "conflicting_sources": [],
+  "court_sources": [],
+  "facts": {
+    "purpose": "non-executable research only",
+    "synthetic": true
+  },
+  "facts_required": [
+    "supplier/customer status and establishment",
+    "approved upstream stage and transaction date",
+    "supplier/customer VAT ID status where material",
+    "special rule, exemption and fixed establishment facts"
+  ],
+  "human_review_required": true,
+  "interpretation": "Article 196 links recipient liability to Article 44 services only where statutory recipient and supplier-establishment conditions are met; HU Áfa tv. 140. § supports domestic recipient liability for §37(1) transactions. This is research, not a transaction determination.",
+  "jurisdiction": [
+    "EU",
+    "HU"
+  ],
+  "official_guidance": [],
+  "primary_sources": [
+    "eu-vat-directive-2025-04-operational",
+    "eu-vat-services-directive-2008-8",
+    "hu-vat-act-2025-12-20-operational"
+  ],
+  "question": "Phase 5 research: article196 for synthetic Hungarian SaaS-like service scenarios",
+  "relevant_provisions": [
+    {
+      "applicability_notes": "Transaction-specific applicability remains unverified.",
+      "provision": "Article 196",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Official source provision accessed; short summary only.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Transaction-specific applicability remains unverified.",
+      "provision": "Article 192a",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "summary": "Official source provision accessed; short summary only.",
+      "verified": true,
+      "version_date": "2025-04-14"
+    },
+    {
+      "applicability_notes": "Transaction-specific applicability remains unverified.",
+      "provision": "Article 2",
+      "source_id": "eu-vat-services-directive-2008-8",
+      "summary": "Official source provision accessed; short summary only.",
+      "verified": true,
+      "version_date": "2008-02-12"
+    },
+    {
+      "applicability_notes": "Transaction-specific applicability remains unverified.",
+      "provision": "140. §",
+      "source_id": "hu-vat-act-2025-12-20-operational",
+      "summary": "Official source provision accessed; short summary only.",
+      "verified": true,
+      "version_date": "2025-12-20"
+    },
+    {
+      "applicability_notes": "Transaction-specific applicability remains unverified.",
+      "provision": "Info füzet 29, §12",
+      "source_id": "hu-nav-2026-community-transactions-guidance",
+      "summary": "Official source provision accessed; short summary only.",
+      "verified": true,
+      "version_date": "2026-01-26"
+    }
+  ],
+  "research_id": "research-07fb68f48d6f5f7a566e",
+  "secondary_sources": [],
+  "snapshot_hash": "3d4cacff6361d02b25849540a267a00b4ce082eba422c19011f5b42de7b8f26f",
+  "snapshot_schema_version": "1.3.0",
+  "sources_considered": [
+    {
+      "authority_level": "primary",
+      "effective_from": "2007-01-01",
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02006L0112-20250414",
+      "publication_date": "2006-11-28",
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "source_type": "eu_legislation",
+      "title": "Council Directive 2006/112/EC consolidated text — 2025-04-14 version, operational provisions",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": false,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "CONTENT_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-04-14"
+    },
+    {
+      "authority_level": "primary",
+      "effective_from": "2010-01-01",
+      "effective_to": null,
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32008L0008",
+      "publication_date": "2008-02-12",
+      "retrieved_at": "2026-10-08",
+      "source_id": "eu-vat-services-directive-2008-8",
+      "source_type": "eu_legislation",
+      "title": "Council Directive 2008/8/EC as regards place of supply of services",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2008-02-12"
+    },
+    {
+      "authority_level": "primary",
+      "effective_from": "2025-12-20",
+      "effective_to": null,
+      "official_url": "https://njt.hu/jogszabaly/2007-127-00-00.100",
+      "publication_date": "2007-11-16",
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-vat-act-2025-12-20-operational",
+      "source_type": "primary_legislation",
+      "title": "2007. évi CXXVII. törvény az általános forgalmi adóról — NJT version shown 2025-12-20",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2025-12-20"
+    },
+    {
+      "authority_level": "official_guidance",
+      "effective_from": "2026-01-01",
+      "effective_to": "2026-12-31",
+      "official_url": "https://nav.gov.hu/ugyfeliranytu/nezzen-utana/inf_fuz/2026",
+      "publication_date": "2026-01-26",
+      "retrieved_at": "2026-10-08",
+      "source_id": "hu-nav-2026-community-transactions-guidance",
+      "source_type": "nav_guidance",
+      "title": "29. információs füzet — Az általános szabályok szerint adózó áfaalanyok közösségi ügyletei (2026)",
+      "verification": {
+        "applicability_verified": false,
+        "checked_at": null,
+        "content_accessed": true,
+        "content_verified": true,
+        "effective_date_verified": true,
+        "notes": "Verification status is derived from the source registry; the research draft cannot self-attest.",
+        "state": "EFFECTIVE_DATE_VERIFIED",
+        "url_reachable": true
+      },
+      "version_date": "2026-01-26"
+    }
+  ],
+  "topics": [
+    "VAT",
+    "Phase5",
+    "article196"
+  ],
+  "transaction_date": "2026-10-08",
+  "uncertainties": [
+    "Applicability and exceptions require transaction-specific review.",
+    "No new rule has human approval; this research cannot produce a tax conclusion.",
+    "2025/516 future changes and member-state implementation require date-specific review."
+  ]
+}

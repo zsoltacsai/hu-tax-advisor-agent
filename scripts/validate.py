@@ -74,7 +74,8 @@ if src_registry is not None:
       "transaction":"transaction-context.schema.json","conclusion":"tax-conclusion.schema.json",
       "review-escalation":"review-escalation.schema.json","evidence":"evidence.schema.json",
       "decision-provenance":"decision-provenance.schema.json","mcp-request":"mcp-request.schema.json",
-      "mcp-response":"mcp-response.schema.json","rule-version":"rule-version.schema.json"}
+      "mcp-response":"mcp-response.schema.json","rule-version":"rule-version.schema.json",
+      "vat-operational-stages":"vat-operational-stages.schema.json"}
     for path in sorted((ROOT/"fixtures/contracts").glob("*.json")):
         obj=load(path)
         if obj is not None:

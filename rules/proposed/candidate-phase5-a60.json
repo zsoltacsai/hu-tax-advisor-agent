@@ -1,0 +1,75 @@
+{
+  "assumptions": [
+    "Synthetic research only.",
+    "An approved upstream semantic stage is required."
+  ],
+  "author": "research-agent",
+  "candidate_id": "candidate-phase5-a60",
+  "conditions": [
+    {
+      "equals": "determined",
+      "field": "approved_upstream.place_of_supply.status"
+    },
+    {
+      "equals": "eu-vat-services-b2b-general@1",
+      "field": "approved_upstream.place_of_supply.rule_version_id"
+    }
+  ],
+  "created_at": "2026-10-08T10:05:07+00:00",
+  "description": "a60: narrowly scoped candidate only; never executable without explicit human approval.",
+  "effective_from": "2010-01-01",
+  "effective_to": null,
+  "evidence": [
+    {
+      "provision": "26A60 03-as lap",
+      "source_id": "hu-nav-26a60-2026-filing-guidance",
+      "source_version": "NAV form version 3.0, 2026-09-02",
+      "supports": "a60: narrowly scoped candidate only; never executable without explicit human approval."
+    }
+  ],
+  "exclusions": [
+    "special or mixed service",
+    "unresolved customer or supplier status",
+    "relevant fixed-establishment uncertainty",
+    "AAM/SME, exemption, rate, tax point or period questions",
+    "unverified transaction-specific conditions"
+  ],
+  "human_review_if": [
+    "AAM/SME or exemption interaction",
+    "special/mixed supply",
+    "fixed establishment unresolved",
+    "conflicting country/customer evidence",
+    "tax-point or reporting-period uncertainty"
+  ],
+  "jurisdiction": "HU",
+  "known_exceptions": [
+    "special or mixed service",
+    "unresolved customer or supplier status",
+    "relevant fixed-establishment uncertainty",
+    "AAM/SME, exemption, rate, tax point or period questions",
+    "unverified transaction-specific conditions"
+  ],
+  "outcome": {
+    "description": "a60: narrowly scoped candidate only; never executable without explicit human approval.",
+    "status": "CANDIDATE_ONLY",
+    "value": "NOT_EXECUTABLE"
+  },
+  "priority": 100,
+  "requires": [
+    "approved Article 44 upstream stage",
+    "explicit human approval"
+  ],
+  "research_id": "research-b41d6351916a01e4c6af",
+  "review_required": true,
+  "rule_id": "hu-a60-services-reporting-candidate",
+  "rule_scope": "SPECIFIC",
+  "rule_specificity": 10,
+  "rule_version_id": "hu-a60-services-reporting-candidate@1",
+  "status": "PROPOSED",
+  "topic": "other",
+  "unresolved_questions": [
+    "Applicability and exceptions require transaction-specific review.",
+    "No new rule has human approval; this research cannot produce a tax conclusion.",
+    "2025/516 future changes and member-state implementation require date-specific review."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "candidate_id": "candidate-phase5-invoice-hu",
+  "confidence": "low",
+  "effective_date_review": {
+    "findings": [
+      "No supporting primary commencement date"
+    ],
+    "passed": false
+  },
+  "human_review_required": true,
+  "legal_basis_review": {
+    "findings": [],
+    "passed": true
+  },
+  "logic_review": {
+    "conditions": {
+      "findings": [],
+      "passed": true
+    },
+    "engine_compatibility": {
+      "findings": [
+        "executable-rule.schema.json: 'operator' is a required property"
+      ],
+      "passed": false
+    },
+    "facts": {
+      "findings": [],
+      "passed": true
+    },
+    "outcome": {
+      "findings": [],
+      "passed": true
+    }
+  },
+  "missing_exceptions": [
+    "special or mixed service",
+    "unresolved customer or supplier status",
+    "relevant fixed-establishment uncertainty",
+    "AAM/SME, exemption, rate, tax point or period questions",
+    "unverified transaction-specific conditions"
+  ],
+  "required_changes": [
+    "Candidate effective_from does not match a verified primary source commencement date.",
+    "Applicability and exceptions require transaction-specific review.",
+    "No new rule has human approval; this research cannot produce a tax conclusion.",
+    "2025/516 future changes and member-state implementation require date-specific review.",
+    "Research confidence is low.",
+    "Candidate is not engine-compatible: executable-rule.schema.json: 'operator' is a required property"
+  ],
+  "research_id": "research-ec9125a2d836bf68e453",
+  "review_id": "review-ecb190bd409c82839111",
+  "reviewed_at": "2026-10-08T10:05:07+00:00",
+  "source_review": {
+    "findings": [
+      "Candidate effective_from does not match a verified primary source commencement date.",
+      "Applicability and exceptions require transaction-specific review.",
+      "No new rule has human approval; this research cannot produce a tax conclusion.",
+      "2025/516 future changes and member-state implementation require date-specific review.",
+      "Research confidence is low.",
+      "Candidate is not engine-compatible: executable-rule.schema.json: 'operator' is a required property"
+    ],
+    "passed": false
+  },
+  "status": "NEEDS_CHANGES",
+  "unsupported_assertions": []
+}

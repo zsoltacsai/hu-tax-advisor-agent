@@ -1,0 +1,71 @@
+{
+  "scenario_id": "phase5-e-eu-b2b-invalid-id",
+  "description": "Synthetic business claim with invalid synthetic VAT-ID state.",
+  "taxpayer": {
+    "country": "HU",
+    "entity_type": "sole_proprietor",
+    "vat_status_reported": "general_vat",
+    "facts_reviewed": true,
+    "eu_vat_number_present": true,
+    "establishment_country": "HU",
+    "tax_year": 2026,
+    "facts_as_of": "2026-10-08",
+    "annual_turnover": null,
+    "turnover_currency": "HUF",
+    "source_fact_ids": [
+      "synthetic-taxpayer-facts"
+    ]
+  },
+  "customer": {
+    "country": "DE",
+    "business_establishment_country": "DE",
+    "customer_type_claimed": "business",
+    "business_status": "verified_business",
+    "business_status_evidence": [
+      "company_register"
+    ],
+    "status_evidence_reviewed": true,
+    "vat_id": "DE000000000",
+    "vat_id_verification": "synthetic_invalid",
+    "verification_at": null,
+    "evidence_country_signals": [
+      {
+        "kind": "billing",
+        "country": "DE",
+        "observed_at": "2026-10-08T10:00:00Z"
+      }
+    ],
+    "vat_id_evidence_status": "INVALID"
+  },
+  "transaction": {
+    "service_as_described": "Synthetic maintenance/support service; classification label is fixture input only.",
+    "service_classification": "GENERAL_SERVICE",
+    "classification_basis": [
+      "synthetic scenario fact"
+    ],
+    "classification_reviewed": true,
+    "special_place_of_supply_reviewed": true,
+    "automation_level": "partial",
+    "human_intervention": "material",
+    "article59c_assessment": "not_assessed",
+    "billing_frequency": "monthly",
+    "currency": "EUR",
+    "price_basis": "net",
+    "transaction_date": "2026-10-08",
+    "tax_point_date": null,
+    "payment_provider": "synthetic-no-connection",
+    "amount": 10000,
+    "events": [],
+    "supplier_establishment_review": "no_relevant_fixed_establishment",
+    "recipient_establishment_review": "no_relevant_fixed_establishment"
+  },
+  "expected_validation": {
+    "expected_escalation": true,
+    "uncertainty_categories": [
+      "MISSING_FACT",
+      "LIVE_VERIFICATION_REQUIRED",
+      "HUMAN_ACCOUNTANT_DECISION"
+    ],
+    "notes": "VAT-ID and/or customer status is not established. Downstream tax conclusions remain unassessed."
+  }
+}

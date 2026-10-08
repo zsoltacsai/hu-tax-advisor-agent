@@ -13,3 +13,5 @@ Freshness labels tell the researcher when cached material must be rechecked. The
 Provider documentation is version-dependent and must be checked before describing current behavior. The authority ranking is independent of freshness. Always report retrieved_at and version_date separately. A cached item outside the allowed freshness window is SOURCE_NOT_VERIFIED; status-specific questions can require LIVE_VERIFICATION_REQUIRED.
 
 No VIES lookup or provider API connection is performed. Phase 3 makes no live verification claims.
+
+Phase 5 notes: the NJT Hungary VAT Act page was fetched directly on 2026-10-08 (HTTP 200; page version header 2025-12-20) and NAV A60 form/page and 2026 instructions were accessed the same date. These records do not certify transaction applicability or future freshness. Recheck NAV form/guidance before current reporting reliance. EU consolidated texts are date-pinned and later amendments must be checked.

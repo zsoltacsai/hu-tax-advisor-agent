@@ -1,0 +1,75 @@
+{
+  "assumptions": [
+    "Synthetic research only.",
+    "An approved upstream semantic stage is required."
+  ],
+  "author": "research-agent",
+  "candidate_id": "candidate-phase5-invoice-eu",
+  "conditions": [
+    {
+      "equals": "determined",
+      "field": "approved_upstream.place_of_supply.status"
+    },
+    {
+      "equals": "eu-vat-services-b2b-general@1",
+      "field": "approved_upstream.place_of_supply.rule_version_id"
+    }
+  ],
+  "created_at": "2026-10-08T10:05:07+00:00",
+  "description": "invoice-eu: narrowly scoped candidate only; never executable without explicit human approval.",
+  "effective_from": "2010-01-01",
+  "effective_to": null,
+  "evidence": [
+    {
+      "provision": "Article 226(11a)",
+      "source_id": "eu-vat-directive-2025-04-operational",
+      "source_version": "EU VAT Directive 2006/112/EC consolidated version 2025-04-14",
+      "supports": "invoice-eu: narrowly scoped candidate only; never executable without explicit human approval."
+    }
+  ],
+  "exclusions": [
+    "special or mixed service",
+    "unresolved customer or supplier status",
+    "relevant fixed-establishment uncertainty",
+    "AAM/SME, exemption, rate, tax point or period questions",
+    "unverified transaction-specific conditions"
+  ],
+  "human_review_if": [
+    "AAM/SME or exemption interaction",
+    "special/mixed supply",
+    "fixed establishment unresolved",
+    "conflicting country/customer evidence",
+    "tax-point or reporting-period uncertainty"
+  ],
+  "jurisdiction": "EU",
+  "known_exceptions": [
+    "special or mixed service",
+    "unresolved customer or supplier status",
+    "relevant fixed-establishment uncertainty",
+    "AAM/SME, exemption, rate, tax point or period questions",
+    "unverified transaction-specific conditions"
+  ],
+  "outcome": {
+    "description": "invoice-eu: narrowly scoped candidate only; never executable without explicit human approval.",
+    "status": "CANDIDATE_ONLY",
+    "value": "NOT_EXECUTABLE"
+  },
+  "priority": 100,
+  "requires": [
+    "approved Article 44 upstream stage",
+    "explicit human approval"
+  ],
+  "research_id": "research-aa7c897795f9e6cd9ca1",
+  "review_required": true,
+  "rule_id": "eu-invoice-reverse-charge-metadata",
+  "rule_scope": "SPECIFIC",
+  "rule_specificity": 10,
+  "rule_version_id": "eu-invoice-reverse-charge-metadata@1",
+  "status": "PROPOSED",
+  "topic": "other",
+  "unresolved_questions": [
+    "Applicability and exceptions require transaction-specific review.",
+    "No new rule has human approval; this research cannot produce a tax conclusion.",
+    "2025/516 future changes and member-state implementation require date-specific review."
+  ]
+}

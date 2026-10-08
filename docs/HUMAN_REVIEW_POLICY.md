@@ -15,3 +15,5 @@ Return cannot_determine or a conditional draft and escalate; do not make a defin
 - provider behavior or invoice wording is material and current official documentation was not verified.
 
 Escalation must name the reason category, evidence needed and appropriate reviewer (accountant, tax adviser, legal counsel, or human reviewer). Human review is not a rubber stamp. Preserve the draft and provenance. No filing, invoicing, tax-status selection or production setting change follows from a draft conclusion.
+
+Phase 5 adds mandatory escalation when AAM/SME status may affect a transaction, invoice requirement or exact wording is unclear, destination exemption/taxability is unresolved, required VAT-ID evidence is inadequate, or reporting applicability/period is uncertain. Candidate summaries are not professional advice. Use `not_assessed`, `cannot_determine`, or `requires_review` rather than filling gaps with an assumption.

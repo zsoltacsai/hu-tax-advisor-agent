@@ -1,0 +1,68 @@
+{
+  "candidate_id": "candidate-phase5-recap",
+  "confidence": "low",
+  "effective_date_review": {
+    "findings": [
+      "No supporting primary commencement date"
+    ],
+    "passed": false
+  },
+  "human_review_required": true,
+  "legal_basis_review": {
+    "findings": [],
+    "passed": true
+  },
+  "logic_review": {
+    "conditions": {
+      "findings": [],
+      "passed": true
+    },
+    "engine_compatibility": {
+      "findings": [
+        "executable-rule.schema.json: 'operator' is a required property"
+      ],
+      "passed": false
+    },
+    "facts": {
+      "findings": [],
+      "passed": true
+    },
+    "outcome": {
+      "findings": [],
+      "passed": true
+    }
+  },
+  "missing_exceptions": [
+    "special or mixed service",
+    "unresolved customer or supplier status",
+    "relevant fixed-establishment uncertainty",
+    "AAM/SME, exemption, rate, tax point or period questions",
+    "unverified transaction-specific conditions"
+  ],
+  "required_changes": [
+    "A primary legal source supporting the candidate effective start date is not verified.",
+    "Candidate effective_from does not match a verified primary source commencement date.",
+    "Applicability and exceptions require transaction-specific review.",
+    "No new rule has human approval; this research cannot produce a tax conclusion.",
+    "2025/516 future changes and member-state implementation require date-specific review.",
+    "Research confidence is low.",
+    "Candidate is not engine-compatible: executable-rule.schema.json: 'operator' is a required property"
+  ],
+  "research_id": "research-d3bec51e681633b64e54",
+  "review_id": "review-8eefd2361505f57a66ee",
+  "reviewed_at": "2026-10-08T10:05:07+00:00",
+  "source_review": {
+    "findings": [
+      "A primary legal source supporting the candidate effective start date is not verified.",
+      "Candidate effective_from does not match a verified primary source commencement date.",
+      "Applicability and exceptions require transaction-specific review.",
+      "No new rule has human approval; this research cannot produce a tax conclusion.",
+      "2025/516 future changes and member-state implementation require date-specific review.",
+      "Research confidence is low.",
+      "Candidate is not engine-compatible: executable-rule.schema.json: 'operator' is a required property"
+    ],
+    "passed": false
+  },
+  "status": "NEEDS_CHANGES",
+  "unsupported_assertions": []
+}
